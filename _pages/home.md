@@ -36,9 +36,9 @@ We are a dynamic research group exploring **sensory interactions** to understand
         <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_audio_morph_fit.png" alt="Slide 5" />
         </div>       
-         <div class="item">
+         <!-- <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_audio_embeddings_fit.png" alt="Slide 6" />
-        </div>
+        </div> -->
         <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_audio_eeg_fit.png" alt="Slide 7" />
         </div>
