@@ -1,7 +1,7 @@
 ---
 title: "News"
 layout: textlay
-excerpt: "Allan Lab at Leiden University."
+excerpt: "SPIN Lab at IIT Guwahati"
 sitemap: false
 permalink: /allnews.html
 ---

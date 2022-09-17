@@ -1,14 +1,11 @@
 ---
-title: "Allan Lab - Home"
+title: "SPIN Lab - Home"
 layout: homelay
-excerpt: "Allan Lab at Leiden University."
+excerpt: "SPIN at IIT Guwahati"
 sitemap: false
 permalink: /
 ---
-
-Hello! neeraj here ....We are a dynamic research group at the [Leiden Institute of Physics](http://www.physics.leidenuniv.nl). Our aim is to explore and understand [quantum materials](http://condensedconcepts.blogspot.nl/2013/05/what-is-quantum-matter.html), including strange metals, high-temperature superconductors, and quantum critical electron matter.
-
-
+We are a dynamic research group exploring **sensory interactions** to understand how humans **perceive** the world and build **intelligence**. In this quest, we resort to analyzing various kinds of digitized sensory signals (and data). We think this exploration is critical for building futuristic intelligent human-machine interaction. Our game is to grow and share our understanding, and help create this future.
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
     <!-- Menu -->
     <ol class="carousel-indicators">
@@ -19,29 +16,33 @@ Hello! neeraj here ....We are a dynamic research group at the [Leiden Institute 
         <li data-target="#carousel" data-slide-to="4"></li>
         <li data-target="#carousel" data-slide-to="5"></li>
         <li data-target="#carousel" data-slide-to="6"></li>
+        <li data-target="#carousel" data-slide-to="7"></li>
     </ol>
 
     <!-- Items -->
     <div class="carousel-inner" markdown="0">
         <div class="item active">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/QPI_Rh.jpg" alt="Slide 1" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_audio_signals_fit.png" alt="Slide 1" />
         </div>
         <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/SmartTipSide.jpg" alt="Slide 2" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_audio_speech_fit.png" alt="Slide 2" />
         </div>
         <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/SaphireSTM2.jpg" alt="Slide 3" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_audio_tone_mixture_fit.png" alt="Slide 3" />
         </div>
         <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/lab.jpg" alt="Slide 4" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_audio_listening_fit.png" alt="Slide 4" />
         </div>
         <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/Fig_Science_Web.jpg" alt="Slide 5" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_audio_morph_fit.png" alt="Slide 5" />
         </div>       
          <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/cake_web.jpg" alt="Slide 6" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_audio_embeddings_fit.png" alt="Slide 6" />
         </div>
-    </div>
+        <div class="item">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_audio_eeg_fit.png" alt="Slide 7" />
+        </div>
+      </div>
   <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -51,22 +52,18 @@ Hello! neeraj here ....We are a dynamic research group at the [Leiden Institute 
     <span class="sr-only">Next</span>
   </a>
 </div>
+From a broader perspective, sensory interactions have been around for more than a billion years and have profoundly affected the forms, habits, destinies and evolution of the creatures. To this end, in our work, we conceptualize novel approaches to create (or use existing) datasets, develop algorithms and computational analysis pipelines, and engineer intelligent use cases. Know more about our explorations at [Research](research).
+<hr>
+We are placed in the [Mehta Family School of Data Science and AI](https://www.iitg.ac.in/dsai/), Indian Institute of Technology, Guwahati. We exchange ideas and work with our neighbors from [Dept. EEE ](https://www.iitg.ac.in/eee/) and [Center for Linguistic Science and Technology](https://www.iitg.ac.in/clst/index.html), as well as with the colleagues from [LEAP Lab, Indian Instititute of Science, Bangalore](http://leap.ee.iisc.ac.in/) and [International Audio Labs, Erlangen, Germany](https://www.audiolabs-erlangen.de/fau/professor/habets).
+
+Our campus is calmy vibrant :), bio-diverse and fondly popular in India as (most!) heavenly. We are situated in the North-East India (see [Pictures](pictures)).
+
+ **We are looking for passionate students (across undergarduate, Masters, and PhD), and Postdocs to join the team** [(more info)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
 
 
-
-
-To this end, we develop novel spectroscopic-imaging scanning tunneling microscopy (SI-STM) tools to visualize the relevant quantum mechanical degrees of freedom. We want to be able to build the perfect instruments to answer the  scientific questions we deem most important (see [Research](research)).
-
-We are located at Leiden University, the birthplace of superconductivity and home to Kamerlingh Onnes, Lorentz, Huygens, Einstein, de Sitter, and others (see e.g. [the wall of signatures from Ehrenfest lecturers](https://www.lorentz.leidenuniv.nl/history/colloquium/muur_heel.html)). We exchange ideas and work with our neighbors from [Quantum Matter & Optics](http://www.physics.leidenuniv.nl/qo-home), as well as with the colleagues from our [world-class theory section](https://www.lorentz.leidenuniv.nl).
-
- **We are  looking for passionate new PhD students, Postdocs, and Master students to join the team** [(more info)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
-
-
-We are grateful for funding from Leiden University, [NWO](www.nwo.nl) ([Vidi talent scheme](http://www.nwo.nl/en/research-and-results/programmes/Talent+Scheme) and the [Frontiers in Nanoscience program](https://www.universiteitleiden.nl/en/research/research-projects/science/frontiers-of-nanoscience-nanofront)), and from an [ERC starting grant](https://erc.europa.eu/funding/starting-grants).
-
-<figure class="fourth">
+<!-- <figure class="fourth">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_Leiden.jpg" style="width: 210px">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_Nanofront.jpg" style="width: 110px">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_NWO.jpg" style="width: 120px">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_ERC.jpg" style="width: 110px">
-</figure>
+</figure> -->
