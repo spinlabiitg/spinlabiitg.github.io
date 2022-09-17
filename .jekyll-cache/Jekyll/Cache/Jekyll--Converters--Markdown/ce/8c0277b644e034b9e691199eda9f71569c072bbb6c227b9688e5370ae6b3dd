@@ -1,0 +1,59 @@
+I"ê<h1 id="group-members">Group Members</h1>
+
+<p><strong>We are  looking for new PhD students, Master, and BTech students to join the team</strong> <a href="http://localhost:4000/vacancies">(see openings)</a> <strong>!</strong></p>
+
+<!-- Jump to [staff](#staff), [master and bachelor students](#master-and-bachelor-students), [alumni](#alumni), [administrative support](#administrative-support), [lab visitors](#lab-visitors). -->
+
+<h2 id="staff">Staff</h2>
+
+<div class="row">
+
+  <div class="col-sm-6 clearfix">
+    <p><img src="http://localhost:4000/images/teampic/PI_neeraj.png" class="img-responsive" width="25%" style="float: left" /></p>
+    <h4><a href="https://www.neerajww@gmail.com">Neeraj Kumar Sharma</a></h4>
+    <p><i>Assistant Professor, started July 2022 <!--<br>email: <neerajs@iitg.ac.in></i> --></i></p>
+    <ul style="overflow: hidden">
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li> B.Tech in Instrumentation and Electronics Engineering, <a href="https://en.wikipedia.org/wiki/Odisha_University_of_Technology_and_Research">College of Engineering and Technology</a>, Bhubaneswar, India </li>
+  <li> Masters, Ph.D, <a href="https://iisc.ac.in/">Indian Institute of Science</a>, Bangalore, India </li>
+  <li> <a href="https://www.cmu.edu/ni/">BrainHub Postdoc Fellow</a>, Carnegie Mellon University, Pittsburgh, USA </li>
+  <li> <a href="https://iisc.ac.in/post-docs/">C. V. Raman Postdoc Fellow</a>, Indian Institute of Science, Bangalore, India </li>
+  <li> Scientist, <a href="https://www.iis.fraunhofer.de/en/ff/amm/for/audiolabs.html">Fraunhofer Audio Labs</a>, Erlangen, Germany </li>
+  
+
+  </ul>
+  </div>
+
+  <div class="col-sm-6 clearfix">
+    <p><img src="http://localhost:4000/images/teampic/rock.jpg" class="img-responsive" width="25%" style="float: left" /></p>
+    <h4>This could be you !</h4>
+    <p><i>See <a href="http://www.spinlabiitg.github.io/vacancies">openings</a> for more info <!--<br>email: <milan.allan@gmail.com></i> --></i></p>
+    <ul style="overflow: hidden">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  </ul>
+  </div>
+
+</div>
+
+<!-- ## Administrative Support
+<a href="mailto:Rijsewijk@Physics.LeidenUniv.nl">Ellie van Rijsewijk</a> is helping us (and other groups) with administration. -->
+:ET

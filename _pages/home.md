@@ -54,7 +54,7 @@ We are a dynamic research group exploring **sensory interactions** to understand
 </div>
 From a broader perspective, sensory interactions have been around for more than a billion years and have profoundly affected the forms, habits, destinies and evolution of the creatures. To this end, in our work, we conceptualize novel approaches to create (or use existing) datasets, develop algorithms and computational analysis pipelines, and engineer intelligent use cases. Know more about our explorations at [Research](research).
 <hr>
-We are placed in the [Mehta Family School of Data Science and AI](https://www.iitg.ac.in/dsai/), Indian Institute of Technology, Guwahati. We exchange ideas and work with our neighbors from [Dept. EEE ](https://www.iitg.ac.in/eee/) and [Center for Linguistic Science and Technology](https://www.iitg.ac.in/clst/index.html), as well as with the colleagues from [LEAP Lab, Indian Instititute of Science, Bangalore](http://leap.ee.iisc.ac.in/) and [International Audio Labs, Erlangen, Germany](https://www.audiolabs-erlangen.de/fau/professor/habets).
+We are placed in the [School of Data Science and AI](https://www.iitg.ac.in/dsai/), Indian Institute of Technology, Guwahati. We exchange ideas and work with our neighbors from [Dept. EEE ](https://www.iitg.ac.in/eee/) and [Center for Linguistic Science and Technology](https://www.iitg.ac.in/clst/index.html), as well as with the colleagues from [LEAP Lab, Indian Instititute of Science, Bangalore](http://leap.ee.iisc.ac.in/) and [International Audio Labs, Erlangen, Germany](https://www.audiolabs-erlangen.de/fau/professor/habets).
 
 Our campus is calmy vibrant :), bio-diverse and fondly popular in India as (most!) heavenly. We are situated in the North-East India (see [Pictures](pictures)).
 
