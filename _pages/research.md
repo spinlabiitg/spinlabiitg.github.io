@@ -8,7 +8,7 @@ permalink: /research/
  
 # Research
  
-![]({{ site.url }}{{ site.baseurl }}/images/respic/signal_data_AI.png){: style="width: 300px; float: left; margin: 0px 2px"}
+![]({{ site.url }}{{ site.baseurl }}/images/respic/signal_data_AI.png){: style="width: 350px; float: left; margin: 0px 10px"}
 \
 Our overarching goal is to broaden the understanding of sensory interactions from a science and engineering perspective, by analyzing the associated signals (and data). We utilize critical thinking, systematic experimentation, and in depth analysis, enabling us address questions we find most interesting.
 <!-- This direction of research is possible thanks also to Neeraj's broad background with different research themes: speech signal modeling and audio signal processing (at IISc), understanding speech perception using behavioral and neural signals (at CMU), sound-based respiratory health diagnosis (at IISc), and spatial audio cognition (at Fraunhofer IIS). -->
