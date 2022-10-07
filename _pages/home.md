@@ -59,14 +59,14 @@ permalink: /
   </a>
 </div>
  
-We are a dynamic research group exploring **sensory interactions** to understand how humans **perceive** the world and build **intelligence**. In this quest, we resort to analyzing various kinds of digitized sensory signals (and data). We think this exploration is critical for building futuristic intelligent human-machine interactions. Our game is to learn, grow and share our understanding and engineer an AI augmented future.
+We are a dynamic research group exploring **sensory interactions** to understand how humans **perceive** the world and build **intelligence**. In this quest, we resort to analyzing various kinds of digitized sensory signals. We think this exploration is critical for building futuristic intelligent human-machine interactions. Our game is to learn, grow and share our understanding and engineer an AI augmented future.
 - To know more about our planned explorations see [Research](research).
 - To know about our findings see [Publications](publications).
  
 **We are looking for passionate students (across undergraduate, Masters, and PhD) to join the team** [(more info)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
  
 **Our approach**\
-We use signal processing, machine (deep) learning, inferential statistics, AI, and concepts and understanding and tools from psychology and neuroscience in our work.
+We closely work with sound, speech and audio signals. We use signal processing, inferential statistics, machine (deep) learning and AI, and concepts and understanding from psychology and neuroscience in our work. 
  
 **We are new. Say Hi!**\
 Feel free to drop [Neeraj]({{ site.url }}{{ site.baseurl }}/team) an [email](mailto:neerajs@iitg.ac.in) if you wish to interact with us. We will be happy to learn about the challenges you are tackling and discuss ways for collaborating with you.
@@ -95,7 +95,7 @@ Feel free to drop [Neeraj]({{ site.url }}{{ site.baseurl }}/team) an [email](mai
 </li>
 </ul>
 </div>
-In our work we aim to unify these three concepts and using data science and AI will attempt to understand how lifeforms (humans and other species), interact with the world.
+In our work we aim to unify these three concepts and using data science and AI, and attempt to understand how lifeforms (humans and other species) gain intelligence.
 
 <hr>
 We are located in IIT Guwahati. Our campus is calmy vibrant :), bio-diverse and fondly popular in India as (most!) heavenly (see [Pictures](pictures)).
