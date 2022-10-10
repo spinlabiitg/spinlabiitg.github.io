@@ -22,7 +22,7 @@ permalink: /
     <!-- Items -->
     <div class="carousel-inner" markdown="0">
         <div class="item active">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_neeraj_slider_2.png" alt="Slide 1" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_neeraj_slider_pic_3.png" alt="Slide 1" />
         </div>
         <!-- <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_neeraj_slider_2.png" alt="Slide 2" />
