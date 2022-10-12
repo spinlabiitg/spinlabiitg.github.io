@@ -98,7 +98,7 @@ Feel free to drop [Neeraj]({{ site.url }}{{ site.baseurl }}/team) an [email](mai
 In our work we aim to unify these three concepts and using data science and AI, and attempt to understand how lifeforms (humans and other species) gain intelligence.
 
 <hr>
-We are located in IIT Guwahati. Our campus is calmy vibrant :), bio-diverse and fondly popular in India as (most!) heavenly (see [Pictures](pictures)).
+We are located in IIT Guwahati. Our campus is calm and vibrant, bio-diverse and fondly popular in India as (most!) heavenly (see [Pictures](pictures)).
  
 <!-- <figure class="fourth">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_Leiden.jpg" style="width: 210px">
