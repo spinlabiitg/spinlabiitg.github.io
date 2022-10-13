@@ -71,7 +71,7 @@ We closely work with sound, speech and audio signals. We use signal processing, 
 **We are new. Say Hi!**\
 Feel free to drop [Neeraj]({{ site.url }}{{ site.baseurl }}/team) an [email](mailto:neerajs@iitg.ac.in) if you wish to interact with us. We will be happy to learn about the challenges you are tackling and discuss ways for collaborating with you.
 <hr>
- 
+
 **What is**
 <div markdown="0">
 <ul>
