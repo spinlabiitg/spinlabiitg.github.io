@@ -5,7 +5,6 @@ excerpt: "SPIN at IIT Guwahati"
 sitemap: false
 permalink: /
 ---
- 
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
     <!-- Menu -->
     <ol class="carousel-indicators">
@@ -66,17 +65,21 @@ We are a dynamic research group exploring **sensory interactions** to understand
 **We are looking for passionate students (across undergraduate, Masters, and PhD) to join the team** [(more info)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
  
 **Our approach**\
-We closely work with sound, speech and audio signals. We use signal processing, inferential statistics, machine (deep) learning and AI, and concepts and understanding from psychology and neuroscience in our work. 
- 
+We closely work with sound, speech, audio and EEG signals. We use signal processing, machine (deep) learning, behavioral and EEG experiments, and concepts and understanding from psychology, neuroscience and AI in our work.
+<hr>
+<div markdown="0" style="line-height:0px"><img src="images/waveform_zoom.gif" align="left" alt="Computer man" style="width:300px;height:150px;"/>
+<br>Liked it! Thanks to <a href="https://jvbalen.github.io/notes/waveform.html" target="_blank" rel="noopener noreferrer">Jan Van Balen</a>.
+</div>
+<br><br>
 **We are new. Say Hi!**\
-Feel free to drop [Neeraj]({{ site.url }}{{ site.baseurl }}/team) an [email](mailto:neerajs@iitg.ac.in) if you wish to interact with us. We will be happy to learn about the challenges you are tackling and discuss ways for collaborating with you.
+We are constantly also looking for application of data science and AI in other topics of science and engineering. Feel free to drop [Neeraj]({{ site.url }}{{ site.baseurl }}/team) an [email](mailto:neerajs@iitg.ac.in) if you wish to interact with us. We will be happy to learn about the challenges you are tackling and discuss ways for collaborating with you.
 <hr>
 
 **What is**
 <div markdown="0">
 <ul>
 <li><details><summary>Sensing (click)</summary><quote>
-  <details><summary>We are immersed in signals, and it is by sensing these signals that we get data into our brain. The biological sensors, like eyes and ears, have evolved to work under neurophysiological constraints. Exploring human intelligence by understanding the very first step of how a continuous-time (or space) signal (like image, sound, text, odor, etc.) is converted to a discrete sequence of samples in the peripheral sensory system will benefit the design of efficient sampling strategies for various kinds of sensory data.
+  <details><summary>We are immersed in signals, and it is by sensing them that we get data into our brain. The biological sensors, like eyes and ears, have evolved to work under neurophysiological constraints. Exploring human intelligence by understanding the very first step of how a continuous-time (or space) signal (like image, sound, text, odor, etc.) is converted to a discrete sequence of samples in the peripheral sensory system will benefit the design of efficient sampling strategies for various kinds of sensory data.
   </summary>
   </details>
 </quote></details>
@@ -95,7 +98,7 @@ Feel free to drop [Neeraj]({{ site.url }}{{ site.baseurl }}/team) an [email](mai
 </li>
 </ul>
 </div>
-In our work we aim to unify these three concepts and using data science and AI, and attempt to understand how lifeforms (humans and other species) gain intelligence.
+In our work we aim to unify these three concepts and attempt to understand how lifeforms (humans and other species) gain intelligence. Frankly, this is very interesting work, with lots of open questions.
 
 <hr>
 We are located in IIT Guwahati. Our campus is calm and vibrant, bio-diverse and fondly popular in India as (most!) heavenly (see [Pictures](pictures)).
