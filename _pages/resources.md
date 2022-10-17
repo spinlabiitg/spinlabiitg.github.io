@@ -7,7 +7,13 @@ permalink: /resources.html
 ---
  
 # Resources
- 
+
+#### Demos
+- Webtool for [COVID-19 Diagnosis using Audio](https://coswara.iisc.ac.in/)
+- [Time-Scale Modification](https://neerajww.github.io/preprint/demo/tsm/tsm_demo.html)
+- [Breaking-Changing-Making Speech](https://neerajww.github.io/preprint/demo/modeling/tvnm.html)
+- [Reaction time for Talker Change Detection](http://htmlpreview.github.io/?https://github.com/neerajww/rt_demo/blob/master/rt_speech.html)
+
 #### Talks
 - A talk by Neeraj on **Language familiarity impacts brain processing of speech** [(Slides](https://drive.google.com/file/d/1IHru0h9nG4e1xLWOXpG8Qbm0Xx0SBwgU/view?usp=sharing) and [Video)](https://www.youtube.com/watch?v=kb44uQ-JLCw).
  
@@ -19,6 +25,6 @@ permalink: /resources.html
 #### Datasets
 - [Coswara](https://github.com/iiscleap/Coswara-Data): A database of breathing, cough, and voice sounds for COVID-19 diagnosis [(see video)](https://youtu.be/qjDDt1vJ4_M)
 - [A listing (with links) of various dataset related to speech and audio processing](https://github.com/jim-schwoebel/voice_datasets) by Jim Schwoebel.
- 
+
 #### Blogs
-- [Click here](https://neerajww.github.io/myblog/) by Neeraj .
+- [Click here](https://neerajww.github.io/myblog/) by Neeraj.
