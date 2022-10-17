@@ -1,4 +1,12 @@
-I"!<h1 id="resources">Resources</h1>
+I"'<h1 id="resources">Resources</h1>
+
+<h4 id="demos">Demos</h4>
+<ul>
+  <li>Webtool for <a href="https://coswara.iisc.ac.in/">COVID-19 Diagnosis using Audio</a></li>
+  <li><a href="https://neerajww.github.io/preprint/demo/tsm/tsm_demo.html">Time-Scale Modification</a></li>
+  <li><a href="https://neerajww.github.io/preprint/demo/modeling/tvnm.html">Breaking-Changing-Making Speech</a></li>
+  <li><a href="http://htmlpreview.github.io/?https://github.com/neerajww/rt_demo/blob/master/rt_speech.html">Reaction time for Talker Change Detection</a></li>
+</ul>
 
 <h4 id="talks">Talks</h4>
 <ul>
@@ -20,6 +28,6 @@
 
 <h4 id="blogs">Blogs</h4>
 <ul>
-  <li><a href="https://neerajww.github.io/myblog/">Click here</a> by Neeraj .</li>
+  <li><a href="https://neerajww.github.io/myblog/">Click here</a> by Neeraj.</li>
 </ul>
 :ET
