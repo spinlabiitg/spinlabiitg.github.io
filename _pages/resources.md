@@ -26,5 +26,14 @@ permalink: /resources.html
 - [Coswara](https://github.com/iiscleap/Coswara-Data): A database of breathing, cough, and voice sounds for COVID-19 diagnosis [(see video)](https://youtu.be/qjDDt1vJ4_M)
 - [A listing (with links) of various dataset related to speech and audio processing](https://github.com/jim-schwoebel/voice_datasets) by Jim Schwoebel.
 
+#### Connecting labs
+Labs we have enjoyed learning from and working at:
+- [Learning and Extraction of Acoustic Patterns (LEAP) Lab](http://leap.ee.iisc.ac.in/), IISc Bangalore
+- [International Audio Labs](https://www.audiolabs-erlangen.de/fau/professor/habets), Erlangen
+- [Holt Lab](https://www.cmu.edu/dietrich/psychology/holtlab/), Carnegie Mellon University, Pittsburg
+- [LiMN](https://www.cmu.edu/dietrich/psychology/shinn/), Carnegie Mellon University, Pittsburgh
+- [Audition Lab](http://audition.ens.fr/dp/index.html), ENS, Paris
+- [Speech and Audio Group](https://sites.google.com/site/sagiisc/), IISc Bangalore
+
 #### Blogs
 - [Click here](https://neerajww.github.io/myblog/) by Neeraj.
