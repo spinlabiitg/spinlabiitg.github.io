@@ -30,7 +30,7 @@ permalink: /resources.html
 Labs we have enjoyed learning from and working at:
 - [Learning and Extraction of Acoustic Patterns (LEAP) Lab](http://leap.ee.iisc.ac.in/), IISc Bangalore
 - [International Audio Labs](https://www.audiolabs-erlangen.de/fau/professor/habets), Erlangen
-- [Holt Lab](https://www.cmu.edu/dietrich/psychology/holtlab/), Carnegie Mellon University, Pittsburg
+- [Holt Lab](https://www.cmu.edu/dietrich/psychology/holtlab/), Carnegie Mellon University, Pittsburgh
 - [LiMN](https://www.cmu.edu/dietrich/psychology/shinn/), Carnegie Mellon University, Pittsburgh
 - [Audition Lab](http://audition.ens.fr/dp/index.html), ENS, Paris
 - [Speech and Audio Group](https://sites.google.com/site/sagiisc/), IISc Bangalore
