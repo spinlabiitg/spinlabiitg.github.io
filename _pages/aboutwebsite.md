@@ -12,12 +12,13 @@ This website is powered by [Jekyll](https://jekyllrb.com) and uses some [Bootstr
 
 #### Acknowledgement
 - Thanks to [Allan Lab](https://www.allanlab.org/) for creating and sharing this template for quick and easy deployement.
-- Few of the images you see in the website are taken from [Pixabay](), [], and [] which allow free use of amazing images/icons/clipart.
+- Few of the images you see in the website are taken from [Pixabay](https://pixabay.com/vectors/rhinoceros-horn-cartoony-4004201/), [Healthicons](https://healthicons.org/) and [Iconpark](https://iconpark.oceanengine.com/illustrations/9) which allow free use of amazing images/icons/clipart.
 
 #### Getting started
 We recommend you to follow the nice guideline provided [here](https://www.allanlab.org/aboutwebsite.html).
 
-### Copyright / credit
+#### Copyright / credit
+We will be delighted to have a hyperlink from your site in case you use this template.
 
 Comments welcome.
 
