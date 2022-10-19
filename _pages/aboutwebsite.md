@@ -6,14 +6,15 @@ sitemap: false
 permalink: /aboutwebsite.html
 ---
 
-### Use this website as a template for your academic research group
+#### Use this website as a template for your academic research group
 
 This website is powered by [Jekyll](https://jekyllrb.com) and uses some [Bootstrap](http://www.getbootstrap.com) and  [Bootswatch](http://www.bootswatch.com). 
 
-### Acknowledgment
-Thanks to [Allan Lab](https://www.allanlab.org/) for creating and sharing this template for quick and easy deployement.
+#### Acknowledgement
+- Thanks to [Allan Lab](https://www.allanlab.org/) for creating and sharing this template for quick and easy deployement.
+- Few of the images you see in the website are taken from [Pixabay](), [], and [] which allow free use of amazing images/icons/clipart.
 
-### Getting started
+#### Getting started
 We recommend you to follow the nice guideline provided [here](https://www.allanlab.org/aboutwebsite.html).
 
 ### Copyright / credit

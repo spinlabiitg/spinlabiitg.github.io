@@ -9,8 +9,9 @@ permalink: /publications/
 
 # Publications
 
-## Group highlights
+**To see the Google Scholar page [click here](https://scholar.google.com/citations?user=j7oyJ0MAAAAJ&hl=en).**
 
+### Group highlights
 **At the end of this page, you can find the [full list of publications](#full-list-of-publications).**
 
 {% assign number_printed = 0 %}

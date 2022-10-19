@@ -1,4 +1,4 @@
-I"H"<h1 id="research">Research</h1>
+I"�"<h1 id="research">Research</h1>
 
 <p><img src="http://localhost:4000/images/respic/signal_data_AI.png" alt="" style="width: 350px; float: left; margin: 0px 10px" />
 <br />
@@ -7,16 +7,16 @@ Our overarching goal is to broaden the understanding of sensory interactions fro
 
 <p>Here are some themes that we currently work on:</p>
 
-<p><strong>Sensory sensing from a signal processing perspective</strong><br />
-We intend to understand how different sensory systems perform the task of mechano-electro-transduction, and computationally model it in ways which can provide alternative methods for sampling and representation of continuous-time signals. One topic which we have carved out from this interest is “information-rich’’ sampling of non-stationary signals. Here, the goal is to <em>sample not for</em> reconstruction of the complete signal <em>but for</em> reconstruction of the information of interest. Our initial work in this direction has proposed methods such as signal dependent sampling <a href="https://ieeexplore.ieee.org/abstract/document/6288659">Ref 1</a>, <a href="https://ieeexplore.ieee.org/abstract/document/6983916">Ref 2</a>, and extrema-triggered sampling of time-varying signals for instantaneous frequency estimation <a href="https://www.sciencedirect.com/science/article/pii/S0165168415001383">Ref 3</a>.<br />
+<p><strong>Modeling sensory signal processing</strong><br />
+Our sensory system is operating 24x7, and is an evolutionary engineering marvel. We intend to understand how different sensory systems process signals. This process is more broadly termed as mechano-electro-transduction. Computationally modeling this can provide alternative methods for sampling and representation of continuous-time signals. One topic which we have carved out from this interest is “information-rich’’ sampling of non-stationary signals. Here, the goal is to <em>sample not for</em> reconstruction of the complete signal <em>but for</em> reconstruction of the information of interest. Our initial work in this direction has proposed methods such as signal dependent sampling <a href="https://ieeexplore.ieee.org/abstract/document/6288659">Ref 1</a>, <a href="https://ieeexplore.ieee.org/abstract/document/6983916">Ref 2</a>, and extrema-triggered sampling of time-varying signals for instantaneous frequency estimation <a href="https://www.sciencedirect.com/science/article/pii/S0165168415001383">Ref 3</a>.<br />
 <em>Keywords: time-series analysis, information theory, sparse signal recovery, compressive sensing, time-frequency analysis, physical and neural processes in sensory systems, signal representations</em></p>
 
-<p><strong>Analyzing conversations and build conversational machines</strong><br />
-Spoken communication is a key form of social interaction used for sharing of thoughts, learning and creating knowledge. Often we spend our day immersed in listening to or speaking in a conversation. Some conversations are quick and some are confusing, some start gradually and some end abruptly. Some conversations have stayed in our memory for quite some time. Our goal here is to explore human spoken conversations by capturing and analyzing the vocal, facial, breathing, heart beats and pupil signals of the participating individuals. This is a long-term effort involving testing of several hypothesis and solving multiple sub-problems.<br />
+<p><strong>Analyzing spoken conversations</strong><br />
+Spoken communication is a key form of social interaction. It enables us to share thoughts, learn and create knowledge. Often we spend our day immersed in <em>listening to</em> or <em>speaking in</em> a conversation. Some conversations are quick and some are confusing, some start gradually and some end abruptly. Some conversations have stayed in our memory for quite some time. Our goal in this work is to explore conversations by capturing and analyzing the vocal, facial, breathing, heart beats and pupil signals of the participating individuals. This is a long-term effort involving building and testing of several hypothesis, and gaining scientific insights into this amazing form of information transfer used by humans.<br />
 <em>Keywords: real-time multi-channel data acquisition and synchronization, signal processing, machine learning and NNs, psychology-based experiment design, perception and human cognition</em></p>
 
-<p><strong>Audio-driven brain computer interfacing</strong><br />
-In the past decade, several EEG data decoding studies have demonstrated correlation between EEG signal and the attended audio signal in a listening experiment. A recent study by us (with International Audio Labs) also corroborated these findings <a href="https://www.cl.uzh.ch/dam/jcr:e4b2bbe9-2648-4224-8a18-439ba0ad0ebd/bookVoiceID_final.pdf#page=23">Ref 1</a>. We are looking forward to scale up this effort and evaluate the feasibility for audio-driven brain computer interfacing.<br />
+<p><strong>Audio-based brain-computer interfaces</strong><br />
+Since 2013, several EEG data decoding studies have demonstrated correlation between the attended audio signal and the corresponding brain activity captured using EEG. A recent study by us (with <a href="https://www.audiolabs-erlangen.de/">International Audio Labs</a>) also corroborated these findings <a href="https://www.cl.uzh.ch/dam/jcr:e4b2bbe9-2648-4224-8a18-439ba0ad0ebd/bookVoiceID_final.pdf#page=23">Ref 1</a> and adds new insights. We are looking forward to scale up this effort.<br />
 <em>Keywords: EEG signal capture and analysis, signal processing, machine learning, audio processing</em></p>
 
 <p><strong>Behavioral experiments to understand cognition and build AI</strong><br />

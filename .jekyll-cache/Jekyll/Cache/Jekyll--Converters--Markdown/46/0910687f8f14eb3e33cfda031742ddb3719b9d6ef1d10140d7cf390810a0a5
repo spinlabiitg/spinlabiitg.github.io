@@ -1,4 +1,10 @@
-I"N<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover">
+I"Î<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="carousel-inner" markdown="0"&gt;
+    &lt;div class="item active"&gt;
+        &lt;img src="http://localhost:4000/images/slider7001400/example.png" alt="Slide 1" /&gt;
+    &lt;/div&gt;
+</code></pre></div></div>
+
+<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover">
     <!-- Menu -->
     <ol class="carousel-indicators">
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -14,7 +20,7 @@
     <!-- Items -->
     <div class="carousel-inner">
         <div class="item active">
-            <img src="http://localhost:4000/images/slider7001400/web_neeraj_slider_pic_3.png" alt="Slide 1" />
+            <img src="http://localhost:4000/images/slider7001400/example.png" alt="Slide 1" />
         </div>
         <!-- <div class="item">
             <img src="http://localhost:4000/images/slider7001400/web_neeraj_slider_2.png" alt="Slide 2" />
@@ -51,14 +57,14 @@
   </a>
 </div>
 
-<p>We are a dynamic research group exploring <strong>sensory interactions</strong> to understand how humans <strong>perceive</strong> the world and build <strong>intelligence</strong>. In this quest, we resort to analyzing various kinds of digitized sensory signals. We think this exploration is critical for building futuristic intelligent human-machine interactions. Our game is to learn, grow and share our understanding and engineer an AI augmented future.</p>
+<p>We are a dynamic research group exploring <strong>sensory interactions</strong> to understand how humans <strong>perceive</strong> the world and build <strong>intelligence</strong>. In this quest, we resort to analyzing various kinds of digitized sensory signals. We think this exploration is critical for building futuristic intelligent human-machine interactions. Our game is to learn, grow and share our understanding, and engineer an AI-augmented future.</p>
 <ul>
   <li>To know more about our planned explorations see <a href="research">Research</a>.</li>
   <li>To know about our findings see <a href="publications">Publications</a>.</li>
 </ul>
 
 <p><span style="color:#AA4A44"> 
-<strong>We are looking for passionate students (across undergraduate, Masters and PhD) to join the team</strong> <a href="http://localhost:4000/vacancies">(more info)</a> <strong>!</strong></span></p>
+<strong>Announcement: We are looking for passionate students (from undergraduate, Masters and PhD) to join the team</strong> <a href="http://localhost:4000/vacancies">(more info)</a> <strong>!</strong></span></p>
 
 <p><strong>Our approach</strong><br />
 We closely work with sound, speech, audio and EEG signals. We use signal processing, machine (deep) learning, behavioral and EEG experiments, and concepts and understanding from psychology, neuroscience and AI in our work.</p>
@@ -68,21 +74,21 @@ We closely work with sound, speech, audio and EEG signals. We use signal process
 </div>
 
 <p><strong>We are new. Say Hi!</strong><br />
-We are curious to learn new topics. Feel free to drop <a href="http://localhost:4000/team">Neeraj</a> an <a href="mailto:neerajs@iitg.ac.in">email</a> if you wish to interact with us. We will be happy to learn about the challenges you are tackling and discuss ways for collaborating with you.
-(Thanks to <a href="https://jvbalen.github.io/notes/waveform.html" target="_blank" rel="noopener noreferrer">Jan Van Balen</a> for the gif).</p>
+To interact with us, feel free to drop an <a href="mailto:neerajs@iitg.ac.in">email</a> to <a href="http://localhost:4000/team">Neeraj</a>. We will be happy to learn about the challenges you are tackling, and if it helps, discuss ways to collaborating with you.
+(Thanks to <a href="https://jvbalen.github.io/notes/waveform.html" target="_blank" rel="noopener noreferrer">Jan Van Balen</a> for the GIF).</p>
 <hr />
 
 <p><strong>What is</strong></p>
 <div>
 <ul>
 <li><details><summary>Sensing (click)</summary><quote>
-  <details><summary>We are immersed in signals, and it is by sensing them that we get data into our brain. The biological sensors, like eyes and ears, have evolved to work under neurophysiological constraints. Exploring human intelligence by understanding the very first step of how a continuous-time (or space) signal (like image, sound, text, odor, etc.) is converted to a discrete sequence of samples in the peripheral sensory system will benefit the design of efficient sampling strategies for various kinds of sensory data.
+  <details><summary>We are immersed in signals, and it is by sensing them that we get data into our brain. These sensors, like eyes and ears, have evolved to work under neurophysiological and evolutionary constraints. Exploring human intelligence by understanding the very first step of how a continuous-time (or space) signal (like image, sound, text, odor, etc.) is converted to a discrete sequence of samples in the peripheral sensory system will benefit the design of efficient sampling strategies for various kinds of sensory data.
   </summary>
   </details>
 </quote></details>
 </li>
 <li> <details><summary>Perception (click)</summary><quote>
-  <details><summary>The discrete sequence of samples are processed by the human brain to obtain quantitative (or qualitative) estimates of the attributes of the sensory signal. This process is referred to as perception. While listening to music we perceive the loudness, pitch, timbre, location, and distance etc., of the sound source. Similar estimates for other signals are obtained by us before we built a mental model the outside world. In certain ways, perception is analogous to feature extraction in machine learning. Knowing what humans perceive, and designing mathematical models which enables predicting human perception is a challenging problem in AI.
+  <details><summary>The sensed signal is processed by the human brain to obtain quantitative (or qualitative) estimates of the attributes of the sensory signal. This process is referred to as perception. While listening to music we perceive the loudness, pitch, timbre, location, and distance etc., of the sound source. Similar estimates for other sensory signals are obtained by the brain. This enables the brain to build a mental model of the outside world. In a way, perception is analogous to the feature extraction step in machine learning. Knowing what humans perceive, and designing mathematical models which enables predicting human perception is a challenging (and rewarding) problem in artificial intelligence.
   </summary>
   </details>
 </quote></details>
@@ -95,7 +101,7 @@ We are curious to learn new topics. Feel free to drop <a href="http://localhost:
 </li>
 </ul>
 </div>
-<p>In our work we aim to unify these three concepts and understand how lifeforms (humans and other species) gain intelligence. Frankly, this is very interesting work, with lots of open questions.</p>
+<p>In our work we aim to unify these three concepts under the framework of data science and AI and build scientifically-informed engineering solutions. Frankly, this is very interesting work, with lots of open questions.</p>
 
 <hr />
 
