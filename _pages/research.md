@@ -20,7 +20,7 @@ Our sensory system is operating 24x7, and is an evolutionary engineering marvel.
 *Keywords: time-series analysis, information theory, sparse signal recovery, compressive sensing, time-frequency analysis, physical and neural processes in sensory systems, signal representations*
  
 **Spoken conversation analysis**\
-Spoken communication enables us to share thoughts, learn and create knowledge. Often we spend our day immersed in *listening to* or *speaking in* a conversation. Some conversations are quick and some *go on and on*, some start gradually and some end abruptly. Some conversations have stayed in our memory for quite some time. Our goal in this work is to explore spoken conversations by capturing and analyzing the speech, facial, breathing, heart and pupil signals of the participating individuals. This is a long-term effort involving building and testing of several hypothesis, and gaining scientific insights into this amazing form of information transfer used by humans. Strength permitting, we also will look forward to analyze this aspect in bird (and animal) communication.\
+Spoken communication enables us to share thoughts, learn and create knowledge. Often we spend our day immersed in *listening to* or *speaking in* a conversation. Some conversations are quick and some *go on and on*, some start gradually and some end abruptly. Some conversations have stayed in our memory for quite some time. Our goal in this work is to explore spoken conversations by capturing and analyzing the speech, facial, breathing, heart and pupil signals of the participating individuals. This is a long-term effort involving building and testing of several hypotheses, and gaining scientific insights into this amazing form of information transfer used by humans. Strength permitting, we also will look forward to analyze this aspect in bird (and animal) communication.\
 *Keywords: real-time multi-channel data acquisition and synchronization, signal processing, machine learning and NNs, psychology-based experiment design, perception and human cognition*
  
 **Audio-based brain-computer interfacing**\
@@ -32,11 +32,11 @@ Unlike neuroimaging experiments like EEG and fMRI, behavioral experiments are de
 *Keywords: psychology and cognitive sciences, vision and audition, data science and inferential statistics, AI*
 
 **Data analysis for human healthcare**\
-Do you recall doctor listening to body sounds using a stethoscope? The art of listening to body sounds is referred to as *auscultation* and dates back to the 1820s. Our goal is to further the information extraction from body sounds using signal processing and machine learning. The goal is to design remote, cost-effective, and scalable disease screening methodologies. In a recent work, we pursued analysis of respiratory sounds such as breathing, cough and speech collected during the pandemic from individuals with and without COVID-19 [Ref](http://eprints.iisc.ac.in/67641/1/coswara-2020-4811-4815.pdf), [Ref](https://www.sciencedirect.com/science/article/pii/S0885230821001157).\
+Do you recall a doctor listening to body sounds using a stethoscope? The art of listening to body sounds is referred to as *auscultation* and dates back to the 1820s. Our goal is to further the information extraction from body sounds using signal processing and machine learning. The goal is to design remote, cost-effective, and scalable disease screening methodologies. In a recent work, we pursued analysis of respiratory sounds such as breathing, cough and speech collected during the pandemic from individuals with and without COVID-19 [Ref](http://eprints.iisc.ac.in/67641/1/coswara-2020-4811-4815.pdf), [Ref](https://www.sciencedirect.com/science/article/pii/S0885230821001157).\
 *Keywords: time-series analysis, signal processing, audio signal processing, machine learning and NNs, inferential statistics, full stack web development, biosciences*
 
 **Data analysis for climate sciences**\
-The cacophony of sounds in a forest draws contributions from many different species, natural phenomena such as wind, rain, and thunder, and man-made vehicles and machines. Building on this obervation, we intend to design ways to monitor forest's response to changing weather and climate conditions, allowing prediction of adversities. This is a long-term effort involving testing of several hypothesis and solving multiple sub-problems.\
+The cacophony of sounds in a forest draws contributions from many different species, natural phenomena such as wind, rain, and thunder, and man-made vehicles and machines. Building on this observation, we intend to design ways to monitor forest's response to changing weather and climate conditions, allowing prediction of adversities. This is a long-term effort involving testing of several hypothesis and solving multiple sub-problems.\
 *Keywords: wildlife sensor design and deployment, data analysis, signal processing and machine learning, ecological sciences, full stack web development*
  
 **Exploratory data analysis and visualization**\
@@ -44,7 +44,7 @@ Data science, being an interdisciplinary field, brings challenges and opportunit
 *Keywords: visualization, sonification, animating data science and AI concepts, linear algebra, full stack web development*
  
 <!-- ![]({{ site.url }}{{ site.baseurl }}/images/respic/SmartTip.png){: style="width: 250px; float: left; margin: 0px  10px"}
-One of the  projects back from my job-proposal is to develop nanofabricated STM tips. The idea behind these “smart tips” is to use the technologies that were developed over decades in nanofabrication and make them available for scanning probe by using a nano-device instead of the traditional STM tungsten tip. One gains the flexibility of using different functionalities that are known from the fields of nanofabrication and mesoscopic physics. We are collaborating with the group Simon Groeblacher at TU Delft to realize this concept, benefitting from their unparalleled micro/nano fabrication know how.  A prototype of a smart tip is shown to the left. See publications in Microsyst Nanoeng, Nanotechnology, and PRB. -->
+One of the  projects back from my job-proposal is to develop nanofabricated STM tips. The idea behind these “smart tips” is to use the technologies that were developed over decades in nanofabrication and make them available for scanning probes by using a nano-device instead of the traditional STM tungsten tip. One gains the flexibility of using different functionalities that are known from the fields of nanofabrication and mesoscopic physics. We are collaborating with the group Simon Groeblacher at TU Delft to realize this concept, benefitting from their unparalleled micro/nano fabrication know how.  A prototype of a smart tip is shown to the left. See publications in Microsyst Nanoeng, Nanotechnology, and PRB. -->
  
 <!-- **Ultra-stable SI-STM instrument.**  ![]({{ site.url }}{{ site.baseurl }}/images/respic/STMHead.png){: style="width: 250px; float: right; margin: 0px 10px"}
 For SI-STM, having the most stable STM head is key. We have used finite element simulations, good choices in material science, and craftsmanship to build the most stable STM head in the world, to our knowledge. See publication in RSI. -->
@@ -54,3 +54,5 @@ For SI-STM, having the most stable STM head is key. We have used finite element 
 #### ... and more as we continue to learn and do.
 
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/ai_mind.png){: style="width: 250px; float: center; margin: 0px 10px"}
+
+

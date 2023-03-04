@@ -63,7 +63,7 @@ We are a dynamic research group exploring **sensory interactions** to understand
 - To know more about our planned explorations see [Research](research).
 - To know about our findings see [Publications](publications).
 
-<span style="color:#AA4A44"> 
+<span style="color:#AA4A44">
 **Announcement: We are looking for passionate students (from undergraduate, Masters and PhD) to join the team** [(more info)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**</span>
  
 **Our approach**\
@@ -73,7 +73,7 @@ We closely work with sound, speech, audio and EEG signals. We use signal process
 </div>
 
 **We are new. Say Hi!**\
-To interact with us, feel free to drop an [email](mailto:neerajs@iitg.ac.in) to [Neeraj]({{ site.url }}{{ site.baseurl }}/team). We will be happy to learn about the challenges you are tackling, and if it helps, discuss ways to collaborating with you.
+To interact with us, feel free to drop an [email](mailto:neerajs@iitg.ac.in) to [Neeraj]({{ site.url }}{{ site.baseurl }}/team). We will be happy to learn about the challenges you are tackling, and if it helps, discuss ways to collaborate with you.
 (Thanks to <a href="https://jvbalen.github.io/notes/waveform.html" target="_blank" rel="noopener noreferrer">Jan Van Balen</a> for the GIF).
 <hr>
 
@@ -112,4 +112,7 @@ We are located in IIT Guwahati. Our campus is calm and vibrant, bio-diverse and 
   <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_ERC.jpg" style="width: 110px">
 </figure> -->
  
+
+
+
 
