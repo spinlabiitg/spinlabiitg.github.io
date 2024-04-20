@@ -1,0 +1,58 @@
+#- name:
+#  photo: rock.jpg
+#  info:
+#  email:
+#  number_educ:
+#  education1:
+#  education2:
+#  education3:
+#  education4:
+
+- name: Akshaj Padmakar
+  photo: rock.jpg
+  info: I love to indulge in things that are backed up by mathematics. Some of my favourite fields include Algorithms analysis, Discrete Mathematics, Information theory, Cryptography etc.
+  # email: m.ortego.larrazabal@umail.leidenuniv.nl
+  # number_educ: 1
+  # education1: M.Sc
+
+- name: Pratham Sridhar Kulkarni
+  photo: rock.jpg
+  info: My broad interests are in development of detectors, imaging systems and related signal processing, data analysis methods for the same. Recently, I have also started learning more about the mathematical foundations of machine learning models.
+  # email: m.ortego.larrazabal@umail.leidenuniv.nl
+  # number_educ: 1
+  # education1: BTech
+
+- name: Sanskar Kejriwal
+  photo: rock.jpg
+  # info:
+  # email: m.ortego.larrazabal@umail.leidenuniv.nl
+  # number_educ: 1
+  # education1: MTech
+
+- name: Saksham Kumar
+  photo: rock.jpg
+  # info:
+  # email: m.ortego.larrazabal@umail.leidenuniv.nl
+  # number_educ: 1
+  # education1: MTech
+
+- name: Samarth Umapati Hegde
+  photo: rock.jpg
+  # info: PhD Scholar
+  # email: m.ortego.larrazabal@umail.leidenuniv.nl
+  # number_educ: 1
+  # education1: BTech
+
+- name: Soham Karak
+  photo: rock.jpg
+  info: Deep Learning, Signal Processing, Neuromorphic Computing, Computational Neuroscience
+  # email: m.ortego.larrazabal@umail.leidenuniv.nl
+  # number_educ: 1
+  # education1: BTech
+
+- name: Suhayl Mahek
+  photo: rock.jpg
+  # info: PhD Scholar
+  # email: m.ortego.larrazabal@umail.leidenuniv.nl
+  # number_educ: 1
+  # education1: BTech

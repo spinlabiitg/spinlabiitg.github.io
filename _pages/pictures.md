@@ -14,8 +14,8 @@ To see an album of (not so) random clicks from campus: <a href="https://photos.a
 #### Our institute's campus video shoot:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/i_c5MjtcBwI" frameborder="0" allowfullscreen></iframe>
 
-#### Our members albums
-Neeraj's: <a href="https://photos.app.goo.gl/dzP2VB7PueUu88317">Click here</a> 
+<!-- #### Our members albums
+Neeraj's: <a href="https://photos.app.goo.gl/dzP2VB7PueUu88317">Click here</a>  -->
 
 
 <!-- #### Gallery

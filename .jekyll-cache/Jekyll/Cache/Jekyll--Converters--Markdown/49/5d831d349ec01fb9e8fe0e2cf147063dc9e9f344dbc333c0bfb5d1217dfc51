@@ -1,0 +1,275 @@
+I"�N<h1 id="publications">Publications</h1>
+
+<p><strong>To see the Google Scholar page <a href="https://scholar.google.com/citations?user=j7oyJ0MAAAAJ&amp;hl=en">click here</a>.</strong></p>
+
+<h3 id="group-highlights">Group highlights</h3>
+<p><strong>At the end of this page, you can find the <a href="#full-list-of-publications">full list of publications</a>.</strong></p>
+
+<div class="row">
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <pubtit>Analyzing the impact of SARS-CoV-2 variants on respiratory sound signals</pubtit>
+      <p><img src="http://localhost:4000/images/pubpic/web_paper_highlights_omi_del_covid19.png" class="img-responsive" width="33%" style="float: left" /></p>
+      <p>The impact of SARS-CoV-2 infection on respiratory health has been shown to depend on the strain of the virus. This paper is the first to probe the impact by analyzing respiratory sound signals.</p>
+      <p><em>Debarpan Bhattacharya, Debottam Dutta, Neeraj Kumar Sharma, Srikanth Raj Chetupalli, Pravin Mote, Sriram Ganapathy, Sahiti Nori, Sadhana Gonuguntla, Murali Alagesan</em></p>
+      <p><strong><a href="https://arxiv.org/abs/2206.12309v1">ISCA Interspeech (2022)</a></strong></p>
+      <p class="text-danger"><strong> </strong></p>
+      <p> </p>
+    </div>
+  </div>
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <pubtit>Coswara: A website application enabling COVID-19 screening by analysing respiratory sound samples and health symptoms</pubtit>
+      <p><img src="http://localhost:4000/images/pubpic/web_paper_highlights_coswara_tool.png" class="img-responsive" width="33%" style="float: left" /></p>
+      <p>We designed a machine learning tool to screen for COVID-19. The tool, named Coswara, records the breathing, cough, and speech sound samples, analyzes them and ouputs a COVID-19 score.</p>
+      <p><em>Debarpan Bhattacharya, Debottam Dutta, Neeraj Kumar Sharma, Srikanth Raj Chetupalli, Pravin Mote, Sriram Ganapathy, Chandrakiran C, Sahiti Nori, Suhail K K, Sadhana Gonuguntla, Murali Alagesan</em></p>
+      <p><strong><a href="https://arxiv.org/abs/2206.05053">ISCA Interspeech Show &amp; Tell (2022)</a></strong></p>
+      <p class="text-danger"><strong> <a href="https://coswara.iisc.ac.in/">Use it</a></strong></p>
+      <p> </p>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <pubtit>Towards sound based testing of COVID-19--Summary of the first Diagnostics of COVID-19 using Acoustics (DiCOVA) Challenge</pubtit>
+      <p><img src="http://localhost:4000/images/pubpic/web_paper_highlights_secod_dicova_chall.png" class="img-responsive" width="33%" style="float: left" /></p>
+      <p>We conducted a first-of-its-kind challenge inviting researchers from around the world to address the binary classification problem of COVID-19 detection using sound samples. Twenty nine teams participated and posted encouraging results on the leaderboard.</p>
+      <p><em>Neeraj Kumar Sharma, Ananya Muguli, Prashant Krishnan, Rohit Kumar, Srikanth Raj Chetupalli, Sriram Ganapathy</em></p>
+      <p><strong><a href="https://www.sciencedirect.com/science/article/pii/S0885230821001157">Elsevier Computer, Speech &amp; Language (2022)</a></strong></p>
+      <p class="text-danger"><strong> </strong></p>
+      <p> <a href="https://dicova2021.github.io/">Challenge Portal</a></p>
+    </div>
+  </div>
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <pubtit>Acoustic and linguistic features influence talker change detection</pubtit>
+      <p><img src="http://localhost:4000/images/pubpic/web_paper_highlights_tcd_language.png" class="img-responsive" width="33%" style="float: left" /></p>
+      <p>While listening to speech, does our ability to understand a spoken language impact our attention to acoustic attributes of the talker? In this paper, we explore answer this question by analyzing data obtained from a behavioral listening test.</p>
+      <p><em>Neeraj Kumar Sharma, Venkat Krishnamohan, Sriram Ganapathy, Ahana Gangopadhayay, Lauren Fink</em></p>
+      <p><strong><a href="https://asa.scitation.org/doi/full/10.1121/10.0002462">JASA Express Letters (2021)</a></strong></p>
+      <p class="text-danger"><strong> </strong></p>
+      <p> </p>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <pubtit>Coswara -- A Database of Breathing, Cough, and Voice Sounds for COVID-19 Diagnosis</pubtit>
+      <p><img src="http://localhost:4000/images/pubpic/web_paper_highlights_coswara_creation.png" class="img-responsive" width="33%" style="float: left" /></p>
+      <p>Co (COVID) + Swara (sound), a unique dataset created to enable exploration on how COVID-19 impacts respiratory sound signals.</p>
+      <p><em>Neeraj Sharma, Prashant Krishnan, Rohit Kumar, Shreyas Ramoji, Srikanth Raj Chetupalli, R Nirmala, Prasanta Kumar Ghosh, Sriram Ganapathy</em></p>
+      <p><strong><a href="http://eprints.iisc.ac.in/67641/1/coswara-2020-4811-4815.pdf">ISCA Interspeech (2020)</a></strong></p>
+      <p class="text-danger"><strong> </strong></p>
+      <p> </p>
+    </div>
+  </div>
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <pubtit>Talker change detection: A comparison of human and machine performance</pubtit>
+      <p><img src="http://localhost:4000/images/pubpic/web_paper_highlights_tcd.png" class="img-responsive" width="33%" style="float: left" /></p>
+      <p>How good are humans at detecting change in talker while listening to spoken converstations? How do machine compare with humans in this task? We explored this topic here.</p>
+      <p><em>Neeraj Kumar Sharma, Shobhana Ganesh, Sriram Ganapathy, Lori L Holt</em></p>
+      <p><strong><a href="https://asa.scitation.org/doi/full/10.1121/1.5084044">JASA (2019)</a></strong></p>
+      <p class="text-danger"><strong> </strong></p>
+      <p> <a href="https://www.insidescience.org/news/computer-voice-recognition-still-learning-detect-whos-talking">Inside Science</a>, <a href="https://iisc.ac.in/alexa-are-you-ready-to-join-our-dinner-table-conversation/">IISc Pick</a>.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <pubtit>Time-varying sinusoidal demodulation for non-stationary modeling of speech</pubtit>
+      <p><img src="http://localhost:4000/images/pubpic/web_paper_highlights_speech_tvnm.png" class="img-responsive" width="33%" style="float: left" /></p>
+      <p>Speech signals contain a fairly rich time-evolving spectral content. Accurate analysis of this time-evolving spectrum is an open challenge in signal processing. Towards this, we designed an approach which overcomes some of the challenges using foundational concepts in signal processing.</p>
+      <p><em>Neeraj Kumar Sharma, Thippur V Sreenivas</em></p>
+      <p><strong><a href="https://github.com/neerajww/tvhDemodulation/raw/master/manuscript/2018_time_varying_sinusoidal_demodulation_ntvs.pdf">Elsevier Speech Communication (2019)</a></strong></p>
+      <p class="text-danger"><strong> </strong></p>
+      <p> <a href="https://neerajww.github.io/preprint/demo/modeling/tvnm.html">Demo</a></p>
+    </div>
+  </div>
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <pubtit>Leveraging LSTM models for overlap detection in multi-party meetings</pubtit>
+      <p><img src="http://localhost:4000/images/pubpic/web_paper_highlights_overlap_speech.png" class="img-responsive" width="33%" style="float: left" /></p>
+      <p>In real-world speech converstation recordings there are lot of instances at which multiple talkers are speaking simultaneously (that is, overlapping speech segments). Applications such as conversation analysis or recognition are adversely impacted by overlapping speech segments. An automatic detection (and annotation) of overlapping segments can be utilized to improve the performance. This paper proposes a solution.</p>
+      <p><em>Neeraj Sajjan, Shobhana Ganesh, Neeraj Sharma, Sriram Ganapathy, Neville Ryant</em></p>
+      <p><strong><a href="https://ieeexplore.ieee.org/abstract/document/8462548">IEEE ICASSP (2018)</a></strong></p>
+      <p class="text-danger"><strong> </strong></p>
+      <p> </p>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <pubtit>Multicomponent 2-D AM-FM modeling of speech spectrograms</pubtit>
+      <p><img src="http://localhost:4000/images/pubpic/web_paper_highlights_2D_analysis.png" class="img-responsive" width="33%" style="float: left" /></p>
+      <p>Can there be a mathematical model for the beautiful 2-D patterns in a speech spectrogram? Yes! We proposed a multi-component AM-FM model here and evaluated the performance using analysis by synthesis.</p>
+      <p><em>Jitendra Kumar Dhiman, Neeraj Sharma, Chandra Sekhar Seelamantula</em></p>
+      <p><strong><a href="https://www.isca-speech.org/archive_v0/Interspeech_2018/pdfs/1937.pdf">ISCA Interspeech (2018)</a></strong></p>
+      <p class="text-danger"><strong> </strong></p>
+      <p> </p>
+    </div>
+  </div>
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <pubtit>Mel-scale sub-band modelling for perceptually improved time-scale modification of speech and audio signals</pubtit>
+      <p><img src="http://localhost:4000/images/pubpic/web_paper_highlights_mu_tvs.png" class="img-responsive" width="33%" style="float: left" /></p>
+      <p>To save time and still grasp the maximum content, we usually speed-up or slow-down a video. In this paper, we discuss the issues associated with audio signals when scaling the speed of video. We propose a new method which preserves the perceptual quality of audio during such scaling operations.</p>
+      <p><em>Neeraj Sharma, Shreepad Potadar, Srikanth Raj Chetupalli, TV Sreenivas</em></p>
+      <p><strong><a href="https://ieeexplore.ieee.org/abstract/document/8077073">IEEE NCC (2017)</a></strong></p>
+      <p class="text-danger"><strong> </strong></p>
+      <p> <a href="https://neerajww.github.io/preprint/demo/tsm/tsm_demo.html">Demo</a></p>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <pubtit>Event-triggered sampling using signal extrema for instantaneous amplitude and instantaneous frequency estimation</pubtit>
+      <p><img src="http://localhost:4000/images/pubpic/web_paper_highlights_extrema.png" class="img-responsive" width="33%" style="float: left" /></p>
+      <p>In contrast to uniform Nyquist-rate sampling for processing time-varying signals, we here proposed a non-uniform sampling and analysis method. We demonstrate its application for estimating amplitude and frequency modulations embedded in time-varying sinusoidal signals.</p>
+      <p><em>Neeraj Kumar Sharma, Thippur V Sreenivas</em></p>
+      <p><strong><a href="https://www.sciencedirect.com/science/article/pii/S0165168415001383">Elsevier Signal Processing (2015)</a></strong></p>
+      <p class="text-danger"><strong> </strong></p>
+      <p> </p>
+    </div>
+  </div>
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <pubtit>Moving sound source parameter estimation using a single microphone and signal extrema samples</pubtit>
+      <p><img src="http://localhost:4000/images/pubpic/web_paper_highlights_doppler.png" class="img-responsive" width="33%" style="float: left" /></p>
+      <p>By listening to the horn of a train we easily detect if the train is approaching or receding. Here we design a simple signal processing method to do the same by modeling the Doppler effect embedded in the recorded sound signal.</p>
+      <p><em>Neeraj Sharma, Sai Gunaranjan Pelluri, Thippur V Sreenivas</em></p>
+      <p><strong><a href="https://ieeexplore.ieee.org/abstract/document/7178387">IEEE ICASSP (2015)</a></strong></p>
+      <p class="text-danger"><strong> </strong></p>
+      <p> </p>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <pubtit>Event-triggered sampling and reconstruction of sparse real-valued trigonometric polynomials</pubtit>
+      <p><img src="http://localhost:4000/images/pubpic/web_paper_highlights_spcom_extrema.png" class="img-responsive" width="33%" style="float: left" /></p>
+      <p>Can a trigonometric polynomial, or sum of sine waves, be sampled and reconstructed from its level crossing and extrema samples? Yes! Check this paper to know more!</p>
+      <p><em>Neeraj Kumar Sharma, TV Sreenivas</em></p>
+      <p><strong><a href="https://ieeexplore.ieee.org/abstract/document/6983916">IEEE SPCOM (2014, chosen in top 3)</a></strong></p>
+      <p class="text-danger"><strong> </strong></p>
+      <p> </p>
+    </div>
+  </div>
+
+  <div class="col-sm-6 clearfix">
+    <div class="well">
+      <pubtit>Sparse signal reconstruction based on signal dependent non-uniform samples</pubtit>
+      <p><img src="http://localhost:4000/images/pubpic/web_paper_highlights_sampling.png" class="img-responsive" width="33%" style="float: left" /></p>
+      <p>We explored reconstructing a signal from its level crossing samples. Treating the problem as underdetermined, we make use of ideas from sparse signal recovery.</p>
+      <p><em>Neeraj Sharma, Thippur V Sreenivas</em></p>
+      <p><strong><a href="https://ieeexplore.ieee.org/abstract/document/6288659">IEEE ICASSP (2012)</a></strong></p>
+      <p class="text-danger"><strong> </strong></p>
+      <p> </p>
+    </div>
+  </div>
+
+</div>
+
+<p>   </p>
+
+<!-- ## Patents
+<em>Milan P Allan, S Gröblacher, RA Norte, M Leeuwenhoek</em><br />Novel atomic force microscopy probes with phononic crystals<br /> PCT/NL20-20/050797 (2020)
+
+<em>Milan P Allan</em><br /> Methods of manufacturing superconductor and phononic elements <br /> <a href="https://patents.google.com/patent/US10439125B2/en?inventor=Milan+ALLAN&oq=inventor:(Milan+ALLAN)">US10439125B2 (2016)</a> -->
+
+<h2 id="list-of-publications">List of publications</h2>
+<p><strong>For more updates see Google Scholar page <a href="https://scholar.google.com/citations?user=j7oyJ0MAAAAJ&amp;hl=en">click here</a>.</strong></p>
+
+<p>Analyzing the impact of SARS-CoV-2 variants on respiratory sound signals <br />
+  <em>Debarpan Bhattacharya, Debottam Dutta, Neeraj Kumar Sharma, Srikanth Raj Chetupalli, Pravin Mote, Sriram Ganapathy, Sahiti Nori, Sadhana Gonuguntla, Murali Alagesan </em><br /><a href="https://arxiv.org/abs/2206.12309v1">ISCA Interspeech (2022)</a></p>
+
+<p>Coswara: A website application enabling COVID-19 screening by analysing respiratory sound samples and health symptoms <br />
+  <em>Debarpan Bhattacharya, Debottam Dutta, Neeraj Kumar Sharma, Srikanth Raj Chetupalli, Pravin Mote, Sriram Ganapathy, Chandrakiran C, Sahiti Nori, Suhail K K, Sadhana Gonuguntla, Murali Alagesan </em><br /><a href="https://arxiv.org/abs/2206.05053">ISCA Interspeech Show &amp; Tell (2022)</a></p>
+
+<p>The Second Dicova Challenge: Dataset and Performance Analysis for Diagnosis of Covid-19 Using Acoustics <br />
+  <em>Neeraj Kumar Sharma, Srikanth Raj Chetupalli, Debarpan Bhattacharya, Debottam Dutta, Pravin Mote, Sriram Ganapathy </em><br /><a href="https://ieeexplore.ieee.org/abstract/document/9747188">ICASSP (2021)</a></p>
+
+<p>Towards sound based testing of COVID-19–Summary of the first Diagnostics of COVID-19 using Acoustics (DiCOVA) Challenge <br />
+  <em>Neeraj Kumar Sharma, Ananya Muguli, Prashant Krishnan, Rohit Kumar, Srikanth Raj Chetupalli, Sriram Ganapathy </em><br /><a href="https://www.sciencedirect.com/science/article/pii/S0885230821001157">Elsevier Computer, Speech &amp; Language (2022)</a></p>
+
+<p>DiCOVA Challenge: Dataset, task, and baseline system for COVID-19 diagnosis using acoustics <br />
+  <em>Ananya Muguli, Lancelot Pinto, Neeraj Sharma, Prashant Krishnan, Prasanta Kumar Ghosh, Rohit Kumar, Shrirama Bhat, Srikanth Raj Chetupalli, Sriram Ganapathy, Shreyas Ramoji, Viral Nanda </em><br /><a href="https://arxiv.org/abs/2103.09148">ISCA Interspeech (2021)</a></p>
+
+<p>Acoustic and linguistic features influence talker change detection <br />
+  <em>Neeraj Kumar Sharma, Venkat Krishnamohan, Sriram Ganapathy, Ahana Gangopadhayay, Lauren Fink </em><br /><a href="https://asa.scitation.org/doi/full/10.1121/10.0002462">JASA Express Letters (2021)</a></p>
+
+<p>Coswara – A Database of Breathing, Cough, and Voice Sounds for COVID-19 Diagnosis <br />
+  <em>Neeraj Sharma, Prashant Krishnan, Rohit Kumar, Shreyas Ramoji, Srikanth Raj Chetupalli, R Nirmala, Prasanta Kumar Ghosh, Sriram Ganapathy </em><br /><a href="http://eprints.iisc.ac.in/67641/1/coswara-2020-4811-4815.pdf">ISCA Interspeech (2020)</a></p>
+
+<p>On the impact of language familiarity in talker change detection <br />
+  <em>Neeraj Sharma, Venkat Krishnamohan, Sriram Ganapathy, Ahana Gangopadhayay, Lauren Fink </em><br /><a href="https://ieeexplore.ieee.org/abstract/document/9054294">IEEE ICASSP (2020)</a></p>
+
+<p>Analyzing human reaction time for talker change detection <br />
+  <em>Neeraj Sharma, Shobhana Ganesh, Sriram Ganapathy, Lori L Holt </em><br /><a href="https://ieeexplore.ieee.org/abstract/document/8682477">IEEE ICASSP (2020)</a></p>
+
+<p>Talker change detection: A comparison of human and machine performance <br />
+  <em>Neeraj Kumar Sharma, Shobhana Ganesh, Sriram Ganapathy, Lori L Holt </em><br /><a href="https://asa.scitation.org/doi/full/10.1121/1.5084044">JASA (2019)</a></p>
+
+<p>Time-varying sinusoidal demodulation for non-stationary modeling of speech <br />
+  <em>Neeraj Kumar Sharma, Thippur V Sreenivas </em><br /><a href="https://github.com/neerajww/tvhDemodulation/raw/master/manuscript/2018_time_varying_sinusoidal_demodulation_ntvs.pdf">Elsevier Speech Communication (2019)</a></p>
+
+<p>Leveraging LSTM models for overlap detection in multi-party meetings <br />
+  <em>Neeraj Sajjan, Shobhana Ganesh, Neeraj Sharma, Sriram Ganapathy, Neville Ryant </em><br /><a href="https://ieeexplore.ieee.org/abstract/document/8462548">IEEE ICASSP (2018)</a></p>
+
+<p>Multicomponent 2-D AM-FM modeling of speech spectrograms <br />
+  <em>Jitendra Kumar Dhiman, Neeraj Sharma, Chandra Sekhar Seelamantula </em><br /><a href="https://www.isca-speech.org/archive_v0/Interspeech_2018/pdfs/1937.pdf">ISCA Interspeech (2018)</a></p>
+
+<p>Dimension-based attention in learning and understanding spoken languages <br />
+  <em>Frederic K Dick, Lori L Holt, Howard Nusbaum, Neeraj Sharma, Barbara Shinn-Cunningham </em><br /><a href="https://cogsci.mindmodeling.org/2018/papers/0013/0013.pdf">Cognitive Sciences Meeting (2019)</a></p>
+
+<p>Mel-scale sub-band modelling for perceptually improved time-scale modification of speech and audio signals <br />
+  <em>Neeraj Sharma, Shreepad Potadar, Srikanth Raj Chetupalli, TV Sreenivas </em><br /><a href="https://ieeexplore.ieee.org/abstract/document/8077073">IEEE NCC (2017)</a></p>
+
+<p>Time-instant sampling based encoding of time-varying acoustic spectrum <br />
+  <em>Neeraj Kumar Sharma </em><br /><a href="https://aip.scitation.org/doi/abs/10.1063/1.4939431">Mechanics of Hearing (2014), American Physical Society</a></p>
+
+<p>Event-triggered sampling using signal extrema for instantaneous amplitude and instantaneous frequency estimation <br />
+  <em>Neeraj Kumar Sharma, Thippur V Sreenivas </em><br /><a href="https://www.sciencedirect.com/science/article/pii/S0165168415001383">Elsevier Signal Processing (2015)</a></p>
+
+<p>Moving sound source parameter estimation using a single microphone and signal extrema samples <br />
+  <em>Neeraj Sharma, Sai Gunaranjan Pelluri, Thippur V Sreenivas </em><br /><a href="https://ieeexplore.ieee.org/abstract/document/7178387">IEEE ICASSP (2015)</a></p>
+
+<p>Event-triggered sampling and reconstruction of sparse real-valued trigonometric polynomials <br />
+  <em>Neeraj Kumar Sharma, TV Sreenivas </em><br /><a href="https://ieeexplore.ieee.org/abstract/document/6983916">IEEE SPCOM (2014, chosen in top 3)</a></p>
+
+<p>Sparse signal reconstruction based on signal dependent non-uniform samples <br />
+  <em>Neeraj Sharma, Thippur V Sreenivas </em><br /><a href="https://ieeexplore.ieee.org/abstract/document/6288659">IEEE ICASSP (2012)</a></p>
+
+<p>   </p>
+:ET
