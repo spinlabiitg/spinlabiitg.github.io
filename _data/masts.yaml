@@ -1,0 +1,16 @@
+#- name:
+#  photo: rock.jpg
+#  info:
+#  email:
+#  number_educ:
+#  education1:
+#  education2:
+#  education3:
+#  education4:
+
+- name: Manikantha Dandi (Co-Sup)
+  photo: rock.jpg
+  info:
+  # email: m.ortego.larrazabal@umail.leidenuniv.nl
+  # number_educ: 1
+  # education1: M.Sc

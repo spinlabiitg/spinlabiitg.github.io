@@ -8,30 +8,30 @@
 #  education3:
 #  education4:
 
-- name: Sneha Ray Barman
-  photo: rock.jpg
-  # info: PhD Scholar
+- name: Sneha Ray Barman <i>(Co-Sup)</i>
+  photo: sneha_spinlab.jpg
+  # info:
   # email: m.ortego.larrazabal@umail.leidenuniv.nl
   # number_educ: 1
-  # education1: M.Sc
+  # education1: B.Sc., M.Sc
 
-- name: <a href="https://www.linkedin.com/in/ashitabatra23" target='_blank'>Ashita Batra</a>
-  photo: rock.jpg
-  info: I like to observe nature. Moreover, I also like how we can apply the artificial intelligence in real life of people suffering from pathological speech namely Stuttering and Parkinson's which would make their life a little easier.
+- name: <a href="https://www.linkedin.com/in/ashitabatra23" target='_blank'>Ashita Batra</a> <i>(Co-Sup)</i>
+  photo: ashita_spinlab.jpg
+  info: I like to observe nature, applying AI in real life of people suffering from pathological speech namely Stuttering and Parkinson's disease.
   # email: m.ortego.larrazabal@umail.leidenuniv.nl
   # number_educ: 1
-  # education1: MTech
-
+  # education1: B.Tech., M.Tech.
+  
 - name: <a href="https://www.linkedin.com/in/prakhar-kumar-12s/" target='_blank'>Prakhar Kumar Sonkar</a>
-  photo: rock.jpg
+  photo: prakhar_spinlab.jpg
   info: I'm passionate about working with audio and speech signal processing, particularly when it involves utilizing deep learning techniques. It's fascinating to dive into the realm of sound and enrich audio data using deep learning methods.
   # email: m.ortego.larrazabal@umail.leidenuniv.nl
   # number_educ: 1
-  # education1: MTech
+  # education1: B.Tech., M.Tech.
 
 - name: Shania H
-  photo: rock.jpg
+  photo: shania_spinlab.jpg
   # info: PhD Scholar
   # email: m.ortego.larrazabal@umail.leidenuniv.nl
   # number_educ: 1
-  # education1: BTech
+  # education1: B.Tech.

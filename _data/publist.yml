@@ -1,3 +1,66 @@
+- title: "Boli: A dataset for understanding stuttering experience and analyzing stuttered speech"
+  image: web_paper_highlights_project_boli.png
+  description:  This paper introduces Project Boli, a multi-lingual stuttered speech dataset designed to advance scientific understanding and technology development for individuals who stutter, particularly in India.
+  authors: Ashita Batra, Mannas Narang, Neeraj Kumar Sharma, Pradip K Das
+  link:
+    url: https://arxiv.org/pdf/2501.15877
+    display: IEEE ICASSP (2025)
+  highlight: 1
+
+- title: "Deciphering Assamese Vowel Harmony with Featural InfoWaveGAN"
+  image: web_paper_highlights_omi_del_covid19.png
+  description: We demonstrate that the model is adept at grasping the intricacies of Assamese phonotactics, particularly iterative long-distance harmony with regressive directionality.
+  authors: Priyankoo Sarmah, Wendy Lalhminghlui, Neeraj Kumar Sharma
+  link:
+    url: https://arxiv.org/pdf/2407.06547
+    display: ISCA Interspeech (2024)
+  highlight: 0
+
+- title: "Sounds of <sil>ence: Acoustics of Inhalation in Read Speech"
+  image: web_paper_highlights_omi_del_covid19.png
+  description: we demonstrate that the acoustics of inhalations may not be completely ‘silent’ and contain useful cues correlated with the contiguous linguistic sounds. 
+  authors: Priyankoo Sarmah, Wendy Lalhminghlui, Neeraj Kumar Sharma
+  link:
+    url: https://link.springer.com/chapter/10.1007/978-3-031-48309-7_26
+    display: Proc. SPECOM (2023)
+  highlight: 0
+
+- title: "Coswara: A respiratory sounds and symptoms dataset for remote screening of SARS-CoV-2 infection"
+  image: web_paper_highlights_secod_dicova_chall.png
+  description: This paper presents the Coswara dataset, a dataset containing diverse set of respiratory sounds and rich meta-data, recorded between April-2020 and February-2022 from 2635 individuals (1819 SARS-CoV-2 negative, 674 positive, and 142 recovered subjects). 
+  authors: Debarpan Bhattacharya, Neeraj Kumar Sharma, Debottam Dutta, Srikanth Raj Chetupalli, Pravin Mote, Sriram Ganapathy, C Chandrakiran, Sahiti Nori, KK Suhail, Sadhana Gonuguntla, Murali Alagesan
+  link:
+    url: https://www.nature.com/articles/s41597-023-02266-0
+    display: Scientific Data, Nature (2023)
+  highlight: 1
+
+- title: "Two congruent cues are better than one: Impact of ITD–ILD combinations on reaction time for sound lateralization"
+  image: web_paper_highlights_itd_ild_RT.png
+  description: We present a reaction time analysis of a sound lateralization test. Stimuli from the sides yielded quicker reactions and better class accuracy than from the front. Congruent ITD–ILD cues significantly improved both metrics. 
+  authors: Neeraj Kumar Sharma, Ünal Ege Gaznepoglu, Thomas Robotham, Emanuël AP Habets
+  link:
+    url: https://pubs.aip.org/asa/jel/article/3/5/054401/2892521
+    display: JASA Express Letters (2023)
+  highlight: 1
+
+- title: "Multi-modal point-of-care diagnostics for covid-19 based on acoustics and symptoms"
+  image: web_paper_highlights_omi_del_covid19.png
+  description: We show that a multi-modal integration of inference from different acoustic signal categories and symptoms achieves an area-under-curve (AUC) of 96.3%, a statistically significant improvement when compared against any individual modality (p < 0.05).
+  authors: Srikanth Raj Chetupalli, Prashant Krishnan, Neeraj Sharma, Ananya Muguli, Rohit Kumar, Viral Nanda, Lancelot Mark Pinto, Prasanta Kumar Ghosh, Sriram Ganapathy
+  link:
+    url: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10064207
+    display: IEEE Journal of Translational Engineering in Health and Medicine (2023)
+  highlight: 0
+
+- title: "Decoding attended talker solely from listening-state EEG signals"
+  image: web_paper_highlights_omi_del_covid19.png
+  description: We find that both speaker and spatial attention can be decoded with significantly above chance performance from EEG. This holds even when using short (0.1- 0.5 sec) decision windows.
+  authors: Mohamed Elminshawi, Julia Kostina, Emanuël AP Habets, Neeraj Kumar Sharma
+  link:
+    url: https://www.cl.uzh.ch/dam/jcr:e4b2bbe9-2648-4224-8a18-439ba0ad0ebd/bookVoiceID_final.pdf#page=23
+    display: Proc. VoiceID Conference (2022)
+  highlight: 0
+
 - title: "Analyzing the impact of SARS-CoV-2 variants on respiratory sound signals"
   image: web_paper_highlights_omi_del_covid19.png
   description: The impact of SARS-CoV-2 infection on respiratory health has been shown to depend on the strain of the virus. This paper is the first to probe the impact by analyzing respiratory sound signals.
@@ -5,7 +68,7 @@
   link:
     url: https://arxiv.org/abs/2206.12309v1
     display:  ISCA Interspeech (2022)
-  highlight: 1
+  highlight: 0
 
 - title: "Coswara: A website application enabling COVID-19 screening by analysing respiratory sound samples and health symptoms"
   image: web_paper_highlights_coswara_tool.png
@@ -14,7 +77,7 @@
   link:
     url: https://arxiv.org/abs/2206.05053
     display: ISCA Interspeech Show & Tell (2022)
-  highlight: 1
+  highlight: 0
   news1: <a href="https://coswara.iisc.ac.in/">Use it</a>
 
 - title: "The Second Dicova Challenge: Dataset and Performance Analysis for Diagnosis of Covid-19 Using Acoustics"
@@ -34,7 +97,7 @@
   link:
     url: https://www.sciencedirect.com/science/article/pii/S0885230821001157
     display:  Elsevier Computer, Speech & Language (2022)
-  highlight: 1
+  highlight: 0
   news2: <a href="https://dicova2021.github.io/">Challenge Portal</a>
 
 - title: "DiCOVA Challenge: Dataset, task, and baseline system for COVID-19 diagnosis using acoustics"
@@ -63,7 +126,7 @@
   link:
     url: http://eprints.iisc.ac.in/67641/1/coswara-2020-4811-4815.pdf
     display: ISCA Interspeech (2020)
-  highlight: 1
+  highlight: 0
   news2:
 
 
@@ -104,7 +167,7 @@
   link:
     url: https://github.com/neerajww/tvhDemodulation/raw/master/manuscript/2018_time_varying_sinusoidal_demodulation_ntvs.pdf
     display: Elsevier Speech Communication (2019)
-  highlight: 1
+  highlight: 0
   news2: <a href="https://neerajww.github.io/preprint/demo/modeling/tvnm.html">Demo</a>
 
 - title: "Leveraging LSTM models for overlap detection in multi-party meetings"
@@ -114,7 +177,7 @@
   link:
     url: https://ieeexplore.ieee.org/abstract/document/8462548
     display: IEEE ICASSP (2018)
-  highlight: 1
+  highlight: 0
   news2:
 
 - title: "Multicomponent 2-D AM-FM modeling of speech spectrograms"
@@ -124,7 +187,7 @@
   link:
     url: https://www.isca-speech.org/archive_v0/Interspeech_2018/pdfs/1937.pdf
     display: ISCA Interspeech (2018)
-  highlight: 1
+  highlight: 0
 
 
 - title: "Dimension-based attention in learning and understanding spoken languages"
@@ -144,7 +207,7 @@
   link:
     url: https://ieeexplore.ieee.org/abstract/document/8077073
     display: IEEE NCC (2017)
-  highlight: 1
+  highlight: 0
   news2: <a href="https://neerajww.github.io/preprint/demo/tsm/tsm_demo.html">Demo</a>
 
 - title: "Time-instant sampling based encoding of time-varying acoustic spectrum"
@@ -163,7 +226,7 @@
   link:
     url: https://www.sciencedirect.com/science/article/pii/S0165168415001383
     display: Elsevier Signal Processing (2015)
-  highlight: 1
+  highlight: 0
   news2:
 
 - title: "Moving sound source parameter estimation using a single microphone and signal extrema samples"
@@ -173,7 +236,7 @@
   link:
     url: https://ieeexplore.ieee.org/abstract/document/7178387
     display: IEEE ICASSP (2015)
-  highlight: 1
+  highlight: 0
 
 - title: "Event-triggered sampling and reconstruction of sparse real-valued trigonometric polynomials"
   image: web_paper_highlights_spcom_extrema.png
@@ -182,7 +245,7 @@
   link:
     url: https://ieeexplore.ieee.org/abstract/document/6983916
     display: IEEE SPCOM (2014, chosen in top 3)
-  highlight: 1
+  highlight: 0
   news2:
 
 - title: Sparse signal reconstruction based on signal dependent non-uniform samples
@@ -193,4 +256,4 @@
   link:
     url: https://ieeexplore.ieee.org/abstract/document/6288659
     display: IEEE ICASSP (2012)
-  highlight: 1
+  highlight: 0

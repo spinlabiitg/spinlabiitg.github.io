@@ -1,0 +1,54 @@
+- title: "Prediction of Strength and Deformation Behaviour of Jointed Rocks Using Machine Learning Algorithms "
+  image: web_paper_highlights_project_boli.png
+  description: This paper introduces Project Boli, a multi-lingual stuttered speech dataset designed to advance scientific understanding and technology development for individuals who stutter, particularly in India.
+  authors: Aadarsh Thakur
+  link:
+    # url: https://arxiv.org/pdf/2501.15877
+    display: M.Tech. (Civil) Term Project Thesis (2024); Co-sup Vivek Padamanabha
+  highlight: 0
+
+- title: "Spoken language diversity quantification in campus population: A multimodal dataset creation and analysis study"
+  image: web_paper_highlights_project_boli.png
+  description: This paper introduces Project Boli, a multi-lingual stuttered speech dataset designed to advance scientific understanding and technology development for individuals who stutter, particularly in India.
+  authors: Saksham Kumar, Samarth Hegde
+  link:
+    # url: https://arxiv.org/pdf/2501.15877
+    display: B.Tech. (ECE) Term Project Thesis (2024)
+  highlight: 0
+
+- title: "Listening to the lungs: Respiratory sound visualization, annotation, and analysis"
+  image: web_paper_highlights_omi_del_covid19.png
+  description: We demonstrate that the model is adept at grasping the intricacies of Assamese phonotactics, particularly iterative long-distance harmony with regressive directionality.
+  authors: Askshaj Padmakar, Sanskar Kejriwal
+  link:
+    # url: https://arxiv.org/pdf/2407.06547
+    display: B.Tech. (ECE) Term Project Thesis (2024)
+  highlight: 0
+
+- title: "Auditory attention decoding using listening-state EEG signals in multi-speaker scenarios"
+  image: web_paper_highlights_omi_del_covid19.png
+  description: we demonstrate that the acoustics of inhalations may not be completely ‘silent’ and contain useful cues correlated with the contiguous linguistic sounds. 
+  authors: Soham Karak
+  link:
+    # url: https://link.springer.com/chapter/10.1007/978-3-031-48309-7_26
+    display: B.Tech. (ECE) Term Project Thesis (2024)
+  highlight: 0
+
+- title: "A study on neural network learning dynamics"
+  image: web_paper_highlights_secod_dicova_chall.png
+  description: This paper presents the Coswara dataset, a dataset containing diverse set of respiratory sounds and rich meta-data, recorded between April-2020 and February-2022 from 2635 individuals (1819 SARS-CoV-2 negative, 674 positive, and 142 recovered subjects). 
+  authors: Partham Kulkarni
+  link:
+    # url: https://www.nature.com/articles/s41597-023-02266-0
+    display: B.Tech. (Engg. Physics) Term Project Thesis (2024)
+  highlight: 0
+
+- title: "Sentiment analysis of video: Howe we perceive audio and video"
+  image: web_paper_highlights_secod_dicova_chall.png
+  description: This paper presents the Coswara dataset, a dataset containing diverse set of respiratory sounds and rich meta-data, recorded between April-2020 and February-2022 from 2635 individuals (1819 SARS-CoV-2 negative, 674 positive, and 142 recovered subjects). 
+  authors: Suhayl Mahek
+  link:
+    # url: https://www.nature.com/articles/s41597-023-02266-0
+    display: B.Tech. (Engg. Physics) Term Project Thesis (2024)
+  highlight: 0
+

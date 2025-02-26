@@ -9,11 +9,10 @@ permalink: /publications/
 
 # Publications
 
-**To see the Google Scholar page [click here](https://scholar.google.com/citations?user=j7oyJ0MAAAAJ&hl=en).**
+**An updated summary of publications is accessible at the Google Scholar page: [click here](https://scholar.google.com/citations?user=j7oyJ0MAAAAJ&hl=en).**
 
 ### Group highlights
-**At the end of this page, you can find the [full list of publications](#full-list-of-publications).**
-
+<!-- **At the end of this page, you can find the [full list of publications](#full-list-of-publications).** -->
 {% assign number_printed = 0 %}
 {% for publi in site.data.publist %}
 
@@ -52,6 +51,15 @@ permalink: /publications/
 
 <p> &nbsp; </p>
 
+
+### Thesis
+{% for publi in site.data.mtpbtplist %}
+
+  {{ publi.title }} <br />
+  <em>{{ publi.authors }} </em><br /><a href="{{ publi.link.url }}">{{ publi.link.display }}</a>
+
+{% endfor %}
+<p> &nbsp; </p>
 
 <!-- ## Patents
 <em>Milan P Allan, S Gröblacher, RA Norte, M Leeuwenhoek</em><br />Novel atomic force microscopy probes with phononic crystals<br /> PCT/NL20-20/050797 (2020)

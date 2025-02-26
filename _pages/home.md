@@ -10,9 +10,9 @@ permalink: /
     <!-- Menu -->
     <ol class="carousel-indicators">
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
-        <!-- <li data-target="#carousel" data-slide-to="1"></li>
-        <li data-target="#carousel" data-slide-to="2"></li> -->
-        <!-- <li data-target="#carousel" data-slide-to="3"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <!-- <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
         <li data-target="#carousel" data-slide-to="4"></li>
         <li data-target="#carousel" data-slide-to="5"></li>
         <li data-target="#carousel" data-slide-to="6"></li>
@@ -24,13 +24,13 @@ permalink: /
         <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/example.png" alt="Slide 1" />
         </div>
+        <div class="item">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/spinlab_group_May2024.jpg" alt="Slide 2" />
+        </div>
         <!-- <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_neeraj_slider_2.png" alt="Slide 2" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_neeraj_slider_0.png" alt="Slide 2" />
         </div>
         <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_neeraj_slider_0.png" alt="Slide 2" />
-        </div> -->
-        <!-- <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_audio_speech_fit.png" alt="Slide 3" />
         </div>
         <div class="item">
@@ -99,7 +99,10 @@ Feel free to drop an [email](mailto:neerajs@iitg.ac.in) to [Neeraj]({{ site.url 
 (Thanks to <a href="https://jvbalen.github.io/notes/waveform.html" target="_blank" rel="noopener noreferrer">Jan Van Balen</a> for the GIF).
 
 We are located in IIT Guwahati. Our campus is calm and vibrant, bio-diverse and fondly popular in India as (most!) heavenly (see [Pictures](pictures)).
- 
+
+**Check out - TEDx talk of Neeraj Sharma**
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/watch?v=CYMMLLeGrVs&t=36s" frameborder="0" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CYMMLLeGrVs?si=WupHSq82_LRLGOI7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <!-- <figure class="fourth">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_Leiden.jpg" style="width: 210px">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_Nanofront.jpg" style="width: 110px">

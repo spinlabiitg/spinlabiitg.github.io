@@ -1,6 +1,6 @@
 - name: <a href="https://www.neerajww.github.io">Neeraj Kumar Sharma</a>
   photo: PI_neeraj.png
-  info: Assistant Professor, started July 2022
+  info: Lab Director, started July 2022
   email: neerajs@iitg.ac.in
   number_educ: 5
   education1: B.Tech in Instrumentation and Electronics Engineering, <a href="https://en.wikipedia.org/wiki/Odisha_University_of_Technology_and_Research" target="_blank">College of Engineering and Technology</a>, Bhubaneswar, India
@@ -10,13 +10,10 @@
   education5: Scientist, <a href="https://www.audiolabs-erlangen.de/" target="_blank">Fraunhofer IIS Audio Labs</a>, Erlangen, Germany
 
 
-- name: ""
-# - name: "This could be you !"
-#   photo: rock.jpg
-#   info: See <a href="https://spinlabiitg.github.io/vacancies">openings</a> for more info
-#   email: milan.allan@gmail.com
-#   number_educ: 0
-#   education1:
-#   education2:
-#   education3:
-#   education4:
+- name: <a href="https://scholar.google.com/citations?user=M1pqD90AAAAJ&hl=en" target="_blank">Aamir Hamid Dar</a>
+  photo: postdoc_aamir.png
+  info: Postdoctoral Researcher (IPDF)
+  email: aamir740@rnd.iitg.ac.in
+  number_educ: 2 
+  education1: B.Sc., M Sc., University of Kashmir
+  education2: Ph.D., <a href="https://www.iust.ac.in/" target="_blank">Islamic University of Science and Technology, Kashmir, India</a>

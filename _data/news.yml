@@ -1,6 +1,17 @@
+- date: Feb 2025-
+  headline: "Neeraj Sharma awarded the Prime Minister Early Career Research Grant, funded by ANRF for the project titled - <i>Melodies of the Lungs: Leveraging AI for Point-of-Care Testing in Respiratory Healthcare through Respiratory Audio Analysis</i>. This is the first big external funding for the lab!"
+
+- date: Jan 2025-
+  headline: "Congratulations to Ashita Batra and Mannas Narang on the acceptance of our work on [creation and release of an India specific stuttered speech dataset](https://arxiv.org/pdf/2501.15877) in ICASSP 2025 Conference!"
+
+- date: Sep 2024-
+  headline: "Sneha receives Travel Award from IndSCA for assisting her travel to the Interspeech 2024 Conference, held in Greece!"
+
+- date: Jun 2024-
+  headline: "Congratulations to Sneha on the acceptance of our work on [deciphering Assamese vowel harmony with Featural InfoWaveGAN](https://www.arxiv.org/pdf/2407.06547) in Interspeech 2024 Conference!"
 
 - date: Mar 2024-
-  headline: "Congratulations to Sneha on the acceptance of her work on [analyzing vowel harmony with GAN and raw audio](https://labphon.org/labphon19/poster-sessions) in LabPhon19 Conference!"
+  headline: "Congratulations to Sneha on the acceptance of our work on [analyzing vowel harmony with GAN and raw audio](https://labphon.org/labphon19/poster-sessions) in LabPhon19 Conference!"
 
 - date: Dec 2023-
   headline: "[Analyzing silences in speech](https://link.springer.com/chapter/10.1007/978-3-031-48309-7_26)! Check out our paper in SPECOM 2023"
@@ -14,11 +25,11 @@
 - date: Feb 2023-
   headline: "Check out [The Curious Case of Sound](https://www.youtube.com/watch?v=CYMMLLeGrVs&t=36s), a TEDx talk delivered by Neeraj!"
 
-- date: Sept 2022-
-  headline: "Namaste! Welcome to our website!"
+# - date: Sept 2022-
+#   headline: "Namaste! Welcome to our website!"
 
-- date: July 2022-
-  headline: "Neeraj joins IIT Guwahati as an Assistant Professor."
+# - date: July 2022-
+#   headline: "Neeraj joins IIT Guwahati as an Assistant Professor."
 
 # see this if you wish to include image in news
 # - date: 17. March 2022
