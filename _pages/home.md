@@ -11,9 +11,9 @@ permalink: /
     <ol class="carousel-indicators">
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
         <li data-target="#carousel" data-slide-to="1"></li>
-        <!-- <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
         <li data-target="#carousel" data-slide-to="3"></li>
-        <li data-target="#carousel" data-slide-to="4"></li>
+        <!-- <li data-target="#carousel" data-slide-to="4"></li>
         <li data-target="#carousel" data-slide-to="5"></li>
         <li data-target="#carousel" data-slide-to="6"></li>
         <li data-target="#carousel" data-slide-to="7"></li> -->
@@ -27,13 +27,13 @@ permalink: /
         <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/spinlab_group_May2024.jpg" alt="Slide 2" />
         </div>
+        <div class="item">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/project_boli_flyer.png" alt="Slide 2" />
+        </div>
+        <div class="item">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/anrf2025_earlypmgrant.png" alt="Slide 3" />
+        </div>
         <!-- <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_neeraj_slider_0.png" alt="Slide 2" />
-        </div>
-        <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_audio_speech_fit.png" alt="Slide 3" />
-        </div>
-        <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_audio_tone_mixture_fit.png" alt="Slide 4" />
         </div>
         <div class="item">
