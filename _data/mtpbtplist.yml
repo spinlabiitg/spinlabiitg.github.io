@@ -1,3 +1,22 @@
+- title: "Modulation Filtering and Attention-Based Model for Enhanced Audio Classification"
+  image: web_paper_highlights_project_boli.png
+  description: This paper introduces Project Boli, a multi-lingual stuttered speech dataset designed to advance scientific understanding and technology development for individuals who stutter, particularly in India.
+  authors: Aditya Suryawanshi
+  link:
+    # url: https://arxiv.org/pdf/2501.15877
+    display: B.Tech. (DSAI) Term Project Thesis (2025)
+  highlight: 0
+
+- title: "Audio Abstractor for Diarization, Summarization and Embedding Based Conversation Analysis"
+  image: web_paper_highlights_project_boli.png
+  description: This paper introduces Project Boli, a multi-lingual stuttered speech dataset designed to advance scientific understanding and technology development for individuals who stutter, particularly in India.
+  authors: Nishchay Nilabh
+  link:
+    # url: https://arxiv.org/pdf/2501.15877
+    display: B.Tech. (DSAI) Term Project Thesis (2025)
+  highlight: 0
+
+
 - title: "Prediction of Strength and Deformation Behaviour of Jointed Rocks Using Machine Learning Algorithms "
   image: web_paper_highlights_project_boli.png
   description: This paper introduces Project Boli, a multi-lingual stuttered speech dataset designed to advance scientific understanding and technology development for individuals who stutter, particularly in India.

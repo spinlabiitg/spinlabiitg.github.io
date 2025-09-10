@@ -13,6 +13,10 @@ permalink: /
         <li data-target="#carousel" data-slide-to="1"></li>
         <li data-target="#carousel" data-slide-to="2"></li>
         <li data-target="#carousel" data-slide-to="3"></li>
+        <li data-target="#carousel" data-slide-to="4"></li>
+        <li data-target="#carousel" data-slide-to="5"></li>
+        <li data-target="#carousel" data-slide-to="6"></li>
+        <li data-target="#carousel" data-slide-to="7"></li>
         <!-- <li data-target="#carousel" data-slide-to="4"></li>
         <li data-target="#carousel" data-slide-to="5"></li>
         <li data-target="#carousel" data-slide-to="6"></li>
@@ -33,6 +37,19 @@ permalink: /
         <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/anrf2025_earlypmgrant.png" alt="Slide 3" />
         </div>
+        <div class="item">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/IMG_20250627_114954.jpg" alt="Slide 4" />
+        </div>
+        <div class="item">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/IMG_20250627_105524.jpg" alt="Slide 5" />
+        </div>
+        <div class="item">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/IMG_20250627_112407.jpg" alt="Slide 6" />
+        </div>
+        <div class="item">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/IMG_20250411_143901 (1).jpg" alt="Slide 7" />
+        </div>
+
         <!-- <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/web_audio_tone_mixture_fit.png" alt="Slide 4" />
         </div>
@@ -62,6 +79,8 @@ permalink: /
 We are a research group exploring **sensory interactions** to understand how humans **perceive** the world and build **intelligence**. In our work, we enjoy conversing using the language of signal processing, machine (deep) learning, and enriching our understanding using psychology, neuroscience and AI. We think our explorations are critical in enabling an AI-augmented humane future.
 - To know about our findings see [Publications](publications).
 - To know more about our explorations see [Research](research).
+- To know about the Mehta Family School of Data Science and AI, our parent department, see [MFSDSAI](https://www.iitg.ac.in/dsai/)
+- To know about the Centre for Linguistic Science and Technology, a centre we love being part of, see [CLST](https://www.iitg.ac.in/clst/index.php)
 
 <span style="color:#AA4A44">
 Does the above relate to your interests? Join our team [(more info)]({{ site.url }}{{ site.baseurl }}/vacancies) or sponsor our lab! </span>

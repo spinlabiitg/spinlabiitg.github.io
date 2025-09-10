@@ -135,7 +135,7 @@ permalink: /team/
 </div>
 {% endif %}
 
-## MTech PGs (2024-25 MTPs)
+## MTech PGs
 {% assign number_printed = 0 %}
 {% for member in site.data.masts %}
 
@@ -197,7 +197,7 @@ permalink: /team/
 {% endif %}
 
 
-## BTech UGs (2024-25 BTPs)
+## BTech UGs
 {% assign number_printed = 0 %}
 {% for member in site.data.bachs %}
 
