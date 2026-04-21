@@ -29,6 +29,9 @@ permalink: /
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/example.png" alt="Slide 1" />
         </div>
         <div class="item">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/spinlab_group_Oct2025.jpg" alt="Slide 2" />
+        </div>
+        <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/spinlab_group_May2024.jpg" alt="Slide 2" />
         </div>
         <div class="item">
@@ -37,9 +40,9 @@ permalink: /
         <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/anrf2025_earlypmgrant.png" alt="Slide 3" />
         </div>
-        <div class="item">
+        <!-- <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/IMG_20250627_114954.jpg" alt="Slide 4" />
-        </div>
+        </div> -->
         <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/IMG_20250627_105524.jpg" alt="Slide 5" />
         </div>
