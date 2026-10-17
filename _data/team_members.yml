@@ -1,19 +1,19 @@
 - name: <a href="https://www.neerajww.github.io">Neeraj Kumar Sharma</a>
   photo: PI_neeraj.png
-  info: Lab Director, started July 2022
+  info: Team Lead
   email: neerajs@iitg.ac.in
   number_educ: 5
-  education1: B.Tech in Instrumentation and Electronics Engineering, <a href="https://en.wikipedia.org/wiki/Odisha_University_of_Technology_and_Research" target="_blank">College of Engineering and Technology</a>, Bhubaneswar, India
+  education1: B.Tech, <a href="https://en.wikipedia.org/wiki/Odisha_University_of_Technology_and_Research" target="_blank">College of Engineering and Technology</a>, Bhubaneswar, India
   education2: Masters, Ph.D, <a href="https://iisc.ac.in/" target="_blank">Indian Institute of Science</a>, Bangalore, India
   education3: <a href="https://www.cmu.edu/ni/" target="_blank">BrainHub Postdoc Fellow</a>, Carnegie Mellon University, Pittsburgh, USA
   education4: <a href="https://iisc.ac.in/post-docs/" target="_blank">C. V. Raman Postdoc Fellow</a>, Indian Institute of Science, Bangalore, India
   education5: Scientist, <a href="https://www.audiolabs-erlangen.de/" target="_blank">Fraunhofer IIS Audio Labs</a>, Erlangen, Germany
 
 
-- name: <a href="https://scholar.google.com/citations?user=M1pqD90AAAAJ&hl=en" target="_blank">Aamir Hamid Dar</a>
-  photo: postdoc_aamir.png
-  info: Postdoctoral Researcher (IPDF)
-  email: aamir740@rnd.iitg.ac.in
-  number_educ: 2 
-  education1: B.Sc., M Sc., University of Kashmir
-  education2: Ph.D., <a href="https://www.iust.ac.in/" target="_blank">Islamic University of Science and Technology, Kashmir, India</a>
+# - name: <a href="https://scholar.google.com/citations?user=M1pqD90AAAAJ&hl=en" target="_blank">Aamir Hamid Dar</a>
+#   photo: postdoc_aamir.png
+#   info: Postdoctoral Researcher (IPDF)
+#   email: aamir740@rnd.iitg.ac.in
+#   number_educ: 2 
+#   education1: B.Sc., M Sc., University of Kashmir
+#   education2: Ph.D., <a href="https://www.iust.ac.in/" target="_blank">Islamic University of Science and Technology, Kashmir, India</a>

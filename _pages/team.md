@@ -258,12 +258,16 @@ permalink: /team/
 </div>
 {% endif %}
 
-## Former visitors, BTech/BSc/MTech students
+## Former Members
 <div class="row">
 <div class="col-sm-4 clearfix">
-<h4>Visitors</h4>
+<h4>Postdocs</h4>
 {% for member in site.data.alumni_visitors %}
 {{ member.name }}
+<ul style="overflow: hidden">
+  <li><i>{{ member.info }}</i></li>
+  <li><i>{{ member.work }}</i></li>
+</ul>
 {% endfor %}
 </div>
 
@@ -273,7 +277,7 @@ permalink: /team/
 {{ member.name }}
 <ul style="overflow: hidden">
   <li><i>{{ member.info }}</i></li>
-  <!-- <li><i>{{ member.work }}</i></li> -->
+  <li><i>{{ member.work }}</i></li>
 </ul>
 {% endfor %}
 </div>

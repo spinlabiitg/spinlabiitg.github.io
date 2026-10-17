@@ -1,4 +1,4 @@
-I"�<h1 id="group-members">Group Members</h1>
+I"�<h1 id="group-members">Group Members</h1>
 
 <p><strong>We are  looking for new PhD students, Master, and BTech students to join the team</strong> <a href="http://localhost:4000/vacancies">(see openings)</a> <strong>!</strong></p>
 
@@ -11,7 +11,7 @@
   <div class="col-sm-6 clearfix">
     <p><img src="http://localhost:4000/images/teampic/PI_neeraj.png" class="img-responsive" width="25%" style="float: left" /></p>
     <h4><a href="https://www.neerajww.github.io">Neeraj Kumar Sharma</a></h4>
-    <p><i>Lab Director, started July 2022 <!--<br>email: <neerajs@iitg.ac.in></i> --></i></p>
+    <p><i>Team Lead <!--<br>email: <neerajs@iitg.ac.in></i> --></i></p>
     <ul style="overflow: hidden">
 
   
@@ -23,33 +23,11 @@
   
 
   
-  <li> B.Tech in Instrumentation and Electronics Engineering, <a href="https://en.wikipedia.org/wiki/Odisha_University_of_Technology_and_Research" target="_blank">College of Engineering and Technology</a>, Bhubaneswar, India </li>
+  <li> B.Tech, <a href="https://en.wikipedia.org/wiki/Odisha_University_of_Technology_and_Research" target="_blank">College of Engineering and Technology</a>, Bhubaneswar, India </li>
   <li> Masters, Ph.D, <a href="https://iisc.ac.in/" target="_blank">Indian Institute of Science</a>, Bangalore, India </li>
   <li> <a href="https://www.cmu.edu/ni/" target="_blank">BrainHub Postdoc Fellow</a>, Carnegie Mellon University, Pittsburgh, USA </li>
   <li> <a href="https://iisc.ac.in/post-docs/" target="_blank">C. V. Raman Postdoc Fellow</a>, Indian Institute of Science, Bangalore, India </li>
   <li> Scientist, <a href="https://www.audiolabs-erlangen.de/" target="_blank">Fraunhofer IIS Audio Labs</a>, Erlangen, Germany </li>
-  
-
-  </ul>
-  </div>
-
-  <div class="col-sm-6 clearfix">
-    <p><img src="http://localhost:4000/images/teampic/postdoc_aamir.png" class="img-responsive" width="25%" style="float: left" /></p>
-    <h4><a href="https://scholar.google.com/citations?user=M1pqD90AAAAJ&amp;hl=en" target="_blank">Aamir Hamid Dar</a></h4>
-    <p><i>Postdoctoral Researcher (IPDF) <!--<br>email: <aamir740@rnd.iitg.ac.in></i> --></i></p>
-    <ul style="overflow: hidden">
-
-  
-
-  
-  <li> B.Sc., M Sc., University of Kashmir </li>
-  <li> Ph.D., <a href="https://www.iust.ac.in/" target="_blank">Islamic University of Science and Technology, Kashmir, India</a> </li>
-  
-
-  
-
-  
-
   
 
   </ul>
@@ -106,7 +84,7 @@
   <div class="col-sm-6 clearfix">
     <p><img src="http://localhost:4000/images/teampic/prakhar_spinlab.jpg" class="img-responsive" width="25%" style="float: left" /></p>
     <h4><a href="https://www.linkedin.com/in/prakhar-kumar-12s/" target="_blank">Prakhar Kumar Sonkar</a></h4>
-    <p><i>I’m passionate about working with audio and speech signal processing, particularly when it involves utilizing deep learning techniques. It’s fascinating to dive into the realm of sound and enrich audio data using deep learning methods. <!--<br>email: <></i> --></i></p>
+    <p><i>I’m passionate about working with audio and speech signal processing, particularly when it involves utilizing deep learning techniques. It’s fascinating to dive into the realm of sound and analyze audio data using deep learning methods. <!--<br>email: <></i> --></i></p>
     <ul style="overflow: hidden">
 
   
@@ -129,8 +107,27 @@
 <div class="row">
 
   <div class="col-sm-6 clearfix">
+    <p><img src="http://localhost:4000/images/teampic/bharati_mtp_2026.jpg" class="img-responsive" width="25%" style="float: left" /></p>
+    <h4>Bharati Bansal (Co-Sup)</h4>
+    <p><i> <!--<br>email: <></i> --></i></p>
+    <ul style="overflow: hidden">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  </ul>
+  </div>
+
+  <div class="col-sm-6 clearfix">
     <p><img src="http://localhost:4000/images/teampic/rock.jpg" class="img-responsive" width="25%" style="float: left" /></p>
-    <h4>Manikantha Dandi (Co-Sup)</h4>
+    <h4>R Virinchi (Co-Sup)</h4>
     <p><i> <!--<br>email: <></i> --></i></p>
     <ul style="overflow: hidden">
 
@@ -154,8 +151,8 @@
 <div class="row">
 
   <div class="col-sm-6 clearfix">
-    <p><img src="http://localhost:4000/images/teampic/rishab_2025_26_btech.jpg" class="img-responsive" width="25%" style="float: left" /></p>
-    <h4>Rishab Sonthalia</h4>
+    <p><img src="http://localhost:4000/images/teampic/shourya_goyal_btp_2026.jpeg" class="img-responsive" width="25%" style="float: left" /></p>
+    <h4>Shourya Goyal</h4>
     <p><i> <!--<br>email: <></i> --></i></p>
     <ul style="overflow: hidden">
 
@@ -173,8 +170,8 @@
   </div>
 
   <div class="col-sm-6 clearfix">
-    <p><img src="http://localhost:4000/images/teampic/ujwal_2025_26_btech.jpg" class="img-responsive" width="25%" style="float: left" /></p>
-    <h4>Ujwal Fandulal Kirsan</h4>
+    <p><img src="http://localhost:4000/images/teampic/srijan_btp_2026.jpg" class="img-responsive" width="25%" style="float: left" /></p>
+    <h4>Srijan Kumar</h4>
     <p><i> <!--<br>email: <></i> --></i></p>
     <ul style="overflow: hidden">
 
@@ -193,19 +190,27 @@
 
 </div>
 
-<h2 id="former-visitors-btechbscmtech-students">Former visitors, BTech/BSc/MTech students</h2>
+<h2 id="former-members">Former Members</h2>
 <div class="row">
   <div class="col-sm-4 clearfix">
-    <h4>Visitors</h4>
+    <h4>Postdocs</h4>
+
+    <p>Aamir Hamid Dar</p>
 
   </div>
 
   <div class="col-sm-4 clearfix">
     <h4>Master students</h4>
 
+    <p>Manikantha Dandi (Co-Sup)</p>
+    <ul style="overflow: hidden">
+  <li><i>MTech (DS) MTP, 2025-26</i></li>
+  <!-- <li><i>Joined Sirius AI</i></li> -->
+</ul>
+
     <p>Aadarsh Navnath Thakur (Co-Sup)</p>
     <ul style="overflow: hidden">
-  <li><i>MTech MTP, 2023-24</i></li>
+  <li><i>MTech (Civil) MTP, 2023-24</i></li>
   <!-- <li><i></i></li> -->
 </ul>
 
@@ -214,58 +219,70 @@
   <div class="col-sm-4 clearfix">
     <h4>Bachelor Students</h4>
 
+    <p>Rishab Sonthalia</p>
+    <ul style="overflow: hidden">
+  <li><i>BTech (DSAI) BTP, 2025-26</i></li>
+  <li><i>Joined Salesforce</i></li>
+</ul>
+
+    <p>Ujwal Fandulal Kirsan</p>
+    <ul style="overflow: hidden">
+  <li><i>BTech (DSAI) BTP, 2025-26</i></li>
+  <li><i>EXL Service</i></li>
+</ul>
+
     <p>Aditya Suryawanshi</p>
     <ul style="overflow: hidden">
-  <li><i>BTech BTP, 2024-25</i></li>
+  <li><i>BTech (DSAI) BTP, 2024-25</i></li>
   <li><i>Joined HSBC</i></li>
 </ul>
 
     <p>Nishchay Nilabh</p>
     <ul style="overflow: hidden">
-  <li><i>BTech BTP, 2024-25</i></li>
+  <li><i>BTech (DSAI) BTP, 2024-25</i></li>
   <li><i>Joined Thoughspot</i></li>
 </ul>
 
     <p>Akshaj Padmakar</p>
     <ul style="overflow: hidden">
-  <li><i>BTech BTP, 2023-24</i></li>
+  <li><i>BTech (CSE) BTP, 2023-24</i></li>
   <li><i>Joined Sprinklr (Prouduct Engineer)</i></li>
 </ul>
 
     <p>Pratham Sridhar Kulkarni</p>
     <ul style="overflow: hidden">
-  <li><i>BTech BTP, 2023-24</i></li>
+  <li><i>BTech (Engg. Physics) BTP, 2023-24</i></li>
   <li><i>Joined Max Planck Institute for the Science of Light (Masters)</i></li>
 </ul>
 
     <p>Saksham Kumar</p>
     <ul style="overflow: hidden">
-  <li><i>BTech BTP, 2023-24</i></li>
+  <li><i>BTech (EEE) BTP, 2023-24</i></li>
   <li><i>Joined JPMA (SDE)</i></li>
 </ul>
 
     <p>Samarth Umapati Hegde</p>
     <ul style="overflow: hidden">
-  <li><i>BTech BTP, 2023-24</i></li>
+  <li><i>BTech (EEE) BTP, 2023-24</i></li>
   <li><i>Joined Navi Technologies (SDE)</i></li>
 </ul>
 
     <p>Sanskar Kejriwal</p>
     <ul style="overflow: hidden">
-  <li><i>BTech BTP, 2023-24</i></li>
+  <li><i>BTech (EEE) BTP, 2023-24</i></li>
   <li><i>Joined Databricks (SDE)</i></li>
 </ul>
 
     <p>Soham Karak</p>
     <ul style="overflow: hidden">
-  <li><i>BTech BTP, 2023-24</i></li>
+  <li><i>BTech (ECE) BTP, 2023-24</i></li>
   <li><i>Joined Krutrim OLA (AI Research Engg.)</i></li>
 </ul>
 
     <p>Suhayl Mahek</p>
     <ul style="overflow: hidden">
-  <li><i>BTech BTP, 2023-24</i></li>
-  <li><i>Joined a stealth startup</i></li>
+  <li><i>BTech (Engg. Physics) BTP, 2023-24</i></li>
+  <li><i>Joined Fanon</i></li>
 </ul>
 
   </div>
