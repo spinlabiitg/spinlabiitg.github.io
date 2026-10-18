@@ -9,6 +9,7 @@
 #  education4:
 
 - name: Shourya Goyal
+  topic: "Audio QR codes: generation, analysis and deployment"
   photo: shourya_goyal_btp_2026.jpeg
   info:
   # email: m.ortego.larrazabal@umail.leidenuniv.nl
@@ -16,6 +17,7 @@
   # education1: BTech
 
 - name: Srijan Kumar
+  topic: Multimodal learning across music and dance
   photo: srijan_btp_2026.jpg
   info:
   # email: m.ortego.larrazabal@umail.leidenuniv.nl

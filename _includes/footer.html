@@ -5,7 +5,7 @@
 		  <div class="col-sm-4">
 			  
 			  <!-- <p>We are part of the <a href="https://www.iitg.ac.in/dsai/home">School of Data Science &amp Artificial Intelligence</a>, <a href="https://www.iitg.ac.in/">IIT Guwahati</a>.</p> -->
-			  <p>&copy 2024 SPIN Lab<br/><a href="{{ site.url }}{{ site.baseurl }}/aboutwebsite.html">&#128153; Acknowledgement</a>
+			  <p>&copy; {{ site.time | date: "%Y" }} SPIN Lab<br/><a href="{{ site.url }}{{ site.baseurl }}/aboutwebsite.html">&#128153; {% include t.html k="acknowledgement" %}</a>
 				<br></p>
 			  
 			  <p>  </p><p>
@@ -17,7 +17,7 @@
 			- <a href="https://www.iitg.ac.in/dsai/">Mehta Family Foundation</a> -->
 		  </div>
 		  <div class="col-sm-4">
-			Contact:<br />
+			{% include t.html k="contact" %}:<br />
 			Room 412, Third Floor<br />
 			HSS Dept. Building, Core-2<br />
 			IIT Guwahati, 781039 Assam, India<br />
@@ -31,4 +31,30 @@
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>
-  
+
+  <script>
+    // Theme: light <-> dark (starts from the system setting). Language: English <-> Hindi.
+    (function () {
+      var d = document.documentElement;
+      function isDark() {
+        var t = d.getAttribute('data-theme');
+        if (t) return t === 'dark';
+        return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+      function save(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+      [].forEach.call(document.querySelectorAll('.js-theme'), function (b) {
+        b.addEventListener('click', function () {
+          var next = isDark() ? 'light' : 'dark';
+          d.setAttribute('data-theme', next); save('spin-theme', next);
+        });
+      });
+      [].forEach.call(document.querySelectorAll('.js-lang'), function (b) {
+        b.addEventListener('click', function () {
+          var hi = d.getAttribute('data-lang') !== 'hi';
+          if (hi) { d.setAttribute('data-lang', 'hi'); d.lang = 'hi'; }
+          else { d.removeAttribute('data-lang'); d.lang = 'en'; }
+          save('spin-lang', hi ? 'hi' : 'en');
+        });
+      });
+    })();
+  </script>

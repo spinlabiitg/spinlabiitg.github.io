@@ -1,43 +1,54 @@
 - name: Rishab Sonthalia
+  thesis: "Self-supervised learning for respiratory acoustics in healthcare AI"
   info: BTech (DSAI) BTP, 2025-26
   work: Joined Salesforce
 
 - name: Ujwal Fandulal Kirsan
+  thesis: "Deep learning methods for speech source separation"
   info: BTech (DSAI) BTP, 2025-26
   work: EXL Service
 
 - name: Aditya Suryawanshi
+  thesis: "Modulation filtering and attention-based models for audio classification"
   info: BTech (DSAI) BTP, 2024-25
   work: Joined HSBC
 
 - name: Nishchay Nilabh
+  thesis: "Audio abstraction for diarization, summarization and conversational analysis"
   info: BTech (DSAI) BTP, 2024-25
   work: Joined Thoughspot
 
 - name: Akshaj Padmakar
+  thesis: "Respiratory acoustics analysis for point-of-care healthcare"
   info: BTech (CSE) BTP, 2023-24
   work: Joined Sprinklr (Prouduct Engineer)
 
 - name: Pratham Sridhar Kulkarni
+  thesis: "A study on neural network learning dynamics"
   info: BTech (Engg. Physics) BTP, 2023-24
   work: Joined Max Planck Institute for the Science of Light (Masters)
 
 - name: Saksham Kumar
+  thesis: "Spoken language diversity quantification: multimodal dataset creation and analysis"
   info: BTech (EEE) BTP, 2023-24
   work: Joined JPMA (SDE)
 
 - name: Samarth Umapati Hegde
+  thesis: "Spoken language diversity quantification: multimodal dataset creation and analysis"
   info: BTech (EEE) BTP, 2023-24
   work: Joined Navi Technologies (SDE)
 
 - name: Sanskar Kejriwal
+  thesis: "Respiratory acoustics analysis for point-of-care healthcare"
   info: BTech (EEE) BTP, 2023-24
   work: Joined Databricks (SDE)
 
 - name: Soham Karak
+  thesis: "Listening-state attention decoding in multi-talker ambient environments"
   info: BTech (ECE) BTP, 2023-24
   work: Joined Krutrim OLA (AI Research Engg.)
 
 - name: Suhayl Mahek
+  thesis: "Perception-informed video manipulation and augmentation with custom audio"
   info: BTech (Engg. Physics) BTP, 2023-24
   work: Joined Fanon

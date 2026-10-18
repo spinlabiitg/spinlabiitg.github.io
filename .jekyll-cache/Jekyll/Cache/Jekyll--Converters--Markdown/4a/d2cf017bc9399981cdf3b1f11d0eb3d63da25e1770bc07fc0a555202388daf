@@ -1,0 +1,257 @@
+I"�+<h1><span data-l="en">Group Members</span><span data-l="hi" lang="hi">समूह के सदस्य</span></h1>
+
+<p class="callout"><span data-l="en">We are looking for new PhD, Master and BTech students to join the team.</span><span data-l="hi" lang="hi">हम टीम में नए पीएचडी, मास्टर और बीटेक विद्यार्थियों की तलाश में हैं।</span> <a href="http://localhost:4000/vacancies"><span data-l="en">See openings →</span><span data-l="hi" lang="hi">अवसर देखें →</span></a></p>
+
+<div class="pi-card">
+  <img src="http://localhost:4000/images/teampic/PI_neeraj.png" alt="Neeraj Kumar Sharma" />
+  <div>
+    <h3><a href="https://neerajww.github.io" target="_blank">Neeraj Kumar Sharma</a></h3>
+    <p class="member-info"><span data-l="en">Assistant Professor, Mehta Family School of Data Science and AI</span><span data-l="hi" lang="hi">सहायक प्राध्यापक, मेहता फ़ैमिली स्कूल ऑफ़ डेटा साइंस एंड एआई</span></p>
+    <p class="member-links pi-links">
+      <a href="mailto:neerajs@iitg.ac.in"><span data-l="en">Email</span><span data-l="hi" lang="hi">ईमेल</span></a>
+      <a href="https://scholar.google.com/citations?user=j7oyJ0MAAAAJ&amp;hl=en" target="_blank" rel="noopener"><span data-l="en">Google Scholar</span><span data-l="hi" lang="hi">गूगल स्कॉलर</span></a>
+      <a href="https://neerajww.github.io" target="_blank" rel="noopener"><span data-l="en">Personal website</span><span data-l="hi" lang="hi">निजी वेबसाइट</span></a>
+    </p>
+    <div class="tags pi-roles"><span>Senior Member, IEEE</span><span>Chair, ISCA Indian Language Speech Processing group</span><span>Associate Faculty, Centre for Linguistic Science and Technology</span><span>Associate Faculty, Manekshaw Centre of Excellence for National Security Studies and Research</span></div>
+    <ul>
+    <li>B.Tech, <a href="https://en.wikipedia.org/wiki/Odisha_University_of_Technology_and_Research" target="_blank">College of Engineering and Technology</a>, Bhubaneswar, India</li><li>MTech (Research) and Ph.D. (thesis <i>Information-rich sampling of time-varying signals</i>), <a href="https://iisc.ac.in/" target="_blank">Indian Institute of Science</a>, Bangalore, India</li><li><a href="https://www.cmu.edu/ni/" target="_blank">BrainHub Postdoc Fellow</a>, Carnegie Mellon University, Pittsburgh, USA</li><li><a href="https://iisc.ac.in/post-docs/" target="_blank">C. V. Raman Postdoc Fellow</a>, Indian Institute of Science, Bangalore, India</li><li>Research Scientist, <a href="https://www.audiolabs-erlangen.de/" target="_blank">International Audio Laboratories, Fraunhofer IIS</a>, Erlangen, Germany</li>
+    </ul>
+  </div>
+</div>
+
+<h2><span data-l="en">PhD Scholars</span><span data-l="hi" lang="hi">पीएचडी शोधार्थी</span></h2>
+<div class="member-grid">
+
+
+
+<div class="member-card">
+  
+  <img class="member-photo" src="http://localhost:4000/images/teampic/sneha_spinlab.jpg" alt="Sneha Ray Barman" loading="lazy" />
+  
+  <h4>Sneha Ray Barman <i>(Co-Sup)</i></h4>
+  <p class="member-topic">Computational linguistics</p>
+  
+  <p class="member-links">
+    
+    
+    
+    
+    
+  </p>
+</div>
+
+
+
+<div class="member-card">
+  
+  <img class="member-photo" src="http://localhost:4000/images/teampic/ashita_spinlab.jpg" alt="Ashita Batra" loading="lazy" />
+  
+  <h4><a href="https://www.linkedin.com/in/ashitabatra23" target="_blank">Ashita Batra</a> <i>(Co-Sup)</i></h4>
+  <p class="member-topic">Speech stutter detection and stutter-type classification</p>
+  <p class="member-info">I like to observe nature, applying AI in real life of people suffering from pathological speech namely Stuttering and Parkinson's disease.</p>
+  <p class="member-links">
+    
+    
+    
+    
+    
+  </p>
+</div>
+
+
+
+<div class="member-card">
+  
+  <img class="member-photo" src="http://localhost:4000/images/teampic/prakhar_spinlab.jpg" alt="Prakhar Kumar Sonkar" loading="lazy" />
+  
+  <h4><a href="https://www.linkedin.com/in/prakhar-kumar-12s/" target="_blank">Prakhar Kumar Sonkar</a></h4>
+  <p class="member-topic">Respiratory audio analysis for AI-based respiratory healthcare</p>
+  <p class="member-info">I'm passionate about working with audio and speech signal processing, particularly when it involves utilizing deep learning techniques. It's fascinating to dive into the realm of sound and analyze audio data using deep learning methods.</p>
+  <p class="member-links">
+    
+    
+    
+    
+    
+  </p>
+</div>
+
+
+
+<div class="member-card">
+  
+  
+  <div class="member-photo member-initials">TA</div>
+  
+  <h4>Timothy Alex John</h4>
+  <p class="member-topic">Doctoral coursework (research topic to be finalized)</p>
+  
+  <p class="member-links">
+    
+    
+    
+    
+    
+  </p>
+</div>
+
+
+
+<div class="member-card">
+  
+  
+  <div class="member-photo member-initials">LS</div>
+  
+  <h4>Lammibert Sumer</h4>
+  <p class="member-topic">Doctoral coursework (research topic to be finalized)</p>
+  
+  <p class="member-links">
+    
+    
+    
+    
+    
+  </p>
+</div>
+
+</div>
+
+<h2><span data-l="en">MTech Students</span><span data-l="hi" lang="hi">एमटेक विद्यार्थी</span></h2>
+<div class="member-grid">
+
+
+
+<div class="member-card">
+  
+  <img class="member-photo" src="http://localhost:4000/images/teampic/bharati_mtp_2026.jpg" alt="Bharati Bansal" loading="lazy" />
+  
+  <h4>Bharati Bansal (Co-Sup)</h4>
+  <p class="member-topic">Machine learning for respiratory healthcare</p>
+  
+  <p class="member-links">
+    
+    
+    
+    
+    
+  </p>
+</div>
+
+
+
+<div class="member-card">
+  
+  
+  <div class="member-photo member-initials">RV</div>
+  
+  <h4>R Virinchi (Co-Sup)</h4>
+  <p class="member-topic">Satellite imagery for climate and weather monitoring</p>
+  
+  <p class="member-links">
+    
+    
+    
+    
+    
+  </p>
+</div>
+
+</div>
+
+<h2><span data-l="en">BTech Students</span><span data-l="hi" lang="hi">बीटेक विद्यार्थी</span></h2>
+<div class="member-grid">
+
+
+
+<div class="member-card">
+  
+  <img class="member-photo" src="http://localhost:4000/images/teampic/shourya_goyal_btp_2026.jpeg" alt="Shourya Goyal" loading="lazy" />
+  
+  <h4>Shourya Goyal</h4>
+  <p class="member-topic">Audio QR codes: generation, analysis and deployment</p>
+  
+  <p class="member-links">
+    
+    
+    
+    
+    
+  </p>
+</div>
+
+
+
+<div class="member-card">
+  
+  <img class="member-photo" src="http://localhost:4000/images/teampic/srijan_btp_2026.jpg" alt="Srijan Kumar" loading="lazy" />
+  
+  <h4>Srijan Kumar</h4>
+  <p class="member-topic">Multimodal learning across music and dance</p>
+  
+  <p class="member-links">
+    
+    
+    
+    
+    
+  </p>
+</div>
+
+</div>
+
+<h2><span data-l="en">Former Members</span><span data-l="hi" lang="hi">पूर्व सदस्य</span></h2>
+
+<table class="table alumni-table">
+  <thead><tr><th><span data-l="en">Name and thesis</span><span data-l="hi" lang="hi">नाम और शोध-प्रबंध</span></th><th><span data-l="en">Role</span><span data-l="hi" lang="hi">भूमिका</span></th><th><span data-l="en">Now</span><span data-l="hi" lang="hi">अब</span></th></tr></thead>
+  
+  
+  
+  <tbody>
+    <tr class="alumni-group"><td colspan="3"><span data-l="en">Postdocs</span><span data-l="hi" lang="hi">पोस्टडॉक</span></td></tr>
+    
+    <tr><td>Aamir Hamid Dar<span class="alumni-thesis">Time-frequency analysis and machine learning</span></td><td>Institute Post-Doctoral Fellow, 2024-26</td><td>Faculty, Islamic University of Science and Technology, Kashmir, India</td></tr>
+    
+  </tbody>
+  
+  
+  <tbody>
+    <tr class="alumni-group"><td colspan="3"><span data-l="en">Master students</span><span data-l="hi" lang="hi">मास्टर विद्यार्थी</span></td></tr>
+    
+    <tr><td>Satyam Kumar (Co-Sup)<span class="alumni-thesis">Machine learning based breathing anomaly detection using a custom-designed humidity sensor</span></td><td>MTech MTP, 2025-26</td><td>To update</td></tr>
+    
+    <tr><td>Manikantha Dandi (Co-Sup)<span class="alumni-thesis">Photoacoustic image reconstruction using a two-phase approach with lightweight LNEformer</span></td><td>MTech (DS) MTP, 2025-26</td><td>Joined Sirius AI</td></tr>
+    
+    <tr><td>Aadarsh Navnath Thakur (Co-Sup)<span class="alumni-thesis">Prediction of strength and deformation behavior of jointed rocks using machine learning algorithms</span></td><td>MTech (Civil) MTP, 2023-24</td><td>To update</td></tr>
+    
+  </tbody>
+  
+  
+  <tbody>
+    <tr class="alumni-group"><td colspan="3"><span data-l="en">Bachelor students</span><span data-l="hi" lang="hi">बैचलर विद्यार्थी</span></td></tr>
+    
+    <tr><td>Rishab Sonthalia<span class="alumni-thesis">Self-supervised learning for respiratory acoustics in healthcare AI</span></td><td>BTech (DSAI) BTP, 2025-26</td><td>Joined Salesforce</td></tr>
+    
+    <tr><td>Ujwal Fandulal Kirsan<span class="alumni-thesis">Deep learning methods for speech source separation</span></td><td>BTech (DSAI) BTP, 2025-26</td><td>EXL Service</td></tr>
+    
+    <tr><td>Aditya Suryawanshi<span class="alumni-thesis">Modulation filtering and attention-based models for audio classification</span></td><td>BTech (DSAI) BTP, 2024-25</td><td>Joined HSBC</td></tr>
+    
+    <tr><td>Nishchay Nilabh<span class="alumni-thesis">Audio abstraction for diarization, summarization and conversational analysis</span></td><td>BTech (DSAI) BTP, 2024-25</td><td>Joined Thoughspot</td></tr>
+    
+    <tr><td>Akshaj Padmakar<span class="alumni-thesis">Respiratory acoustics analysis for point-of-care healthcare</span></td><td>BTech (CSE) BTP, 2023-24</td><td>Joined Sprinklr (Prouduct Engineer)</td></tr>
+    
+    <tr><td>Pratham Sridhar Kulkarni<span class="alumni-thesis">A study on neural network learning dynamics</span></td><td>BTech (Engg. Physics) BTP, 2023-24</td><td>Joined Max Planck Institute for the Science of Light (Masters)</td></tr>
+    
+    <tr><td>Saksham Kumar<span class="alumni-thesis">Spoken language diversity quantification: multimodal dataset creation and analysis</span></td><td>BTech (EEE) BTP, 2023-24</td><td>Joined JPMA (SDE)</td></tr>
+    
+    <tr><td>Samarth Umapati Hegde<span class="alumni-thesis">Spoken language diversity quantification: multimodal dataset creation and analysis</span></td><td>BTech (EEE) BTP, 2023-24</td><td>Joined Navi Technologies (SDE)</td></tr>
+    
+    <tr><td>Sanskar Kejriwal<span class="alumni-thesis">Respiratory acoustics analysis for point-of-care healthcare</span></td><td>BTech (EEE) BTP, 2023-24</td><td>Joined Databricks (SDE)</td></tr>
+    
+    <tr><td>Soham Karak<span class="alumni-thesis">Listening-state attention decoding in multi-talker ambient environments</span></td><td>BTech (ECE) BTP, 2023-24</td><td>Joined Krutrim OLA (AI Research Engg.)</td></tr>
+    
+    <tr><td>Suhayl Mahek<span class="alumni-thesis">Perception-informed video manipulation and augmentation with custom audio</span></td><td>BTech (Engg. Physics) BTP, 2023-24</td><td>Joined Fanon</td></tr>
+    
+  </tbody>
+  
+</table>
+:ET

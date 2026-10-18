@@ -1,0 +1,140 @@
+# Research themes. Used by the Research page (full cards) and the Home page (tiles).
+# Fields (refs without a url are shown as plain text):
+#   id:       anchor used in links, e.g. /research/#healthcare
+#   title:    theme name
+#   short:    one line shown on the Home page tile
+#   image:    path under /images
+#   body:     full description (markdown allowed)
+#   keywords: list of tags
+#   refs:     list of {title, url} for key papers
+
+- id: sensory-signals
+  title: Modeling sensory signal processing
+  title_hi: "संवेदी संकेत प्रसंस्करण की मॉडलिंग"
+  short: How sensory systems sample the world, and what that teaches us about sampling signals.
+  short_hi: "संवेदी तंत्र दुनिया का सैंपल कैसे लेते हैं, और इससे हम संकेतों की सैंपलिंग के बारे में क्या सीखते हैं।"
+  image: pubpic/web_paper_highlights_extrema.png
+  body: >-
+    Our sensory system is operating 24x7, and is an evolutionary engineering marvel. We intend to understand how
+    different sensory systems process signals. This process is more broadly termed as mechano-electro-transduction.
+    Computationally modeling this can provide alternative methods for sampling and representation of continuous-time
+    signals. One topic which we have carved out from this interest is "information-rich" sampling of non-stationary
+    signals. Here, the goal is to *sample not for* reconstruction of the complete signal *but for* reconstruction of the
+    information of interest.
+  keywords: [time-series analysis, information theory, sparse signal recovery, compressive sensing, time-frequency analysis, sensory systems, signal representations]
+  refs:
+    - title: Sparse signal reconstruction based on signal dependent non-uniform samples
+      url: https://ieeexplore.ieee.org/abstract/document/6288659
+    - title: Event-triggered sampling and reconstruction of sparse real-valued trigonometric polynomials
+      url: https://ieeexplore.ieee.org/abstract/document/6983916
+    - title: Event-triggered sampling using signal extrema for instantaneous amplitude and instantaneous frequency estimation
+      url: https://www.sciencedirect.com/science/article/pii/S0165168415001383
+
+- id: conversation
+  title: Spoken conversation analysis
+  title_hi: "बोली गई बातचीत का विश्लेषण"
+  short: Capturing speech, face, breath, heart and pupil signals to study how conversations unfold.
+  short_hi: "बातचीत कैसे आगे बढ़ती है, यह समझने के लिए वाणी, चेहरे, साँस, हृदय और पुतली के संकेतों का अध्ययन।"
+  image: slider7001400/web_audio_speech.png
+  body: >-
+    Spoken communication enables us to share thoughts, learn and create knowledge. Often we spend our day immersed in
+    *listening to* or *speaking in* a conversation. Some conversations are quick and some *go on and on*, some start
+    gradually and some end abruptly. Our goal is to explore spoken conversations by capturing and analyzing the speech,
+    facial, breathing, heart and pupil signals of the participating individuals. This is a long-term effort involving
+    building and testing several hypotheses, and gaining scientific insights into this amazing form of information
+    transfer. Strength permitting, we will also analyze this aspect in bird (and animal) communication.
+  keywords: [multi-channel data acquisition, signal processing, machine learning, experiment design, perception, cognition, foundation models]
+  refs:
+    - title: "Breaking the Pair: Evaluating dyadic interaction via speaker switching (SPCOM 2026)"
+    - title: "Accommodation or Drift? Nested controls for probing conversational adaptation in foundation-model embeddings (NeurIPS 2026 Workshop LP4FM)"
+    - title: Leveraging LSTM models for overlap detection in multi-party meetings (ICASSP 2018)
+
+- id: indian-languages
+  title: Speech and language technology for Indian languages
+  title_hi: "भारतीय भाषाओं के लिए वाणी एवं भाषा प्रौद्योगिकी"
+  short: Datasets and models for stuttered speech, vowel harmony and low-resourced languages of India.
+  short_hi: "हकलाहट, स्वर-सामंजस्य और कम संसाधन वाली भारतीय भाषाओं के लिए डेटासेट और मॉडल।"
+  image: pubpic/web_paper_highlights_project_boli.png
+  body: >-
+    India speaks in hundreds of languages, and most of them are low-resourced for speech technology. We build datasets
+    and models that respect this diversity: Boli, a multilingual dataset for understanding the stuttering experience;
+    generative models that learn the vowel harmony of Assamese from raw audio; phonology-informed evaluation of
+    multilingual text-to-speech; and, in a SERB-funded project, normative nasalance and acoustic characteristics of
+    North-Eastern languages for language technology and speech therapy.
+  keywords: [Indian languages, stuttering, phonology, generative models, text-to-speech, datasets]
+  refs:
+    - title: "Boli: A dataset for understanding stuttering experience and analyzing stuttered speech (ICASSP 2025)"
+      url: https://arxiv.org/pdf/2501.15877
+    - title: Deciphering Assamese vowel harmony with Featural InfoWaveGAN (Interspeech 2024)
+      url: https://arxiv.org/pdf/2407.06547
+    - title: Towards a phonology-informed evaluation of multilingual TTS (Interspeech 2026, to appear)
+
+- id: bci
+  title: Audio-based brain-computer interfacing
+  title_hi: "ऑडियो-आधारित ब्रेन-कंप्यूटर इंटरफ़ेस"
+  short: Decoding which talker a listener attends to, from EEG.
+  short_hi: "ईईजी से पता लगाना कि श्रोता किस वक्ता को ध्यान से सुन रहा है।"
+  image: slider7001400/web_audio_eeg.png
+  body: >-
+    Since 2013, several EEG decoding studies have demonstrated correlation between the attended audio signal and the
+    corresponding brain activity captured using EEG. In a recent study, we corroborate this evidence and add new
+    insights. We are looking forward to scale up this effort and design audio-based BCIs.
+  keywords: [EEG, signal processing, machine learning, audio processing]
+  refs:
+    - title: Decoding attended talker solely from listening-state EEG signals
+      url: https://www.cl.uzh.ch/dam/jcr:e4b2bbe9-2648-4224-8a18-439ba0ad0ebd/bookVoiceID_final.pdf#page=23
+
+- id: audio-cognition
+  title: Audio cognition through behavioral experiments
+  title_hi: "व्यवहारिक प्रयोगों से श्रवण संज्ञान की समझ"
+  short: What button presses and reaction times reveal about how we listen.
+  short_hi: "बटन दबाने और प्रतिक्रिया-समय से हम कैसे सुनते हैं, इसका पता चलता है।"
+  image: pubpic/web_paper_highlights_itd_ild_RT.png
+  body: >-
+    Unlike neuroimaging experiments like EEG and fMRI, behavioral experiments capture simple responses such as a button
+    press or reaction time during a live experiment. When carefully captured, these simple responses can be analyzed to
+    understand human cognition. We have explored talker perception, the impact of language on talker perception, and,
+    currently, spatial cognition. We look forward to translating these findings into AI algorithms.
+  keywords: [psychology, cognitive science, audition, vision, inferential statistics, AI]
+  refs:
+    - title: "Talker change detection: A comparison of human and machine performance"
+      url: https://asa.scitation.org/doi/full/10.1121/1.5084044
+    - title: Acoustic and linguistic features influence talker change detection
+      url: https://asa.scitation.org/doi/full/10.1121/10.0002462
+
+- id: healthcare
+  title: Data analysis for human healthcare
+  title_hi: "मानव स्वास्थ्य के लिए डेटा विश्लेषण"
+  short: Listening to breath, cough and speech for remote, low-cost disease screening.
+  short_hi: "दूरस्थ, कम लागत वाली रोग-जाँच के लिए साँस, खाँसी और वाणी को सुनना।"
+  image: pubpic/web_paper_highlights_coswara_creation.png
+  body: >-
+    Do you recall a doctor listening to body sounds using a stethoscope? The art of listening to body sounds is called
+    *auscultation* and dates back to the 1820s. We aim to extract more information from body sounds using signal
+    processing and machine learning, towards remote, cost-effective, and scalable disease screening. We have analyzed
+    respiratory sounds such as breathing, cough and speech collected during the pandemic from individuals with and
+    without COVID-19, and released them openly as the Coswara dataset. Our ANRF-funded project *Melodies of the Lungs*
+    takes this towards AI-based point-of-care respiratory healthcare.
+  keywords: [respiratory acoustics, time-series analysis, audio signal processing, machine learning, inferential statistics, web development, biosciences]
+  refs:
+    - title: "Coswara: A respiratory sounds and symptoms dataset for remote screening of SARS-CoV-2 infection (Scientific Data, 2023)"
+      url: https://www.nature.com/articles/s41597-023-02266-0
+    - title: Coswara -- A Database of Breathing, Cough, and Voice Sounds for COVID-19 Diagnosis
+      url: http://eprints.iisc.ac.in/67641/1/coswara-2020-4811-4815.pdf
+    - title: Towards sound based testing of COVID-19 -- Summary of the first DiCOVA Challenge
+      url: https://www.sciencedirect.com/science/article/pii/S0885230821001157
+
+- id: climate
+  title: Data analysis for climate sciences
+  title_hi: "जलवायु विज्ञान के लिए डेटा विश्लेषण"
+  short: Using the soundscape of a forest to track its response to weather and climate.
+  short_hi: "मौसम और जलवायु के प्रति जंगल की प्रतिक्रिया को उसकी ध्वनियों से समझना।"
+  image: slider7001400/web_audio_signals.png
+  body: >-
+    The cacophony of sounds in a forest draws contributions from many species, natural phenomena such as wind, rain,
+    and thunder, and man-made vehicles and machines. Building on this observation, we intend to design ways to monitor
+    a forest's response to changing weather and climate conditions, allowing prediction of adversities. This is a
+    long-term effort involving several hypotheses and sub-problems. We are also analyzing satellite imagery for climate
+    and weather monitoring.
+  keywords: [sensor design and deployment, satellite imagery, data analysis, signal processing, machine learning, ecology]
+  refs: []

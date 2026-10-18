@@ -1,0 +1,18 @@
+# Open datasets released by the lab. Shown on /showcase/.
+
+- title: Coswara
+  url: https://www.nature.com/articles/s41597-023-02266-0
+  link_text: Paper (Scientific Data, 2023)
+  link_text_hi: "शोध-पत्र (Scientific Data, 2023)"
+  data_url: https://github.com/iiscleap/Coswara-Data
+  blurb_hi: "2,500 से अधिक लोगों की साँस, खाँसी और वाणी की रिकॉर्डिंग, कोविड-19 लक्षणों के साथ (2020–2022)।"
+  blurb: Breathing, cough and speech recordings with COVID-19 symptoms from 2,500+ individuals, recorded 2020–2022.
+  tags: [respiratory audio, healthcare]
+
+- title: Boli
+  url: https://arxiv.org/pdf/2501.15877
+  link_text: Paper (ICASSP 2025)
+  link_text_hi: "शोध-पत्र (ICASSP 2025)"
+  blurb_hi: "भारत के लगभग 100 लोगों से एकत्रित बहुभाषी हकलाहट-वाणी डेटासेट, हकलाने के अनुभव को समझने के लिए।"
+  blurb: A multilingual stuttered-speech dataset from close to 100 people in India, for understanding the stuttering experience.
+  tags: [stuttering, Indian languages]

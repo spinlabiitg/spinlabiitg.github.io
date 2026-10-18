@@ -1,0 +1,11 @@
+{% assign s = include.s %}
+<a class="showcase-card" href="{{ s.url }}" target="_blank" rel="noopener">
+  <div class="showcase-img"><img src="{{ site.url }}{{ site.baseurl }}/images/{{ s.image }}" alt="Preview of {{ s.title }}" loading="lazy" /></div>
+  <div class="showcase-body">
+    <span class="showcase-kind">{% include bi.html en=s.kind hi=s.kind_hi %}</span>
+    <h4>{{ s.title }} <span class="ext">&#8599;</span></h4>
+    <p>{% include bi.html en=s.blurb hi=s.blurb_hi %}</p>
+    {% if include.compact != true %}<div class="tags">{% for k in s.tags %}<span>{{ k }}</span>{% endfor %}</div>{% endif %}
+    {% if s.credit %}<p class="credit">{{ s.credit }}</p>{% endif %}
+  </div>
+</a>

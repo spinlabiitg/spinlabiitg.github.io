@@ -9,6 +9,7 @@
 #  education4:
 
 - name: Bharati Bansal (Co-Sup)
+  topic: Machine learning for respiratory healthcare
   photo: bharati_mtp_2026.jpg
   info:
   # email: m.ortego.larrazabal@umail.leidenuniv.nl
@@ -16,6 +17,7 @@
   # education1: M.Sc
 
 - name: R Virinchi (Co-Sup)
+  topic: Satellite imagery for climate and weather monitoring
   photo: rock.jpg
   info:
   # email: m.ortego.larrazabal@umail.leidenuniv.nl

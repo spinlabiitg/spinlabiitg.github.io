@@ -1,0 +1,36 @@
+# Interactive sites and visual work from SPIN Lab. Shown on /showcase/ and on the Home page.
+# To add one: copy a block, drop a ~800x500 screenshot in images/showcase/, and fill in the fields.
+#   kind:    a short label shown on the card (e.g. Interactive map, Course site, Data story)
+#   credit:  optional small print under the image (image sources/licences)
+#   home:    true to also feature it on the Home page
+
+- title: Bahubhashi India
+  url: https://spinlabiitg.github.io/bbi/
+  image: showcase/bbi.jpg
+  kind: Data story
+  kind_hi: "डेटा कहानी"
+  blurb: India's spoken-language landscape, state by state. Census 2011 mother tongues drawn as a night sky of languages, scripts and real voices.
+  blurb_hi: "राज्य-दर-राज्य भारत का भाषाई परिदृश्य। जनगणना 2011 की मातृभाषाएँ, भाषाओं, लिपियों और असली आवाज़ों के रात्रि-आकाश के रूप में।"
+  tags: [languages, census, speech, visualization]
+  home: true
+
+- title: Speech and Audio Processing
+  url: https://spinlabiitg.github.io/sap/
+  image: showcase/sap.jpg
+  kind: Course site
+  kind_hi: "पाठ्यक्रम साइट"
+  blurb: An open course, from the physics of a sound to the models that understand it. Spectrograms, source–filter models, linear prediction and codecs, with live demos on Indian-English speech.
+  blurb_hi: "एक खुला पाठ्यक्रम: ध्वनि की भौतिकी से लेकर उसे समझने वाले मॉडलों तक। स्पेक्ट्रोग्राम, स्रोत-फ़िल्टर मॉडल, लीनियर प्रेडिक्शन और कोडेक, भारतीय-अंग्रेज़ी वाणी पर लाइव डेमो के साथ।"
+  tags: [teaching, speech, audio, interactive demos]
+  home: true
+
+- title: IITG Campus uMap
+  url: https://spinlabiitg.github.io/iitg_umap/
+  image: showcase/iitg_umap.jpg
+  kind: Interactive map
+  kind_hi: "इंटरैक्टिव नक्शा"
+  blurb: An unofficial map of IIT Guwahati's hills, lakes and the Brahmaputra, with walking routes, seasons, terrain, satellite greenness and a poster mode.
+  blurb_hi: "आईआईटी गुवाहाटी की पहाड़ियों, झीलों और ब्रह्मपुत्र का एक अनौपचारिक नक्शा, जिसमें पैदल रास्ते, मौसम, भू-आकृति, उपग्रह से दिखती हरियाली और पोस्टर मोड हैं।"
+  tags: [maps, campus, satellite data, open data]
+  credit: Image contains modified Copernicus Sentinel-2 data (monsoon 2022).
+  home: true

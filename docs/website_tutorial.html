@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How the SPIN Lab website works</title>
+<meta name="description" content="A picture-book guide to how the SPIN Lab website is built: Jekyll, layouts, data files, styles, dark mode, Hindi, the signal animation, Say hey, and the favicon.">
+<style>
+  :root {
+    --bg: #f7f5f2; --paper: #ffffff; --ink: #1f2933; --muted: #5f6b7a; --line: #e3e0da;
+    --a: #1e3a8a; --b: #0d6e6e; --accent: #158cba; --warm: #e07a3f; --green: #2e9e6e; --purple: #b0509f;
+    --kid: #fff6d6; --kid-line: #f0d67a; --try: #e8f6f1; --try-line: #9fd8c3; --warn: #fdecec; --warn-line: #f2b2b2;
+    --code: #f1f3f6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14161b; --paper: #1d2027; --ink: #e2e6ec; --muted: #a0a8b4; --line: #333844;
+      --a: #8fb0ff; --b: #5fd4c4; --accent: #5cc0ea; --warm: #f29a5f; --green: #4cc28d; --purple: #d27bd0;
+      --kid: #3a3320; --kid-line: #6b5b2a; --try: #1b332c; --try-line: #2f6b57; --warn: #3a2224; --warn-line: #7a3b40;
+      --code: #262a33;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14161b; --paper: #1d2027; --ink: #e2e6ec; --muted: #a0a8b4; --line: #333844;
+    --a: #8fb0ff; --b: #5fd4c4; --accent: #5cc0ea; --warm: #f29a5f; --green: #4cc28d; --purple: #d27bd0;
+    --kid: #3a3320; --kid-line: #6b5b2a; --try: #1b332c; --try-line: #2f6b57; --warn: #3a2224; --warn-line: #7a3b40;
+    --code: #262a33;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
+  a { color: var(--accent); }
+  code, pre { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-size: 14px; }
+  code { background: var(--code); padding: 1px 5px; border-radius: 4px; }
+  pre { background: var(--code); padding: 12px 14px; border-radius: 8px; overflow-x: auto; line-height: 1.5; margin: 10px 0 16px; }
+  pre code { background: none; padding: 0; }
+  .c { color: var(--muted); }           /* comment */
+  .k { color: var(--purple); }          /* liquid / keyword */
+  .s { color: var(--green); }           /* string */
+
+  .layout { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 32px; max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+  nav.toc { position: sticky; top: 0; align-self: start; max-height: 100vh; overflow-y: auto; padding: 24px 0; font-size: 14.5px; }
+  nav.toc b { display: block; margin-bottom: 8px; }
+  nav.toc ol { padding-left: 22px; margin: 0; }
+  nav.toc li { margin: 3px 0; }
+  nav.toc a { color: var(--ink); text-decoration: none; }
+  nav.toc a:hover { color: var(--accent); }
+  main { padding: 24px 0 80px; min-width: 0; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } nav.toc { position: static; max-height: none; padding-bottom: 0; } }
+
+  header.top { background: linear-gradient(120deg, var(--a), var(--b)); color: #fff; border-radius: 14px; padding: 28px 28px 24px; margin-bottom: 26px; position: relative; }
+  header.top h1 { margin: 0 0 6px; font-size: 32px; line-height: 1.2; }
+  header.top p { margin: 0; opacity: .92; max-width: 640px; }
+  .theme-btn { position: absolute; top: 16px; right: 16px; background: rgba(255,255,255,.18); color: #fff; border: 1px solid rgba(255,255,255,.4);
+    border-radius: 20px; padding: 4px 12px; font-size: 14px; cursor: pointer; }
+
+  section.ch { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 22px 26px; margin-bottom: 22px; }
+  section.ch > h2 { margin: 0 0 12px; font-size: 25px; line-height: 1.25; }
+  section.ch > h2 .n { display: inline-block; min-width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, var(--a), var(--b));
+    color: #fff; font-size: 17px; text-align: center; line-height: 34px; margin-right: 8px; vertical-align: 3px; }
+  h3 { font-size: 19px; margin: 22px 0 6px; }
+  .kid, .try, .warn { border-radius: 10px; padding: 12px 16px; margin: 12px 0 16px; }
+  .kid { background: var(--kid); border: 1px solid var(--kid-line); }
+  .kid::before { content: "🧸  Like I'm five"; display: block; font-weight: 700; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 4px; }
+  .try { background: var(--try); border: 1px solid var(--try-line); }
+  .try::before { content: "🛠  Try it yourself"; display: block; font-weight: 700; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 4px; }
+  .warn { background: var(--warn); border: 1px solid var(--warn-line); }
+  .warn::before { content: "⚠  Watch out"; display: block; font-weight: 700; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 4px; }
+  .kid p:last-child, .try p:last-child, .warn p:last-child { margin-bottom: 0; }
+  figure { margin: 16px 0; }
+  figure svg { width: 100%; height: auto; display: block; }
+  figcaption { font-size: 14px; color: var(--muted); text-align: center; margin-top: 6px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 10px 0 16px; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  .tablewrap { overflow-x: auto; }
+  .pill { display: inline-block; font-size: 12px; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
+  .yes { background: #d9f2e6; color: #17603f; } .some { background: #fff0cc; color: #7a5600; } .no { background: #f6dede; color: #862b2b; }
+  :root[data-theme="dark"] .yes { background: #1f3d31; color: #8fe0b8; } :root[data-theme="dark"] .some { background: #3d3418; color: #f0d07a; } :root[data-theme="dark"] .no { background: #3d2224; color: #f2a6a6; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .yes { background: #1f3d31; color: #8fe0b8; } :root:not([data-theme="light"]) .some { background: #3d3418; color: #f0d07a; } :root:not([data-theme="light"]) .no { background: #3d2224; color: #f2a6a6; } }
+
+  /* live demos */
+  .demo { border: 2px dashed var(--line); border-radius: 10px; padding: 14px 16px; margin: 12px 0 16px; }
+  .demo button { font: inherit; font-size: 14px; border: 1px solid var(--line); background: var(--code); color: var(--ink); border-radius: 18px; padding: 4px 14px; cursor: pointer; margin-right: 6px; }
+  .demo [data-l="hi"] { display: none; }
+  .demo.hi [data-l="hi"] { display: inline; } .demo.hi [data-l="en"] { display: none; }
+  .demo .out { margin-top: 10px; font-size: 18px; }
+
+  /* svg helpers */
+  svg text { font-family: system-ui, "Segoe UI", sans-serif; fill: var(--ink); }
+  svg .muted { fill: var(--muted); }
+  svg .box { fill: var(--paper); stroke: var(--line); stroke-width: 2; }
+  svg .boxa { fill: none; stroke: var(--a); stroke-width: 2.5; }
+  svg .boxb { fill: none; stroke: var(--b); stroke-width: 2.5; }
+  svg .boxw { fill: none; stroke: var(--warm); stroke-width: 2.5; }
+  svg .arrow { stroke: var(--muted); stroke-width: 2.5; fill: none; marker-end: url(#ah); }
+  svg .fa { fill: var(--a); } svg .fb { fill: var(--b); } svg .fw { fill: var(--warm); } svg .fg { fill: var(--green); } svg .fp { fill: var(--purple); }
+  svg .soft { fill: var(--code); stroke: var(--line); stroke-width: 1.5; }
+  footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 30px; }
+</style>
+</head>
+<body>
+<!-- shared arrowhead for all drawings -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a94a3"/></marker>
+</defs></svg>
+
+<div class="layout">
+<nav class="toc" aria-label="Chapters">
+  <b>Chapters</b>
+  <ol>
+    <li><a href="#what">What is a website?</a></li>
+    <li><a href="#kitchen">The kitchen: Jekyll</a></li>
+    <li><a href="#house">A tour of the folders</a></li>
+    <li><a href="#dolls">How one page is put together</a></li>
+    <li><a href="#liquid">Liquid: fill in the blanks</a></li>
+    <li><a href="#data">Data files: index cards</a></li>
+    <li><a href="#clothes">Styles: the clothes</a></li>
+    <li><a href="#night">Night mode</a></li>
+    <li><a href="#lang">Two languages</a></li>
+    <li><a href="#hero">The moving picture</a></li>
+    <li><a href="#hey">"Say hey": listening</a></li>
+    <li><a href="#icon">The tiny icon</a></li>
+    <li><a href="#run">Running it on your computer</a></li>
+    <li><a href="#oops">When things break</a></li>
+    <li><a href="#recipes">Recipes (how do I…?)</a></li>
+    <li><a href="#leftovers">Leftovers to tidy</a></li>
+    <li><a href="#words">Word list</a></li>
+  </ol>
+</nav>
+
+<main>
+<header class="top">
+  <button class="theme-btn" id="themeBtn" type="button">☾ / ☀</button>
+  <h1>How the SPIN Lab website works</h1>
+  <p>A picture book for future you. Every chapter starts with a “like I'm five” idea, then shows how it really works in this site, with the exact files to open. This page lives in <code style="background:rgba(255,255,255,.2);color:#fff">docs/</code>, which Jekyll skips, so it is never published.</p>
+</header>
+
+<!-- 1 -->
+<section class="ch" id="what">
+  <h2><span class="n">1</span>What is a website?</h2>
+  <div class="kid"><p>A website is a pile of letters (files) sitting in a post office (a server). When you type the address, your browser asks the post office for the letters, then reads them out loud as a picture you can see and click.</p></div>
+  <figure>
+    <svg viewBox="0 0 760 170" role="img" aria-label="Files on a server travel to a browser, which draws a page">
+      <rect class="box" x="10" y="30" width="180" height="110" rx="12"/>
+      <text x="100" y="58" text-anchor="middle" font-weight="700">Server</text>
+      <rect class="soft" x="35" y="72" width="40" height="52" rx="4"/><text x="55" y="103" text-anchor="middle" font-size="12">.html</text>
+      <rect class="soft" x="80" y="72" width="40" height="52" rx="4"/><text x="100" y="103" text-anchor="middle" font-size="12">.css</text>
+      <rect class="soft" x="125" y="72" width="40" height="52" rx="4"/><text x="145" y="103" text-anchor="middle" font-size="12">.js</text>
+      <path class="arrow" d="M200 85 H 300"/><text x="250" y="72" text-anchor="middle" font-size="13" class="muted">“send me the page”</text>
+      <rect class="box" x="310" y="20" width="200" height="130" rx="12"/>
+      <text x="410" y="48" text-anchor="middle" font-weight="700">Your browser</text>
+      <text x="410" y="74" text-anchor="middle" font-size="13">HTML = what is there</text>
+      <text x="410" y="96" text-anchor="middle" font-size="13">CSS = how it looks</text>
+      <text x="410" y="118" text-anchor="middle" font-size="13">JS = what it does</text>
+      <path class="arrow" d="M520 85 H 590"/>
+      <rect class="boxa" x="600" y="25" width="150" height="120" rx="10"/>
+      <rect class="fa" x="612" y="38" width="126" height="14" rx="3" opacity=".8"/>
+      <rect class="soft" x="612" y="60" width="60" height="70" rx="4"/><rect class="soft" x="678" y="60" width="60" height="32" rx="4"/><rect class="soft" x="678" y="98" width="60" height="32" rx="4"/>
+      <text x="675" y="165" text-anchor="middle" font-size="13" class="muted">the page you see</text>
+    </svg>
+    <figcaption>Three kinds of letters: HTML (the words and boxes), CSS (colours and layout), JavaScript (movement and buttons).</figcaption>
+  </figure>
+  <p>Our site is a <b>static</b> website: the server just hands over ready-made files. Nothing is computed on the server when someone visits. That's why it can live for free on <b>GitHub Pages</b> at <code>spinlabiitg.github.io</code>.</p>
+</section>
+
+<!-- 2 -->
+<section class="ch" id="kitchen">
+  <h2><span class="n">2</span>The kitchen: Jekyll</h2>
+  <div class="kid"><p>Writing every page by hand is like making every sandwich from scratch. Jekyll is a kitchen robot. You give it ingredients (your text, a list of people, photos) and lunchbox shapes (layouts), and it packs a finished lunchbox (an HTML page) for every page.</p></div>
+  <figure>
+    <svg viewBox="0 0 760 210" role="img" aria-label="Ingredients go into Jekyll, which produces the _site folder, which GitHub Pages serves">
+      <rect class="box" x="10" y="15" width="200" height="180" rx="12"/>
+      <text x="110" y="40" text-anchor="middle" font-weight="700">Ingredients</text>
+      <text x="30" y="68" font-size="14">_pages/*.md  (words)</text>
+      <text x="30" y="92" font-size="14">_data/*.yml  (lists)</text>
+      <text x="30" y="116" font-size="14">_layouts, _includes</text>
+      <text x="30" y="140" font-size="14">css/main.scss</text>
+      <text x="30" y="164" font-size="14">images, js, audio</text>
+      <path class="arrow" d="M220 105 H 290"/>
+      <circle cx="350" cy="105" r="56" class="box"/>
+      <g class="fa" opacity=".85"><rect x="330" y="70" width="40" height="30" rx="6"/><rect x="348" y="60" width="4" height="10"/><circle cx="350" cy="58" r="4"/></g><circle cx="342" cy="85" r="4" fill="#fff"/><circle cx="358" cy="85" r="4" fill="#fff"/>
+      <text x="350" y="128" text-anchor="middle" font-weight="700">Jekyll</text>
+      <path class="arrow" d="M412 105 H 480"/>
+      <rect class="boxb" x="490" y="40" width="120" height="130" rx="12"/>
+      <text x="550" y="66" text-anchor="middle" font-weight="700">_site/</text>
+      <text x="550" y="92" text-anchor="middle" font-size="13">index.html</text>
+      <text x="550" y="112" text-anchor="middle" font-size="13">team/index.html</text>
+      <text x="550" y="132" text-anchor="middle" font-size="13">css/main.css</text>
+      <text x="550" y="152" text-anchor="middle" font-size="13">…</text>
+      <path class="arrow" d="M620 105 H 670"/>
+      <g class="fb" opacity=".85"><rect x="688" y="72" width="34" height="24" rx="3"/><path d="M722 80 h12 l8 8 v8 h-20 z"/></g><circle cx="698" cy="100" r="5" class="fa"/><circle cx="730" cy="100" r="5" class="fa"/>
+      <text x="715" y="128" text-anchor="middle" font-size="13">GitHub</text>
+      <text x="715" y="145" text-anchor="middle" font-size="13">Pages</text>
+    </svg>
+    <figcaption>You edit the ingredients. Jekyll writes <code>_site/</code>. Never edit <code>_site/</code> by hand: it is rebuilt every time.</figcaption>
+  </figure>
+  <p>Jekyll is a program written in <b>Ruby</b>. The <code>Gemfile</code> lists the Ruby packages (“gems”) it needs, and <code>Gemfile.lock</code> pins their exact versions so everyone gets the same kitchen. <b>Bundler</b> is the tool that installs those gems; that's why commands start with <code>bundle exec</code>.</p>
+  <p>On GitHub, Pages runs Jekyll for you each time you push. On your computer, <code>bundle exec jekyll serve</code> does the same and also starts a little local server so you can preview at <code>http://localhost:4000</code>.</p>
+  <div class="warn"><p>The two kitchens are not identical. This repo has no GitHub Actions workflow, so GitHub Pages builds with its own standard Jekyll (3.x, in “safe mode”), while your computer uses Jekyll 4.2.2 from <code>Gemfile.lock</code>. Safe mode ignores anything in <code>_plugins/</code> (there's an unused <code>markdown.rb</code> there). Stick to plain Liquid, layouts, includes and data files, as this site does, and both kitchens cook the same meal.</p></div>
+</section>
+
+<!-- 3 -->
+<section class="ch" id="house">
+  <h2><span class="n">3</span>A tour of the folders</h2>
+  <div class="kid"><p>The website is a house. Each folder is a room with one job. Folders whose names start with an underscore (<code>_</code>) are “staff only” rooms: Jekyll uses them to cook, but visitors never see them directly.</p></div>
+  <div class="tablewrap"><table>
+    <tr><th>Room</th><th>What lives here</th><th>Do I edit it?</th></tr>
+    <tr><td><code>_config.yml</code></td><td>The house rules: site settings, which folders to skip (<code>exclude:</code>). Restart the server after changing it.</td><td><span class="pill some">rarely</span></td></tr>
+    <tr><td><code>_pages/</code></td><td>One file per page: <code>home.md</code>, <code>research.md</code>, <code>team.md</code>, <code>showcase.md</code>, <code>publications.md</code>… The <code>permalink:</code> at the top sets its web address.</td><td><span class="pill yes">yes</span></td></tr>
+    <tr><td><code>_data/</code></td><td>Lists written as YAML: people, news, research themes, showcase sites, datasets, funding, modalities, and all Hindi/English labels (<code>i18n.yml</code>).</td><td><span class="pill yes">most often</span></td></tr>
+    <tr><td><code>_layouts/</code></td><td>Lunchbox shapes. <code>default.html</code> is the outer box for every page; <code>homelay.html</code> (home), <code>textlay.html</code> (text pages), <code>gridlay.html</code> (team/publications) sit inside it.</td><td><span class="pill some">sometimes</span></td></tr>
+    <tr><td><code>_includes/</code></td><td>Stickers reused on many pages: <code>head.html</code>, <code>header.html</code> (menu), <code>footer.html</code>, <code>news.html</code>, <code>member_card.html</code>, <code>showcase_card.html</code>, <code>t.html</code> and <code>bi.html</code> (two languages).</td><td><span class="pill some">sometimes</span></td></tr>
+    <tr><td><code>css/main.scss</code></td><td>Our styles. Starts by importing Bootstrap from <code>_sass/</code>, then adds our own rules at the bottom.</td><td><span class="pill yes">yes</span></td></tr>
+    <tr><td><code>_sass/</code></td><td>Bootstrap 3, a ready-made style kit (2016). Treat as a library.</td><td><span class="pill no">no</span></td></tr>
+    <tr><td><code>js/</code></td><td>JavaScript: <code>bootstrap.min.js</code> (menu dropdowns), <code>spin_audio.js</code> (the moving picture and Say hey), <code>spin_signal_data.js</code> (numbers for the picture, generated).</td><td><span class="pill some">spin_audio.js only</span></td></tr>
+    <tr><td><code>images/</code>, <code>audio/</code></td><td>Photos, figures, screenshots, the favicon PNGs; the web copy of the welcome recording.</td><td><span class="pill yes">add files</span></td></tr>
+    <tr><td><code>scripts/</code></td><td>Python helpers that <i>make</i> files: <code>make_signal_data.py</code>, <code>make_favicon.py</code>. Excluded from the site.</td><td><span class="pill some">run them</span></td></tr>
+    <tr><td><code>docs/</code></td><td>Private notes (your CV, this tutorial). Excluded from the site.</td><td><span class="pill yes">yes</span></td></tr>
+    <tr><td><code>_site/</code></td><td>The cooked result. Rebuilt every time.</td><td><span class="pill no">never</span></td></tr>
+    <tr><td><code>vendor/</code>, <code>.bundle/</code></td><td>Installed gems (in the original repo). Ignored by git.</td><td><span class="pill no">never</span></td></tr>
+  </table></div>
+</section>
+
+<!-- 4 -->
+<section class="ch" id="dolls">
+  <h2><span class="n">4</span>How one page is put together</h2>
+  <div class="kid"><p>Pages are like Russian nesting dolls. The biggest doll (the outer layout) holds a middle doll (the page layout), which holds the smallest doll (your page's words). Some parts, like the menu, are stickers stuck onto the big doll so every page gets the same one.</p></div>
+  <figure>
+    <svg viewBox="0 0 760 330" role="img" aria-label="default layout contains header, homelay, footer; homelay contains hero, content from home.md, and news sidebar">
+      <rect class="boxa" x="10" y="10" width="740" height="310" rx="14"/>
+      <text x="26" y="36" font-weight="700" class="fa">_layouts/default.html</text><text x="230" y="36" font-size="13" class="muted">(every page)</text>
+      <rect class="soft" x="30" y="48" width="700" height="34" rx="6"/><text x="44" y="70" font-size="14">_includes/head.html + header.html → title, styles, menu, ☾ and हिंदी buttons</text>
+      <rect class="boxb" x="30" y="92" width="700" height="180" rx="12"/>
+      <text x="46" y="116" font-weight="700" class="fb">_layouts/homelay.html</text><text x="250" y="116" font-size="13" class="muted">(only the home page)</text>
+      <rect class="soft" x="48" y="126" width="664" height="34" rx="6"/><text x="62" y="148" font-size="14">hero: title, tagline, affiliation, moving picture (canvas)</text>
+      <rect class="boxw" x="48" y="168" width="440" height="92" rx="10"/>
+      <text x="62" y="192" font-weight="700" class="fw">{{ content }}</text>
+      <text x="62" y="214" font-size="14">← the words from _pages/home.md</text>
+      <text x="62" y="236" font-size="14">What we do · Modalities · Themes · Say hey…</text>
+      <rect class="soft" x="500" y="168" width="212" height="92" rx="8"/><text x="514" y="192" font-size="14">team photo +</text><text x="514" y="214" font-size="14">_includes/news.html</text>
+      <rect class="soft" x="30" y="280" width="700" height="30" rx="6"/><text x="44" y="300" font-size="14">_includes/footer.html → contact, and the script that runs the ☾ / हिंदी buttons</text>
+    </svg>
+    <figcaption>The home page = default.html ⟶ homelay.html ⟶ home.md. Other pages swap the middle doll (e.g. <code>textlay.html</code>).</figcaption>
+  </figure>
+  <p>The top of every page file has a little label between <code>---</code> lines, called <b>front matter</b>. It tells Jekyll which doll to use:</p>
+<pre><code><span class="c"># _pages/showcase.md</span>
+---
+title: <span class="s">"SPIN Lab - Showcase"</span>   <span class="c"># shown in the browser tab</span>
+layout: textlay                 <span class="c"># which middle doll</span>
+permalink: /showcase/           <span class="c"># the web address</span>
+---</code></pre>
+  <div class="try"><p>Open <code>_layouts/textlay.html</code>. It's only four lines! It says “use <code>default</code>, and put the page's words in a full-width column”.</p></div>
+</section>
+
+<!-- 5 -->
+<section class="ch" id="liquid">
+  <h2><span class="n">5</span>Liquid: fill in the blanks</h2>
+  <div class="kid"><p>A layout is a colouring page with blank spaces. Liquid is the instruction “write the name here” or “do this once for every friend in the list”. One cookie cutter, many cookies.</p></div>
+  <figure>
+    <svg viewBox="0 0 760 200" role="img" aria-label="One template plus a list of three themes makes three tiles">
+      <rect class="box" x="10" y="20" width="220" height="160" rx="12"/>
+      <text x="120" y="44" text-anchor="middle" font-weight="700">_data/research.yml</text>
+      <rect class="soft" x="28" y="58" width="184" height="30" rx="5"/><text x="40" y="78" font-size="13">- title: Healthcare …</text>
+      <rect class="soft" x="28" y="94" width="184" height="30" rx="5"/><text x="40" y="114" font-size="13">- title: Climate …</text>
+      <rect class="soft" x="28" y="130" width="184" height="30" rx="5"/><text x="40" y="150" font-size="13">- title: Indian languages …</text>
+      <text x="268" y="100" font-size="26">+</text>
+      <rect class="boxw" x="300" y="45" width="170" height="110" rx="12" stroke-dasharray="6 5"/>
+      <text x="385" y="70" text-anchor="middle" font-weight="700" class="fw">cookie cutter</text>
+      <text x="385" y="96" text-anchor="middle" font-size="13">{% for t in … %}</text>
+      <text x="385" y="116" text-anchor="middle" font-size="13">&lt;b&gt;{{ t.title }}&lt;/b&gt;</text>
+      <text x="385" y="136" text-anchor="middle" font-size="13">{% endfor %}</text>
+      <path class="arrow" d="M480 100 H 530"/>
+      <rect class="boxa" x="540" y="25" width="200" height="44" rx="8"/><text x="640" y="52" text-anchor="middle" font-size="14">Healthcare tile</text>
+      <rect class="boxa" x="540" y="78" width="200" height="44" rx="8"/><text x="640" y="105" text-anchor="middle" font-size="14">Climate tile</text>
+      <rect class="boxa" x="540" y="131" width="200" height="44" rx="8"/><text x="640" y="158" text-anchor="middle" font-size="14">Indian languages tile</text>
+    </svg>
+    <figcaption>Add a fourth item to the list and a fourth tile appears. No HTML to copy.</figcaption>
+  </figure>
+  <p>Two kinds of curly brackets, and that's most of Liquid:</p>
+  <div class="tablewrap"><table>
+    <tr><th>Write</th><th>Means</th><th>Example in this site</th></tr>
+    <tr><td><code>{{ … }}</code></td><td><b>Print</b> a value here</td><td><code>{{ t.title }}</code> prints a theme's title</td></tr>
+    <tr><td><code>{% … %}</code></td><td><b>Do</b> something (loop, if, include)</td><td><code>{% for t in site.data.research %}</code></td></tr>
+    <tr><td><code>| filter</code></td><td>Change a value on the way</td><td><code>{{ t.body | markdownify }}</code> turns *stars* into italics</td></tr>
+    <tr><td><code>{% include x.html %}</code></td><td>Paste a sticker from <code>_includes/</code></td><td><code>{% include member_card.html m=m %}</code></td></tr>
+  </table></div>
+<pre><code><span class="c">&lt;!-- _pages/home.md: one tile per research theme --&gt;</span>
+<span class="k">{% for t in site.data.research %}</span>
+  &lt;a class="theme-tile" href="/research/#<span class="k">{{ t.id }}</span>"&gt;
+    &lt;img src="/images/<span class="k">{{ t.image }}</span>"&gt;
+    &lt;b&gt;<span class="k">{% include bi.html en=t.title hi=t.title_hi %}</span>&lt;/b&gt;
+  &lt;/a&gt;
+<span class="k">{% endfor %}</span></code></pre>
+  <p><code>site.data.research</code> means “the file <code>_data/research.yml</code>”. Every file in <code>_data/</code> becomes <code>site.data.&lt;filename&gt;</code> automatically.</p>
+</section>
+
+<!-- 6 -->
+<section class="ch" id="data">
+  <h2><span class="n">6</span>Data files: index cards</h2>
+  <div class="kid"><p>A data file is a box of index cards. Each card starts with a dash and says things like “name: Ashita”, “photo: ashita.jpg”. The pages read the cards and draw them nicely. To add a person you just write a new card.</p></div>
+  <p>The cards are written in <b>YAML</b>. Three rules cover almost everything:</p>
+  <ol>
+    <li><b>A dash starts a new card</b>; lines under it are indented by two spaces.</li>
+    <li><b>Spaces matter</b>. Use spaces, never tabs.</li>
+    <li><b>If a value contains a colon followed by a space, wrap it in quotes.</b></li>
+  </ol>
+<pre><code><span class="c"># _data/bachs.yml (BTech students)</span>
+- name: Shourya Goyal
+  photo: shourya_goyal_btp_2026.jpeg
+  topic: <span class="s">"Audio QR codes: generation, analysis and deployment"</span>   <span class="c"># quotes because of ": "</span>
+
+- name: Srijan Kumar
+  photo: srijan_btp_2026.jpg
+  topic: Multimodal learning across music and dance</code></pre>
+  <div class="warn"><p>We actually hit rule 3 while building this: a Hindi line with “पाठ्यक्रम: ध्वनि…” broke the whole build with <code>mapping values are not allowed in this context</code>. Quotes fixed it.</p></div>
+  <h3>Which file feeds which part?</h3>
+  <div class="tablewrap"><table>
+    <tr><th>File</th><th>Shows up as</th></tr>
+    <tr><td><code>team_members.yml</code></td><td>Your big card at the top of Team (with <code>highlights</code>, <code>scholar</code>, <code>website</code>)</td></tr>
+    <tr><td><code>phd_scholars.yml</code>, <code>masts.yaml</code>, <code>bachs.yml</code></td><td>Student cards (photo or initials, <code>topic</code>, <code>info</code>, optional links)</td></tr>
+    <tr><td><code>alumni_visitors.yml</code>, <code>alumni_msc.yml</code>, <code>alumni_bsc.yml</code></td><td>The Former Members table (<code>thesis</code>, <code>info</code>, <code>work</code>)</td></tr>
+    <tr><td><code>news.yml</code></td><td>News box on Home (first 5) and the All News page. Newest first!</td></tr>
+    <tr><td><code>research.yml</code></td><td>Research page cards and Home tiles</td></tr>
+    <tr><td><code>showcase.yml</code>, <code>datasets.yml</code></td><td>Showcase page; items with <code>home: true</code> also appear on Home</td></tr>
+    <tr><td><code>modalities.yml</code></td><td>The four “Modalities we work with” cards</td></tr>
+    <tr><td><code>funding.yml</code></td><td>Funding list at the bottom of Research</td></tr>
+    <tr><td><code>publist.yml</code></td><td>Publications page (<code>highlight: 1</code> = shown as a highlight)</td></tr>
+    <tr><td><code>i18n.yml</code></td><td>Every interface label in English and Hindi</td></tr>
+  </table></div>
+</section>
+
+<!-- 7 -->
+<section class="ch" id="clothes">
+  <h2><span class="n">7</span>Styles: the clothes</h2>
+  <div class="kid"><p>HTML is the body; CSS is the clothes. The same body can wear a big coat on a computer and a small t-shirt on a phone. CSS rules say “if the screen is small, wear the t-shirt”.</p></div>
+  <figure>
+    <svg viewBox="0 0 760 210" role="img" aria-label="The same content as three columns on a laptop and one column on a phone">
+      <rect class="box" x="20" y="15" width="430" height="180" rx="12"/><text x="235" y="40" text-anchor="middle" font-weight="700">Laptop (wide)</text>
+      <rect class="fa" x="40" y="55" width="125" height="120" rx="8" opacity=".75"/><rect class="fb" x="173" y="55" width="125" height="120" rx="8" opacity=".75"/><rect class="fw" x="306" y="55" width="125" height="120" rx="8" opacity=".75"/>
+      <rect class="box" x="560" y="10" width="140" height="190" rx="16"/><text x="630" y="32" text-anchor="middle" font-weight="700" font-size="14">Phone</text>
+      <rect class="fa" x="575" y="42" width="110" height="44" rx="6" opacity=".75"/><rect class="fb" x="575" y="92" width="110" height="44" rx="6" opacity=".75"/><rect class="fw" x="575" y="142" width="110" height="44" rx="6" opacity=".75"/>
+      <path class="arrow" d="M462 105 H 548"/><text x="505" y="94" text-anchor="middle" font-size="12" class="muted">@media</text>
+    </svg>
+  </figure>
+  <p><code>css/main.scss</code> is written in <b>SCSS</b>, which is CSS plus handy extras (variables like <code>$brand-primary</code>, and “mixins”, which are reusable bundles of rules). Jekyll turns it into plain <code>css/main.css</code>. The file has three layers:</p>
+  <ol>
+    <li><code>@import "bootstrap";</code> brings in Bootstrap 3: the grid (<code>col-sm-8</code>), buttons, the navbar.</li>
+    <li>The original site's small tweaks.</li>
+    <li>Our redesign, in clearly titled blocks: <i>Refined layout</i>, <i>Showcase</i>, <i>Language switch</i>, <i>Dark mode</i>, <i>Signal hero</i>, <i>Say hey</i>, <i>Affiliation signature</i>…</li>
+  </ol>
+  <p>Most new layouts use <b>CSS grid</b>: <code>grid-template-columns: repeat(3, 1fr)</code> means “three equal columns”, and a <code>@media (max-width: 767px)</code> rule below it switches to one column on phones.</p>
+  <div class="try"><p>In your browser, right-click any card on the site → <b>Inspect</b>. You'll see its class (e.g. <code>theme-tile</code>). Search <code>main.scss</code> for that name to find its clothes.</p></div>
+</section>
+
+<!-- 8 -->
+<section class="ch" id="night">
+  <h2><span class="n">8</span>Night mode</h2>
+  <div class="kid"><p>The page has a light switch. When it's flipped, the page puts on its pyjamas: dark background, light text. If you never touch the switch, the page copies your computer's own day/night setting.</p></div>
+  <figure>
+    <svg viewBox="0 0 760 180" role="img" aria-label="Button sets data-theme on the html element; CSS rules for that attribute swap colours">
+      <rect class="box" x="10" y="45" width="150" height="80" rx="12"/><text x="85" y="80" text-anchor="middle" font-size="28">☾</text><text x="85" y="108" text-anchor="middle" font-size="13">button click</text>
+      <path class="arrow" d="M170 85 H 230"/>
+      <rect class="boxa" x="240" y="30" width="250" height="110" rx="12"/>
+      <text x="365" y="58" text-anchor="middle" font-size="14">&lt;html data-theme="dark"&gt;</text>
+      <text x="365" y="84" text-anchor="middle" font-size="13" class="muted">remembered in localStorage</text>
+      <text x="365" y="104" text-anchor="middle" font-size="13" class="muted">as spin-theme = dark</text>
+      <path class="arrow" d="M500 85 H 560"/>
+      <rect x="570" y="35" width="180" height="100" rx="12" fill="#15171c"/><text x="660" y="80" text-anchor="middle" font-size="15" style="fill:#e2e6ec">CSS: html[data-theme</text><text x="660" y="102" text-anchor="middle" font-size="15" style="fill:#e2e6ec">="dark"] … colours</text>
+    </svg>
+  </figure>
+  <p>How the pieces fit:</p>
+  <ul>
+    <li><b>The switch:</b> the ☾/☀ button in <code>_includes/header.html</code>. Its click code is at the bottom of <code>_includes/footer.html</code>.</li>
+    <li><b>No flash:</b> a tiny script at the top of <code>_includes/head.html</code> re-applies the saved choice <i>before</i> the page paints.</li>
+    <li><b>The pyjamas:</b> in <code>main.scss</code>, <code>@mixin dark-theme { … }</code> lists every dark colour once, and is used twice: for <code>html[data-theme="dark"]</code> (switch flipped) and inside <code>@media (prefers-color-scheme: dark)</code> (computer is in dark mode and the switch was never touched).</li>
+    <li><b>Colours as variables:</b> the moving picture reads <code>--sig-bg</code>, <code>--sig-accent</code>… with <code>getComputedStyle</code>, so it changes colour without its own dark-mode code.</li>
+  </ul>
+  <div class="try"><p>This tutorial uses the very same trick. Press the <b>☾ / ☀</b> button at the top of this page.</p></div>
+</section>
+
+<!-- 9 -->
+<section class="ch" id="lang">
+  <h2><span class="n">9</span>Two languages</h2>
+  <div class="kid"><p>Every sentence is written twice, on two sides of a card: English on one side, Hindi on the other. The हिंदी button doesn't translate anything. It just flips all the cards at once.</p></div>
+  <div class="demo" id="langDemo">
+    <button type="button" data-set="en">English</button><button type="button" data-set="hi">हिंदी</button>
+    <div class="out"><span data-l="en">We study how humans sense and perceive the world.</span><span data-l="hi" lang="hi">हम अध्ययन करते हैं कि मनुष्य दुनिया को कैसे महसूस करते और समझते हैं।</span></div>
+    <div class="muted" style="font-size:13px;margin-top:6px">↑ a real flip card. Both sentences are in the page; CSS hides one.</div>
+  </div>
+<pre><code>&lt;span data-l="en"&gt;We study how humans…&lt;/span&gt;
+&lt;span data-l="hi" lang="hi"&gt;हम अध्ययन करते हैं…&lt;/span&gt;
+
+<span class="c">/* main.scss: hide the side we are not showing */</span>
+html:not([data-lang="hi"]) [data-l="hi"],
+html[data-lang="hi"] [data-l="en"] { display: none !important; }</code></pre>
+  <h3>Three ways the two sides get written</h3>
+  <div class="tablewrap"><table>
+    <tr><th>For…</th><th>Write</th><th>Where the words live</th></tr>
+    <tr><td>Menu and labels</td><td><code>{% include t.html k="nav_team" %}</code></td><td><code>_data/i18n.yml</code>: <code>nav_team: {en: "Team", hi: "टीम"}</code></td></tr>
+    <tr><td>Things from data files</td><td><code>{% include bi.html en=t.title hi=t.title_hi %}</code></td><td>a <code>title_hi:</code> field next to <code>title:</code>. If missing, English is shown.</td></tr>
+    <tr><td>Long paragraphs</td><td>two blocks with <code>data-l="en"</code> and <code>data-l="hi"</code></td><td>directly in the page, e.g. <code>_pages/home.md</code></td></tr>
+  </table></div>
+  <p>Extras: <code>?lang=hi</code> at the end of any address opens it in Hindi (handy for sharing), and the choice is remembered as <code>spin-lang</code>. Hindi text uses the Noto Sans Devanagari font from Google Fonts.</p>
+</section>
+
+<!-- 10 -->
+<section class="ch" id="hero">
+  <h2><span class="n">10</span>The moving picture (S → P → IN)</h2>
+  <div class="kid"><p>Someone said “Welcome to SPIN Lab” into a microphone. A helper program measured that sound once and wrote the measurements in a notebook. The web page reads the notebook and draws the sound like a flip-book: first the wiggly line, then dots, then a colourful picture of pitches, then a map where each tiny slice of sound becomes a dot.</p></div>
+  <figure>
+    <svg viewBox="0 0 760 215" role="img" aria-label="wav file to python script to data file to javascript drawing on canvas">
+      <rect class="box" x="6" y="62" width="128" height="76" rx="12"/>
+      <g class="fa"><rect x="62" y="74" width="16" height="26" rx="8"/><rect x="69" y="100" width="2" height="10"/><rect x="62" y="110" width="16" height="2"/></g>
+      <text x="70" y="128" text-anchor="middle" font-size="12">recording (.wav)</text>
+      <path class="arrow" d="M138 100 H 160"/>
+      <rect class="boxa" x="166" y="22" width="250" height="156" rx="12"/>
+      <text x="291" y="46" text-anchor="middle" font-weight="700" font-size="13.5">scripts/make_signal_data.py</text>
+      <text x="180" y="72" font-size="12.5">• waveform (480 min/max bars)</text>
+      <text x="180" y="92" font-size="12.5">• turning points (extrema)</text>
+      <text x="180" y="112" font-size="12.5">• mel spectrogram (48 bands)</text>
+      <text x="180" y="132" font-size="12.5">• PCA map + word of each slice</text>
+      <text x="180" y="152" font-size="12.5">• trimmed audio for the web</text>
+      <path class="arrow" d="M420 100 H 442"/>
+      <rect class="soft" x="448" y="62" width="132" height="76" rx="10"/>
+      <text x="514" y="94" text-anchor="middle" font-size="12.5">js/spin_signal_data.js</text>
+      <text x="514" y="114" text-anchor="middle" font-size="12" class="muted">(numbers, 34 KB)</text>
+      <path class="arrow" d="M584 100 H 606"/>
+      <rect class="boxb" x="612" y="52" width="142" height="96" rx="12"/>
+      <text x="683" y="82" text-anchor="middle" font-size="12.5">js/spin_audio.js</text>
+      <text x="683" y="104" text-anchor="middle" font-size="12.5">paints on a</text>
+      <text x="683" y="124" text-anchor="middle" font-size="12.5">&lt;canvas&gt;</text>
+      <text x="291" y="202" text-anchor="middle" font-size="13" class="muted">runs once, on your computer (Python)</text>
+      <text x="683" y="202" text-anchor="middle" font-size="13" class="muted">runs in each visitor's browser</text>
+    </svg>
+  </figure>
+  <h3>The timeline</h3>
+  <p>The drawing follows a clock that loops every 13.6 seconds. At each moment, <code>draw(t)</code> asks “how far into each step are we?” and draws that much.</p>
+  <figure>
+    <svg viewBox="0 0 760 120" role="img" aria-label="Timeline: Sensing 0 to 3 seconds, Perception 3 to 7.8, Intelligence 7.8 to 13.6">
+      <rect x="20" y="40" width="157" height="34" rx="6" class="fa" opacity=".85"/><text x="98" y="62" text-anchor="middle" font-size="14" style="fill:#fff">S · waveform draws</text>
+      <rect x="177" y="40" width="251" height="34" rx="0" class="fb" opacity=".85"/><text x="302" y="62" text-anchor="middle" font-size="14" style="fill:#fff">P · dots, then spectrogram</text>
+      <rect x="428" y="40" width="312" height="34" rx="6" class="fw" opacity=".85"/><text x="584" y="62" text-anchor="middle" font-size="14" style="fill:#fff">IN · slices fly to the map, words appear</text>
+      <text x="20" y="96" font-size="12" class="muted">0 s</text><text x="177" y="96" font-size="12" class="muted" text-anchor="middle">3.0</text><text x="428" y="96" font-size="12" class="muted" text-anchor="middle">7.8</text><text x="740" y="96" font-size="12" class="muted" text-anchor="end">13.6 s, repeat</text>
+      <text x="380" y="26" text-anchor="middle" font-size="13" class="muted">times are the T = { … } numbers just above initHero() in js/spin_audio.js (in milliseconds)</text>
+    </svg>
+  </figure>
+  <h3>What the IN map really shows</h3>
+  <ul>
+    <li>Each dot is one 25 ms slice of sound (stepping 10 ms). Its place comes from <b>PCA</b> of the slice's 48-band log-mel spectrum: slices that sound alike land close together.</li>
+    <li>The left–right axis turned out to mean “hissy vs vowel-like”: that's why the /s/ of SPIN sits alone on the far left.</li>
+    <li>Colour = which word the slice belongs to. Word times were found once with a speech model (wav2vec2 phoneme <b>forced alignment</b>) and saved as <code>WORDS</code> in the script.</li>
+    <li>Same-word slices do <i>not</i> form neat groups; the lines just join each word's slices in time order.</li>
+  </ul>
+  <h3>Good manners built in</h3>
+  <ul>
+    <li><b>Pauses itself</b> when scrolled off screen or when the tab is hidden (saves battery).</li>
+    <li><b>Reduced motion:</b> if a visitor's computer asks for less animation, it shows still frames; the S/P/IN buttons still work.</li>
+    <li><b>▶ Hear it</b> restarts the clock and draws the waveform in step with the real audio.</li>
+  </ul>
+  <div class="try"><p>Open the home page, press F12 for the Console, and type <code>document.querySelector('.signal-hero').spinSeek(9000)</code>. It jumps to 9 seconds and freezes, which is how the screenshots were checked.</p></div>
+</section>
+
+<!-- 11 -->
+<section class="ch" id="hey">
+  <h2><span class="n">11</span>“Say hey”: listening in the browser</h2>
+  <div class="kid"><p>When you press 🎤, the page asks “may I listen?”. If you say yes, your voice flows through a pipe into a little measuring box that counts how loud each pitch is, many times a second. The page draws those counts. The pipe never goes to a speaker or to the internet, so nothing is saved or sent.</p></div>
+  <figure>
+    <svg viewBox="0 0 760 210" role="img" aria-label="Microphone through Web Audio analyser to canvas; play button through analyser to speakers">
+      <g class="fa"><rect x="38" y="40" width="16" height="26" rx="8"/><rect x="45" y="66" width="2" height="8"/><rect x="38" y="74" width="16" height="2"/></g><text x="8" y="94" font-size="12" class="muted">mic (getUserMedia)</text>
+      <path class="arrow" d="M80 58 H 170"/>
+      <rect class="boxa" x="178" y="34" width="170" height="50" rx="10"/><text x="263" y="64" text-anchor="middle" font-size="13">MediaStreamSource</text>
+      <path class="arrow" d="M356 59 H 410"/>
+      <rect class="boxb" x="418" y="70" width="150" height="60" rx="10"/><text x="493" y="96" text-anchor="middle" font-size="13" font-weight="700">AnalyserNode</text><text x="493" y="116" text-anchor="middle" font-size="12" class="muted">numbers per frame</text>
+      <path class="arrow" d="M576 100 H 640"/>
+      <rect class="soft" x="648" y="72" width="100" height="56" rx="8"/><text x="698" y="104" text-anchor="middle" font-size="13">&lt;canvas&gt;</text>
+      <path class="fw" d="M38 130 L58 143 L38 156 z"/><text x="46" y="176" text-anchor="middle" font-size="12" class="muted">our hello (.wav)</text>
+      <path class="arrow" d="M80 142 H 170"/>
+      <rect class="boxw" x="178" y="118" width="170" height="50" rx="10"/><text x="263" y="148" text-anchor="middle" font-size="13">BufferSource</text>
+      <path class="arrow" d="M356 143 H 410"/>
+      <path class="arrow" d="M493 132 V 170 H 600"/><g class="fw"><rect x="606" y="162" width="8" height="16"/><path d="M614 162 L626 152 V188 L614 178 z"/></g><text x="650" y="176" font-size="13">speakers</text><text x="540" y="198" font-size="12" class="muted">only for playback, never for the mic</text>
+    </svg>
+  </figure>
+  <p>This uses the browser's built-in <b>Web Audio API</b>. Code: <code>initHey()</code> in <code>js/spin_audio.js</code>. The top half of the little screen is the wave right now (<code>getByteTimeDomainData</code>); the bottom half is a spectrogram that scrolls left as new columns of loudness-per-pitch (<code>getByteFrequencyData</code>) arrive. The mic stops by itself after 15 seconds.</p>
+  <div class="warn"><p>Browsers only allow the microphone on secure pages: <code>https://</code> (GitHub Pages) or <code>localhost</code>. Opening the HTML file directly from disk won't work.</p></div>
+</section>
+
+<!-- 12 -->
+<section class="ch" id="icon">
+  <h2><span class="n">12</span>The tiny icon (favicon)</h2>
+  <div class="kid"><p>The favicon is the tiny picture on the browser tab. It is only 16 dots wide! If you draw thin lines on such a tiny grid, they turn into grey mush. So the tiny version has just three fat bars that sit exactly on the dots.</p></div>
+  <figure>
+    <svg viewBox="0 0 760 220" role="img" aria-label="A 16 by 16 pixel grid showing three white bars on a gradient square">
+      <defs><linearGradient id="fg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="1" stop-color="#0d6e6e"/></linearGradient></defs>
+      <g transform="translate(40,10)">
+        <rect width="176" height="176" rx="38" fill="url(#fg)"/>
+        <!-- 16x16 grid, 11px per pixel; bars 2px wide at x=3,7,11 -->
+        <rect x="33" y="55" width="22" height="66" fill="#fff"/><rect x="77" y="33" width="22" height="110" fill="#fff"/><rect x="121" y="50" width="22" height="77" fill="#fff"/>
+        <g stroke="rgba(255,255,255,.18)" stroke-width="1">
+          <path d="M11 0V176M22 0V176M33 0V176M44 0V176M55 0V176M66 0V176M77 0V176M88 0V176M99 0V176M110 0V176M121 0V176M132 0V176M143 0V176M154 0V176M165 0V176"/>
+          <path d="M0 11H176M0 22H176M0 33H176M0 44H176M0 55H176M0 66H176M0 77H176M0 88H176M0 99H176M0 110H176M0 121H176M0 132H176M0 143H176M0 154H176M0 165H176"/>
+        </g>
+      </g>
+      <text x="128" y="212" text-anchor="middle" font-size="13" class="muted">16 × 16: three 2-pixel bars</text>
+      <g transform="translate(300,40)"><rect width="110" height="110" rx="24" fill="url(#fg)"/><rect x="22" y="40" width="9" height="30" rx="4.5" fill="#fff"/><rect x="37" y="28" width="9" height="54" rx="4.5" fill="#fff"/><rect x="52" y="20" width="9" height="70" rx="4.5" fill="#fff"/><rect x="67" y="35" width="9" height="40" rx="4.5" fill="#fff"/><rect x="82" y="44" width="9" height="22" rx="4.5" fill="#fff"/></g>
+      <text x="355" y="175" text-anchor="middle" font-size="13" class="muted">32/48 px: five bars</text>
+      <g transform="translate(500,30)"><rect width="130" height="130" rx="28" fill="url(#fg)"/>
+        <g fill="#fff"><rect x="24" y="58" width="7" height="14" rx="3.5"/><rect x="34" y="51" width="7" height="28" rx="3.5"/><rect x="44" y="41" width="7" height="48" rx="3.5"/><rect x="54" y="30" width="7" height="70" rx="3.5"/><rect x="64" y="41" width="7" height="48" rx="3.5"/><rect x="74" y="49" width="7" height="32" rx="3.5"/><rect x="84" y="37" width="7" height="56" rx="3.5"/><rect x="94" y="48" width="7" height="34" rx="3.5"/><rect x="104" y="56" width="7" height="18" rx="3.5"/></g></g>
+      <text x="565" y="185" text-anchor="middle" font-size="13" class="muted">phone home screen: full 9-bar mark</text>
+    </svg>
+  </figure>
+  <p>The bars are the same waveform mark as the lab's QR codes and posters (<code>spin_branding/</code>), with the same indigo <code>#1e3a8a</code> → teal <code>#0d6e6e</code> gradient. <code>scripts/make_favicon.py</code> draws every size and writes <code>favicon.ico</code> (16/32/48 inside one file), <code>images/favicon-32.png</code>, <code>images/apple-touch-icon.png</code> and <code>images/icon-512.png</code>. <code>_includes/head.html</code> tells browsers where they are.</p>
+  <div class="try"><p>Browsers cache favicons for a long time. After changing it, check in a private window.</p></div>
+</section>
+
+<!-- 13 -->
+<section class="ch" id="run">
+  <h2><span class="n">13</span>Running it on your computer</h2>
+  <div class="kid"><p>Before sending the lunchboxes to the world, you open them at home to check. Your computer becomes a mini post office that only you can visit.</p></div>
+  <p>In the <b>WSL Ubuntu</b> terminal:</p>
+<pre><code><span class="c"># the real repo (first time only: install the gems inside the repo)</span>
+cd ~/Desktop/work/research/repo/spinlabiitg.github.io
+bundle config set --local path vendor/bundle
+bundle install
+
+<span class="c"># every time</span>
+bundle exec jekyll serve          <span class="c"># then open http://localhost:4000</span></code></pre>
+<pre><code><span class="c"># the redesign copy in tommy_assistant (reuses the gems above)</span>
+cd /mnt/c/Users/IITG/Documents/tommy_assistant/spinlab_website
+bundle exec jekyll serve --port 4001 --force_polling   <span class="c"># http://localhost:4001</span></code></pre>
+  <ul>
+    <li><b>Why <code>bundle exec</code>?</b> It uses the exact gem versions from <code>Gemfile.lock</code>, not whatever Jekyll is installed system-wide.</li>
+    <li><b>Why <code>--force_polling</code>?</b> The copy lives on the Windows drive; WSL doesn't hear Windows file-change events, so Jekyll checks for changes by looking every second instead.</li>
+    <li><b>Changed <code>_config.yml</code>?</b> Stop (Ctrl+C) and start again: it's only read at start-up.</li>
+    <li><b>Python scripts</b> (<code>scripts/*.py</code>) run from the site folder on Windows: <code>python scripts/make_favicon.py</code>.</li>
+  </ul>
+</section>
+
+<!-- 14 -->
+<section class="ch" id="oops">
+  <h2><span class="n">14</span>When things break (we've seen these)</h2>
+  <div class="kid"><p>Error messages look scary, but they're just the robot saying which ingredient it couldn't find. Read the first red line; it usually names the problem.</p></div>
+  <div class="tablewrap"><table>
+    <tr><th>You see</th><th>Why</th><th>Fix</th></tr>
+    <tr><td><code>Could not find jekyll-4.2.2 … (Bundler::GemNotFound)</code></td><td>The pinned gems aren't installed.</td><td><code>bundle install</code> (with the local path above)</td></tr>
+    <tr><td><code>undefined method 'untaint'</code></td><td>Old Liquid 4.0.3 vs Ruby 3.2</td><td><code>bundle update liquid</code> (4.0.4)</td></tr>
+    <tr><td><code>cannot load such file -- webrick</code></td><td>Ruby 3 dropped the little web server</td><td><code>bundle add webrick</code></td></tr>
+    <tr><td>Page loads with no styling, links point to <code>0.0.0.0</code></td><td>Started with <code>--host 0.0.0.0</code></td><td>Start without it</td></tr>
+    <tr><td><code>mapping values are not allowed in this context</code></td><td>A YAML value contains “: ”</td><td>Put the value in quotes</td></tr>
+    <tr><td>A change doesn't appear</td><td>Server didn't notice / browser cache</td><td>Wait for “done in … seconds”, then hard refresh (Ctrl+Shift+R)</td></tr>
+    <tr><td>Liquid error with <code>k=parts[0]</code></td><td>Include parameters can't use <code>[ ]</code></td><td><code>{% assign gk = parts[0] %}</code> then <code>k=gk</code></td></tr>
+  </table></div>
+</section>
+
+<!-- 15 -->
+<section class="ch" id="recipes">
+  <h2><span class="n">15</span>Recipes: how do I…?</h2>
+  <h3>…add a news item?</h3>
+  <p>Open <code>_data/news.yml</code> and add a card at the <b>top</b> (newest first). Markdown works: <code>**bold**</code>, <code>*italic*</code>, <code>[text](link)</code>.</p>
+<pre><code>- date: Nov 2026
+  headline: <span class="s">"Congratulations to Prakhar on … [paper](https://…)"</span></code></pre>
+  <h3>…add a new student?</h3>
+  <p>Put a square-ish photo in <code>images/teampic/</code> (about 400 px wide is plenty), then add a card to <code>phd_scholars.yml</code>, <code>masts.yaml</code> or <code>bachs.yml</code>. No photo? Leave <code>photo</code> out: their initials appear in a circle.</p>
+<pre><code>- name: New Student
+  photo: new_student.jpg
+  topic: Respiratory audio and machine learning
+  info: One line in their own words.
+  linkedin: https://www.linkedin.com/in/…        <span class="c"># optional: email, scholar, github, website</span></code></pre>
+  <h3>…move someone to Former Members?</h3>
+  <p>Delete their card from the student file, then add to <code>alumni_msc.yml</code> / <code>alumni_bsc.yml</code> / <code>alumni_visitors.yml</code> with <code>info</code> (degree and years), <code>thesis</code> and <code>work</code> (where they are now).</p>
+  <h3>…add a site to Showcase?</h3>
+  <p>Save an 800×500 screenshot as <code>images/showcase/&lt;name&gt;.jpg</code> and add a card to <code>_data/showcase.yml</code> (<code>title</code>, <code>url</code>, <code>image</code>, <code>kind</code>, <code>blurb</code>, <code>tags</code>; <code>home: true</code> to feature it on Home; <code>kind_hi</code>/<code>blurb_hi</code> for Hindi).</p>
+  <h3>…add or change a Hindi label?</h3>
+  <p>Add a line to <code>_data/i18n.yml</code>: <code>my_key: {en: "…", hi: "…"}</code>, then use <code>{% include t.html k="my_key" %}</code> in a page or layout.</p>
+  <h3>…replace the welcome recording?</h3>
+  <ol>
+    <li>Save the new recording as <code>audio/welcome_to_spinlab.wav</code> (real voice, with the speaker's consent).</li>
+    <li>Update <code>TEXT</code>, <code>T0/T1</code> (where speech starts and ends) and the <code>WORDS</code> timings at the top of <code>scripts/make_signal_data.py</code>.</li>
+    <li>Run <code>python scripts/make_signal_data.py</code>. It rewrites <code>js/spin_signal_data.js</code> and <code>audio/welcome_web.wav</code>.</li>
+  </ol>
+  <h3>…change the brand colours or favicon?</h3>
+  <p>Edit <code>C0, C1</code> in <code>scripts/make_favicon.py</code> and run it; update <code>--brand-a</code> / <code>--brand-b</code> in <code>main.scss</code> to match.</p>
+  <h3>…publish?</h3>
+  <p>In the real repo: <code>git add</code> the changed files, <code>git commit -m "…"</code>, <code>git push</code>. GitHub Pages rebuilds within a minute or two. (The <code>tommy_assistant/spinlab_website</code> folder is a <b>copy</b> for trying things; changes must be brought over to the real repo to go live.)</p>
+</section>
+
+<!-- 16 -->
+<section class="ch" id="leftovers">
+  <h2><span class="n">16</span>Leftovers to tidy someday</h2>
+  <div class="kid"><p>This house was built from another lab's house (the “Allan Lab” template from Leiden). A few of their things are still in the cupboards.</p></div>
+  <ul>
+    <li><code>_config.yml</code> still says <code>title: The Allan Lab</code> and <code>description: Website of the AllanLab</code>. They're only used when a page has no title of its own, but should become SPIN Lab.</li>
+    <li>Unused data files from the template or old pages: <code>alumni_members.yml</code>, <code>students.yml</code>, <code>pictures_Leiden.yml</code> (check <code>pictures.md</code> first), <code>mtpbtplist.yml</code> (thesis list, removed from Publications).</li>
+    <li>Old images in <code>images/</code> (e.g. <code>Group2015.png</code>, STM figures, a 10 MB <code>teampic/tjeruk.jpg</code>) make the repo heavy (~370 MB) but aren't shown.</li>
+    <li>The old <code>images/favicon.ico</code> name is kept (now the new icon) in case anything links to it.</li>
+  </ul>
+</section>
+
+<!-- 17 -->
+<section class="ch" id="words">
+  <h2><span class="n">17</span>Word list</h2>
+  <div class="tablewrap"><table>
+    <tr><th>Word</th><th>Means</th></tr>
+    <tr><td>Static site</td><td>Ready-made files; the server doesn't compute anything per visit.</td></tr>
+    <tr><td>Jekyll</td><td>The program that turns ingredients into <code>_site/</code>.</td></tr>
+    <tr><td>Front matter</td><td>The <code>---</code> label at the top of a page file.</td></tr>
+    <tr><td>Layout / include</td><td>Nesting doll / sticker.</td></tr>
+    <tr><td>Liquid</td><td>The fill-in-the-blanks language: <code>{{ }}</code> prints, <code>{% %}</code> does.</td></tr>
+    <tr><td>YAML</td><td>The index-card format of <code>_data/</code> files.</td></tr>
+    <tr><td>SCSS</td><td>CSS with variables and mixins; becomes <code>main.css</code>.</td></tr>
+    <tr><td>Media query</td><td>A CSS rule that only applies on some screens (e.g. phones, dark mode).</td></tr>
+    <tr><td>localStorage</td><td>A tiny notebook in each visitor's browser (remembers theme and language).</td></tr>
+    <tr><td>Canvas</td><td>A blank drawing board in the page that JavaScript paints on.</td></tr>
+    <tr><td>Web Audio API</td><td>The browser's built-in sound toolkit (mic, playback, analysis).</td></tr>
+    <tr><td>Spectrogram</td><td>A picture of sound: time left→right, pitch bottom→top, loudness as colour.</td></tr>
+    <tr><td>PCA</td><td>A way to squash many numbers per item down to 2, keeping the biggest differences.</td></tr>
+    <tr><td>Forced alignment</td><td>Given the words, find <i>when</i> each one was said.</td></tr>
+    <tr><td>Favicon</td><td>The tiny icon on the browser tab.</td></tr>
+  </table></div>
+</section>
+
+<footer>Written October 2026 for the SPIN Lab redesign. If the site changes, update this page too: it lives in <code>docs/website_tutorial.html</code>.</footer>
+</main>
+</div>
+
+<script>
+  // Theme toggle for this tutorial (the same idea the site uses).
+  (function () {
+    var d = document.documentElement;
+    try { var t = localStorage.getItem('tut-theme'); if (t) d.setAttribute('data-theme', t); } catch (e) {}
+    document.getElementById('themeBtn').addEventListener('click', function () {
+      var cur = d.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      d.setAttribute('data-theme', next);
+      try { localStorage.setItem('tut-theme', next); } catch (e) {}
+    });
+    // Language flip-card demo
+    var demo = document.getElementById('langDemo');
+    demo.addEventListener('click', function (e) {
+      var v = e.target.getAttribute && e.target.getAttribute('data-set');
+      if (v) demo.classList.toggle('hi', v === 'hi');
+    });
+  })();
+</script>
+</body>
+</html>

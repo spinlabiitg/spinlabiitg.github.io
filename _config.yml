@@ -17,6 +17,17 @@ include:
   - .htaccess
   - _pages
 
+# Not published: local notes/CV and build tooling
+exclude:
+  - docs/
+  - scripts/
+  - audio/welcome_to_spinlab.wav
+  - vendor/
+  - .bundle/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
 sass:
   sass_dir: _sass
 

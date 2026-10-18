@@ -1,0 +1,25 @@
+{% comment %}
+  One team member card. Pass the member as include.m.
+  Optional yml fields shown as links: email, scholar, github, linkedin, website.
+  A missing photo or rock.jpg shows the person's initials instead.
+{% endcomment %}
+{% assign m = include.m %}
+{% assign plain = m.name | strip_html | remove: '(Co-Sup)' | strip %}
+<div class="member-card">
+  {% if m.photo and m.photo != 'rock.jpg' %}
+  <img class="member-photo" src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ m.photo }}" alt="{{ plain }}" loading="lazy" />
+  {% else %}
+  {% assign parts = plain | split: ' ' %}
+  <div class="member-photo member-initials">{{ parts[0] | slice: 0 }}{{ parts[1] | slice: 0 }}</div>
+  {% endif %}
+  <h4>{{ m.name }}</h4>
+  {% if m.topic %}<p class="member-topic">{{ m.topic }}</p>{% endif %}
+  {% if m.info %}<p class="member-info">{{ m.info }}</p>{% endif %}
+  <p class="member-links">
+    {% if m.email %}<a href="mailto:{{ m.email }}">Email</a>{% endif %}
+    {% if m.scholar %}<a href="{{ m.scholar }}" target="_blank" rel="noopener">Scholar</a>{% endif %}
+    {% if m.github %}<a href="{{ m.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+    {% if m.linkedin %}<a href="{{ m.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+    {% if m.website %}<a href="{{ m.website }}" target="_blank" rel="noopener">Website</a>{% endif %}
+  </p>
+</div>

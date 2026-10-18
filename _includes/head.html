@@ -4,9 +4,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <script>
+    // Apply saved theme and language before first paint (no flash).
+    (function () {
+      var d = document.documentElement;
+      try {
+        var t = localStorage.getItem('spin-theme');
+        if (t === 'dark' || t === 'light') d.setAttribute('data-theme', t);
+        var q = new URLSearchParams(location.search).get('lang');
+        var l = (q === 'hi' || q === 'en') ? q : localStorage.getItem('spin-lang');
+        if (q === 'hi' || q === 'en') localStorage.setItem('spin-lang', q);
+        if (l === 'hi') { d.setAttribute('data-lang', 'hi'); d.lang = 'hi'; }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url}}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-<link rel="shortcut icon" type ="image/x-icon" href="{{ site.url }}{{ site.baseurl }}/images/favicon.ico">
+<link rel="icon" href="{{ site.url }}{{ site.baseurl }}/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}{{ site.baseurl }}/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="{{ site.url }}{{ site.baseurl }}/images/apple-touch-icon.png">
+  <meta name="theme-color" content="#1e3a8a">
 
 {% if jekyll.environment == 'production' %}
 {% include analytics.html %}

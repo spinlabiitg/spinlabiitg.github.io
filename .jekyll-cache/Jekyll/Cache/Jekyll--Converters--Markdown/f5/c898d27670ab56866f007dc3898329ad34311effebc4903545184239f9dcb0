@@ -1,0 +1,183 @@
+I"�S<div data-l="en">
+  <p>We are a research group exploring <strong>sensory interactions</strong> across modalities: speech and audio, images and video, text, and physiological signals such as breathing and EEG. We want to understand how humans <strong>perceive</strong> the world, and to build <strong>intelligence</strong> that is multimodal, grounded in signals, and humane. We converse in the language of signal processing and machine (deep) learning, and enrich our understanding using any scientific discipline the problem requires us to venture into.</p>
+</div>
+<div data-l="hi" lang="hi">
+  <p>हम एक शोध समूह हैं जो विभिन्न माध्यमों में <strong>संवेदी अंतःक्रियाओं</strong> का अध्ययन करता है: वाणी और ऑडियो, चित्र और वीडियो, पाठ (टेक्स्ट), तथा साँस और ईईजी जैसे शारीरिक संकेत। हम समझना चाहते हैं कि मनुष्य दुनिया को कैसे <strong>अनुभव</strong> करते हैं, और ऐसी <strong>बुद्धिमत्ता</strong> बनाना चाहते हैं जो बहु-माध्यमी (मल्टीमोडल) हो, संकेतों पर आधारित हो, और मानवीय हो। हम सिग्नल प्रोसेसिंग और मशीन (डीप) लर्निंग की भाषा में सोचते हैं, और समस्या हमें जिस भी वैज्ञानिक विषय में ले जाए, उसकी मदद से अपनी समझ को समृद्ध करते हैं।</p>
+</div>
+
+<h2><span data-l="en">What we do</span><span data-l="hi" lang="hi">हम क्या करते हैं</span></h2>
+
+<div class="spin-cards">
+  <div class="spin-card">
+    <div class="spin-letter">S</div>
+    <h4><span data-l="en">Sensing</span><span data-l="hi" lang="hi">संवेदन</span></h4>
+    <p data-l="en">We are immersed in signals, and our eyes, ears, skin and nose turn them into data for the brain. Understanding how a continuous signal becomes a discrete sequence of samples in the sensory periphery can inspire efficient sampling strategies.</p>
+    <p data-l="hi" lang="hi">हम संकेतों से घिरे हैं, और हमारी आँखें, कान, त्वचा और नाक उन्हें मस्तिष्क के लिए डेटा में बदलती हैं। संवेदी तंत्र में एक सतत संकेत कैसे असतत नमूनों में बदलता है, यह समझना कुशल सैंपलिंग विधियों की प्रेरणा बन सकता है।</p>
+  </div>
+  <div class="spin-card">
+    <div class="spin-letter">P</div>
+    <h4><span data-l="en">Perception</span><span data-l="hi" lang="hi">बोध</span></h4>
+    <p data-l="en">The brain turns sensed signals into estimates such as loudness, pitch, timbre and location. Perception is a bit like feature extraction in machine learning, and predicting what humans perceive is a challenging (and rewarding) problem in AI.</p>
+    <p data-l="hi" lang="hi">मस्तिष्क संवेदित संकेतों से प्रबलता, तारत्व (पिच), ध्वनि-गुण (टिम्बर) और स्थान जैसे गुणों का अनुमान लगाता है। बोध कुछ हद तक मशीन लर्निंग में फ़ीचर निकालने जैसा है, और मनुष्य क्या अनुभव करेंगे इसका पूर्वानुमान लगाना एआई की एक चुनौतीपूर्ण (और रोचक) समस्या है।</p>
+  </div>
+  <div class="spin-card">
+    <div class="spin-letter">IN</div>
+    <h4><span data-l="en">Intelligence</span><span data-l="hi" lang="hi">बुद्धिमत्ता</span></h4>
+    <p data-l="en">Perceived attributes feed a mental model of the world: cognition, whose output is behavior. Understanding cognition is critical to designing machines that interact with humans.</p>
+    <p data-l="hi" lang="hi">अनुभव किए गए गुण दुनिया का एक मानसिक मॉडल बनाते हैं: यही संज्ञान है, जिसका परिणाम व्यवहार है। मनुष्यों से संवाद करने वाली मशीनें बनाने के लिए संज्ञान को समझना आवश्यक है।</p>
+  </div>
+</div>
+
+<p data-l="en">Through our work, we aim to unify these three concepts and build solutions. Frankly, this is very interesting work, with lots of open questions.</p>
+<p data-l="hi" lang="hi">अपने काम के ज़रिए हम इन तीनों अवधारणाओं को जोड़कर समाधान बनाना चाहते हैं। सच कहें तो यह बेहद रोचक काम है, जिसमें बहुत से अनसुलझे प्रश्न हैं।</p>
+
+<h2><span data-l="en">Modalities we work with</span><span data-l="hi" lang="hi">हम किन माध्यमों के साथ काम करते हैं</span></h2>
+
+<div class="modality-strip">
+
+  <div class="modality">
+    <span class="modality-icon" aria-hidden="true">🔊</span>
+    <b><span data-l="en">Audio &amp; speech</span><span data-l="hi" lang="hi">ऑडियो और वाणी</span></b>
+    <span><span data-l="en">breath, cough, speech, conversations, music</span><span data-l="hi" lang="hi">साँस, खाँसी, वाणी, बातचीत, संगीत</span></span>
+  </div>
+
+  <div class="modality">
+    <span class="modality-icon" aria-hidden="true">🖼</span>
+    <b><span data-l="en">Images &amp; video</span><span data-l="hi" lang="hi">चित्र और वीडियो</span></b>
+    <span><span data-l="en">SAR, photoacoustic, satellite, video perception</span><span data-l="hi" lang="hi">SAR, फ़ोटोअकूस्टिक, उपग्रह चित्र, वीडियो बोध</span></span>
+  </div>
+
+  <div class="modality">
+    <span class="modality-icon" aria-hidden="true">🔤</span>
+    <b><span data-l="en">Text &amp; language</span><span data-l="hi" lang="hi">पाठ और भाषा</span></b>
+    <span><span data-l="en">Indian languages</span><span data-l="hi" lang="hi">भारतीय भाषाएँ</span></span>
+  </div>
+
+  <div class="modality">
+    <span class="modality-icon" aria-hidden="true">🌿</span>
+    <b><span data-l="en">Environment</span><span data-l="hi" lang="hi">पर्यावरण</span></b>
+    <span><span data-l="en">forest soundscapes, climate and weather</span><span data-l="hi" lang="hi">जंगल की ध्वनियाँ, जलवायु और मौसम</span></span>
+  </div>
+
+</div>
+
+<h2><span data-l="en">Research themes</span><span data-l="hi" lang="hi">अनुसंधान के विषय</span></h2>
+
+<div class="theme-tiles">
+
+  <a class="theme-tile" href="http://localhost:4000/research/#sensory-signals">
+    <img src="http://localhost:4000/images/pubpic/web_paper_highlights_extrema.png" alt="" loading="lazy" />
+    <b><span data-l="en">Modeling sensory signal processing</span><span data-l="hi" lang="hi">संवेदी संकेत प्रसंस्करण की मॉडलिंग</span></b>
+    <span><span data-l="en">How sensory systems sample the world, and what that teaches us about sampling signals.</span><span data-l="hi" lang="hi">संवेदी तंत्र दुनिया का सैंपल कैसे लेते हैं, और इससे हम संकेतों की सैंपलिंग के बारे में क्या सीखते हैं।</span></span>
+  </a>
+
+  <a class="theme-tile" href="http://localhost:4000/research/#conversation">
+    <img src="http://localhost:4000/images/slider7001400/web_audio_speech.png" alt="" loading="lazy" />
+    <b><span data-l="en">Spoken conversation analysis</span><span data-l="hi" lang="hi">बोली गई बातचीत का विश्लेषण</span></b>
+    <span><span data-l="en">Capturing speech, face, breath, heart and pupil signals to study how conversations unfold.</span><span data-l="hi" lang="hi">बातचीत कैसे आगे बढ़ती है, यह समझने के लिए वाणी, चेहरे, साँस, हृदय और पुतली के संकेतों का अध्ययन।</span></span>
+  </a>
+
+  <a class="theme-tile" href="http://localhost:4000/research/#indian-languages">
+    <img src="http://localhost:4000/images/pubpic/web_paper_highlights_project_boli.png" alt="" loading="lazy" />
+    <b><span data-l="en">Speech and language technology for Indian languages</span><span data-l="hi" lang="hi">भारतीय भाषाओं के लिए वाणी एवं भाषा प्रौद्योगिकी</span></b>
+    <span><span data-l="en">Datasets and models for stuttered speech, vowel harmony and low-resourced languages of India.</span><span data-l="hi" lang="hi">हकलाहट, स्वर-सामंजस्य और कम संसाधन वाली भारतीय भाषाओं के लिए डेटासेट और मॉडल।</span></span>
+  </a>
+
+  <a class="theme-tile" href="http://localhost:4000/research/#bci">
+    <img src="http://localhost:4000/images/slider7001400/web_audio_eeg.png" alt="" loading="lazy" />
+    <b><span data-l="en">Audio-based brain-computer interfacing</span><span data-l="hi" lang="hi">ऑडियो-आधारित ब्रेन-कंप्यूटर इंटरफ़ेस</span></b>
+    <span><span data-l="en">Decoding which talker a listener attends to, from EEG.</span><span data-l="hi" lang="hi">ईईजी से पता लगाना कि श्रोता किस वक्ता को ध्यान से सुन रहा है।</span></span>
+  </a>
+
+  <a class="theme-tile" href="http://localhost:4000/research/#audio-cognition">
+    <img src="http://localhost:4000/images/pubpic/web_paper_highlights_itd_ild_RT.png" alt="" loading="lazy" />
+    <b><span data-l="en">Audio cognition through behavioral experiments</span><span data-l="hi" lang="hi">व्यवहारिक प्रयोगों से श्रवण संज्ञान की समझ</span></b>
+    <span><span data-l="en">What button presses and reaction times reveal about how we listen.</span><span data-l="hi" lang="hi">बटन दबाने और प्रतिक्रिया-समय से हम कैसे सुनते हैं, इसका पता चलता है।</span></span>
+  </a>
+
+  <a class="theme-tile" href="http://localhost:4000/research/#healthcare">
+    <img src="http://localhost:4000/images/pubpic/web_paper_highlights_coswara_creation.png" alt="" loading="lazy" />
+    <b><span data-l="en">Data analysis for human healthcare</span><span data-l="hi" lang="hi">मानव स्वास्थ्य के लिए डेटा विश्लेषण</span></b>
+    <span><span data-l="en">Listening to breath, cough and speech for remote, low-cost disease screening.</span><span data-l="hi" lang="hi">दूरस्थ, कम लागत वाली रोग-जाँच के लिए साँस, खाँसी और वाणी को सुनना।</span></span>
+  </a>
+
+  <a class="theme-tile" href="http://localhost:4000/research/#climate">
+    <img src="http://localhost:4000/images/slider7001400/web_audio_signals.png" alt="" loading="lazy" />
+    <b><span data-l="en">Data analysis for climate sciences</span><span data-l="hi" lang="hi">जलवायु विज्ञान के लिए डेटा विश्लेषण</span></b>
+    <span><span data-l="en">Using the soundscape of a forest to track its response to weather and climate.</span><span data-l="hi" lang="hi">मौसम और जलवायु के प्रति जंगल की प्रतिक्रिया को उसकी ध्वनियों से समझना।</span></span>
+  </a>
+
+</div>
+
+<h2><span data-l="en">Explore our work</span><span data-l="hi" lang="hi">हमारा काम देखें</span></h2>
+
+<div class="showcase-grid compact">
+
+<a class="showcase-card" href="https://spinlabiitg.github.io/bbi/" target="_blank" rel="noopener">
+  <div class="showcase-img"><img src="http://localhost:4000/images/showcase/bbi.jpg" alt="Preview of Bahubhashi India" loading="lazy" /></div>
+  <div class="showcase-body">
+    <span class="showcase-kind"><span data-l="en">Data story</span><span data-l="hi" lang="hi">डेटा कहानी</span></span>
+    <h4>Bahubhashi India <span class="ext">&#8599;</span></h4>
+    <p><span data-l="en">India's spoken-language landscape, state by state. Census 2011 mother tongues drawn as a night sky of languages, scripts and real voices.</span><span data-l="hi" lang="hi">राज्य-दर-राज्य भारत का भाषाई परिदृश्य। जनगणना 2011 की मातृभाषाएँ, भाषाओं, लिपियों और असली आवाज़ों के रात्रि-आकाश के रूप में।</span></p>
+    
+    
+  </div>
+</a>
+
+<a class="showcase-card" href="https://spinlabiitg.github.io/sap/" target="_blank" rel="noopener">
+  <div class="showcase-img"><img src="http://localhost:4000/images/showcase/sap.jpg" alt="Preview of Speech and Audio Processing" loading="lazy" /></div>
+  <div class="showcase-body">
+    <span class="showcase-kind"><span data-l="en">Course site</span><span data-l="hi" lang="hi">पाठ्यक्रम साइट</span></span>
+    <h4>Speech and Audio Processing <span class="ext">&#8599;</span></h4>
+    <p><span data-l="en">An open course, from the physics of a sound to the models that understand it. Spectrograms, source–filter models, linear prediction and codecs, with live demos on Indian-English speech.</span><span data-l="hi" lang="hi">एक खुला पाठ्यक्रम: ध्वनि की भौतिकी से लेकर उसे समझने वाले मॉडलों तक। स्पेक्ट्रोग्राम, स्रोत-फ़िल्टर मॉडल, लीनियर प्रेडिक्शन और कोडेक, भारतीय-अंग्रेज़ी वाणी पर लाइव डेमो के साथ।</span></p>
+    
+    
+  </div>
+</a>
+
+<a class="showcase-card" href="https://spinlabiitg.github.io/iitg_umap/" target="_blank" rel="noopener">
+  <div class="showcase-img"><img src="http://localhost:4000/images/showcase/iitg_umap.jpg" alt="Preview of IITG Campus uMap" loading="lazy" /></div>
+  <div class="showcase-body">
+    <span class="showcase-kind"><span data-l="en">Interactive map</span><span data-l="hi" lang="hi">इंटरैक्टिव नक्शा</span></span>
+    <h4>IITG Campus uMap <span class="ext">&#8599;</span></h4>
+    <p><span data-l="en">An unofficial map of IIT Guwahati's hills, lakes and the Brahmaputra, with walking routes, seasons, terrain, satellite greenness and a poster mode.</span><span data-l="hi" lang="hi">आईआईटी गुवाहाटी की पहाड़ियों, झीलों और ब्रह्मपुत्र का एक अनौपचारिक नक्शा, जिसमें पैदल रास्ते, मौसम, भू-आकृति, उपग्रह से दिखती हरियाली और पोस्टर मोड हैं।</span></p>
+    
+    <p class="credit">Image contains modified Copernicus Sentinel-2 data (monsoon 2022).</p>
+  </div>
+</a>
+
+</div>
+<p><a href="http://localhost:4000/showcase/"><span data-l="en">All interactive work and open datasets →</span><span data-l="hi" lang="hi">सभी इंटरैक्टिव काम और खुले डेटासेट →</span></a></p>
+
+<p data-l="en">See also our <a href="http://localhost:4000/publications/">publications</a>. We are part of the <a href="https://www.iitg.ac.in/dsai/">Mehta Family School of Data Science and AI</a> and the <a href="https://www.iitg.ac.in/clst/index.php">Centre for Linguistic Science and Technology</a>.</p>
+<p data-l="hi" lang="hi">हमारे <a href="http://localhost:4000/publications/">प्रकाशन</a> भी देखें। हम <a href="https://www.iitg.ac.in/dsai/">मेहता फ़ैमिली स्कूल ऑफ़ डेटा साइंस एंड एआई</a> और <a href="https://www.iitg.ac.in/clst/index.php">भाषाई विज्ञान एवं प्रौद्योगिकी केंद्र (CLST)</a> का हिस्सा हैं।</p>
+
+<div class="join-band say-hey" data-audio="http://localhost:4000/audio/welcome_web.wav">
+  <div class="hey-viz">
+    <canvas class="hey-canvas" role="img" aria-label="Live waveform and spectrogram"></canvas>
+    <div class="hey-buttons">
+      <button type="button" class="btn btn-primary btn-sm js-mic" aria-pressed="false">&#127908; <span data-l="en">Say hey</span><span data-l="hi" lang="hi">कुछ बोलिए</span></button>
+      <button type="button" class="btn btn-default btn-sm js-play">&#9654; <span data-l="en">Play our hello</span><span data-l="hi" lang="hi">हमारा अभिवादन सुनें</span></button>
+    </div>
+    <p class="hey-status" aria-live="polite"></p>
+    <p class="hey-privacy"><span data-l="en">Your voice stays in your browser: nothing is recorded or sent.</span><span data-l="hi" lang="hi">आपकी आवाज़ आपके ब्राउज़र में ही रहती है: कुछ भी रिकॉर्ड या भेजा नहीं जाता।</span></p>
+  </div>
+  <div>
+    <h3><span data-l="en">Say hey!</span><span data-l="hi" lang="hi">नमस्ते कहिए!</span></h3>
+    <p data-l="en">Does this relate to your interests? Drop an <a href="mailto:neerajs@iitg.ac.in">email</a> to <a href="http://localhost:4000/team/">Neeraj</a>. We are happy to learn about the challenges you are tackling and discuss ways to collaborate. Students can <a href="http://localhost:4000/vacancies">join the team</a>, and organisations can sponsor the lab.</p>
+    <p data-l="hi" lang="hi">क्या यह आपकी रुचि से मेल खाता है? <a href="http://localhost:4000/team/">नीरज</a> को <a href="mailto:neerajs@iitg.ac.in">ईमेल</a> भेजें। हम आपकी चुनौतियों के बारे में जानने और साथ काम करने के तरीकों पर बात करने को उत्सुक हैं। विद्यार्थी <a href="http://localhost:4000/vacancies">टीम से जुड़ सकते हैं</a>, और संस्थाएँ लैब को प्रायोजित कर सकती हैं।</p>
+  </div>
+</div>
+
+<p data-l="en">We are located at IIT Guwahati. Our campus is calm and vibrant, bio-diverse, and fondly known in India as (most!) heavenly (see <a href="http://localhost:4000/pictures/">Pictures</a>).</p>
+<p data-l="hi" lang="hi">हम आईआईटी गुवाहाटी में हैं। हमारा परिसर शांत और जीवंत है, जैव-विविधता से भरपूर है, और भारत में (सबसे!) स्वर्गिक परिसरों में गिना जाता है (<a href="http://localhost:4000/pictures/">तस्वीरें</a> देखें)।</p>
+
+<h2>The Curious Case of Sound</h2>
+
+<p data-l="en">A TEDx IIT Guwahati talk by Neeraj (Feb 2023).</p>
+<p data-l="hi" lang="hi">नीरज की TEDx आईआईटी गुवाहाटी वार्ता (फ़रवरी 2023), अंग्रेज़ी में।</p>
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CYMMLLeGrVs?si=WupHSq82_LRLGOI7" title="TEDx talk by Neeraj Sharma" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" loading="lazy"></iframe>
+</div>
+:ET

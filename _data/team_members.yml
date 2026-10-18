@@ -1,13 +1,21 @@
-- name: <a href="https://www.neerajww.github.io">Neeraj Kumar Sharma</a>
+- name: <a href="https://neerajww.github.io" target="_blank">Neeraj Kumar Sharma</a>
   photo: PI_neeraj.png
-  info: Team Lead
+  info: Assistant Professor, Mehta Family School of Data Science and AI
+  info_hi: "सहायक प्राध्यापक, मेहता फ़ैमिली स्कूल ऑफ़ डेटा साइंस एंड एआई"
   email: neerajs@iitg.ac.in
+  scholar: https://scholar.google.com/citations?user=j7oyJ0MAAAAJ&hl=en
+  website: https://neerajww.github.io
+  highlights:
+    - Senior Member, IEEE
+    - Chair, ISCA Indian Language Speech Processing group
+    - Associate Faculty, Centre for Linguistic Science and Technology
+    - Associate Faculty, Manekshaw Centre of Excellence for National Security Studies and Research
   number_educ: 5
   education1: B.Tech, <a href="https://en.wikipedia.org/wiki/Odisha_University_of_Technology_and_Research" target="_blank">College of Engineering and Technology</a>, Bhubaneswar, India
-  education2: Masters, Ph.D, <a href="https://iisc.ac.in/" target="_blank">Indian Institute of Science</a>, Bangalore, India
+  education2: MTech (Research) and Ph.D. (thesis <i>Information-rich sampling of time-varying signals</i>), <a href="https://iisc.ac.in/" target="_blank">Indian Institute of Science</a>, Bangalore, India
   education3: <a href="https://www.cmu.edu/ni/" target="_blank">BrainHub Postdoc Fellow</a>, Carnegie Mellon University, Pittsburgh, USA
   education4: <a href="https://iisc.ac.in/post-docs/" target="_blank">C. V. Raman Postdoc Fellow</a>, Indian Institute of Science, Bangalore, India
-  education5: Scientist, <a href="https://www.audiolabs-erlangen.de/" target="_blank">Fraunhofer IIS Audio Labs</a>, Erlangen, Germany
+  education5: Research Scientist, <a href="https://www.audiolabs-erlangen.de/" target="_blank">International Audio Laboratories, Fraunhofer IIS</a>, Erlangen, Germany
 
 
 # - name: <a href="https://scholar.google.com/citations?user=M1pqD90AAAAJ&hl=en" target="_blank">Aamir Hamid Dar</a>

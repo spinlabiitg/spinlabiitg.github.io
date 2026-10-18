@@ -1,0 +1,86 @@
+# UI strings in English and Hindi. Use in pages/layouts with:
+#   {% include t.html k="key" %}
+# Data files (research.yml, showcase.yml, ...) carry their own *_hi fields instead.
+
+brand:        {en: "SPIN @ IIT Guwahati", hi: "SPIN @ आईआईटी गुवाहाटी"}
+nav_home:     {en: "Home", hi: "मुखपृष्ठ"}
+nav_research: {en: "Research", hi: "अनुसंधान"}
+nav_pubs:     {en: "Publications", hi: "प्रकाशन"}
+nav_showcase: {en: "Showcase", hi: "प्रदर्शनी"}
+nav_team:     {en: "Team", hi: "टीम"}
+nav_more:     {en: "More", hi: "और"}
+nav_news:     {en: "News", hi: "समाचार"}
+nav_collab:   {en: "Collaboration", hi: "सहयोग"}
+nav_resources: {en: "Resources", hi: "संसाधन"}
+nav_pictures: {en: "Pictures", hi: "तस्वीरें"}
+nav_join:     {en: "Join us", hi: "हमसे जुड़ें"}
+lang_switch:  {en: "हिंदी", hi: "English"}
+theme_label:  {en: "Switch light/dark mode", hi: "लाइट/डार्क मोड बदलें"}
+hi_notice:    {en: "", hi: "कुछ सामग्री (जैसे शोध-पत्र, समाचार और विस्तृत विवरण) अभी केवल अंग्रेज़ी में उपलब्ध है।"}
+
+# Home
+hero_title:   {en: "<b>S</b>ensing, <b>P</b>erception &amp; <b>IN</b>telligence <span class=\"nowrap\">(SPIN) Lab</span>", hi: "संवेदन, बोध एवं बुद्धिमत्ता <span class=\"nowrap\">(SPIN) लैब</span>"}
+hero_tagline: {en: "We study how humans sense and perceive the world through sound, sight, touch and the body's own signals, and build AI that learns from these modalities and from language.", hi: "हम अध्ययन करते हैं कि मनुष्य ध्वनि, दृष्टि, स्पर्श और शरीर के अपने संकेतों के ज़रिए दुनिया को कैसे महसूस करते और समझते हैं, और ऐसा एआई बनाते हैं जो इन माध्यमों और भाषा से सीखता है।"}
+hero_where:   {en: "Mehta Family School of Data Science and AI, IIT Guwahati", hi: "मेहता फ़ैमिली स्कूल ऑफ़ डेटा साइंस एंड एआई, आईआईटी गुवाहाटी"}
+hero_research: {en: "Our research", hi: "हमारा अनुसंधान"}
+hero_caption: {en: "The team, October 2025", hi: "हमारी टीम, अक्टूबर 2025"}
+what_we_do:   {en: "What we do", hi: "हम क्या करते हैं"}
+sensing:      {en: "Sensing", hi: "संवेदन"}
+perception:   {en: "Perception", hi: "बोध"}
+intelligence: {en: "Intelligence", hi: "बुद्धिमत्ता"}
+research_themes: {en: "Research themes", hi: "अनुसंधान के विषय"}
+explore:      {en: "Explore our work", hi: "हमारा काम देखें"}
+explore_all:  {en: "All interactive work and open datasets &rarr;", hi: "सभी इंटरैक्टिव काम और खुले डेटासेट &rarr;"}
+say_hey:      {en: "Say hey!", hi: "नमस्ते कहिए!"}
+news:         {en: "News", hi: "समाचार"}
+news_all:     {en: "See all news &rarr;", hi: "सभी समाचार देखें &rarr;"}
+
+# Research
+research_intro: {en: "Our overarching goal is to broaden the understanding of sensory interactions from a science and engineering perspective, by analyzing the associated signals. We use critical thinking, systematic experimentation, and in-depth analysis to address the questions we find most interesting. Here are the themes we currently work on.", hi: "हमारा व्यापक लक्ष्य संवेदी अंतःक्रियाओं से जुड़े संकेतों का विश्लेषण करके उन्हें विज्ञान और इंजीनियरिंग की दृष्टि से बेहतर समझना है। आलोचनात्मक सोच, व्यवस्थित प्रयोग और गहन विश्लेषण के ज़रिए हम उन प्रश्नों पर काम करते हैं जो हमें सबसे रोचक लगते हैं। ये हैं हमारे वर्तमान विषय।"}
+key_papers:   {en: "Key papers", hi: "प्रमुख शोध-पत्र"}
+funding:      {en: "Funding", hi: "अनुदान"}
+
+# Team
+team_title:   {en: "Group Members", hi: "समूह के सदस्य"}
+team_callout: {en: "We are looking for new PhD, Master and BTech students to join the team.", hi: "हम टीम में नए पीएचडी, मास्टर और बीटेक विद्यार्थियों की तलाश में हैं।"}
+see_openings: {en: "See openings &rarr;", hi: "अवसर देखें &rarr;"}
+phd:          {en: "PhD Scholars", hi: "पीएचडी शोधार्थी"}
+mtech:        {en: "MTech Students", hi: "एमटेक विद्यार्थी"}
+btech:        {en: "BTech Students", hi: "बीटेक विद्यार्थी"}
+former:       {en: "Former Members", hi: "पूर्व सदस्य"}
+col_name:     {en: "Name and thesis", hi: "नाम और शोध-प्रबंध"}
+col_role:     {en: "Role", hi: "भूमिका"}
+col_now:      {en: "Now", hi: "अब"}
+postdocs:     {en: "Postdocs", hi: "पोस्टडॉक"}
+masters:      {en: "Master students", hi: "मास्टर विद्यार्थी"}
+bachelors:    {en: "Bachelor students", hi: "बैचलर विद्यार्थी"}
+email:        {en: "Email", hi: "ईमेल"}
+scholar:      {en: "Google Scholar", hi: "गूगल स्कॉलर"}
+website:      {en: "Personal website", hi: "निजी वेबसाइट"}
+
+# Showcase
+showcase_title: {en: "Showcase", hi: "प्रदर्शनी"}
+showcase_intro: {en: "Some of our work is best explored rather than read. These are interactive sites, visual stories and teaching material built in the lab. More are on the way.", hi: "हमारे कुछ काम पढ़ने से ज़्यादा खोजकर देखने लायक हैं। ये लैब में बनी इंटरैक्टिव साइटें, दृश्य कहानियाँ और शिक्षण सामग्री हैं। और भी जल्द आ रही हैं।"}
+datasets:     {en: "Open datasets", hi: "खुले डेटासेट"}
+get_data:     {en: "Get the data &rarr;", hi: "डेटा प्राप्त करें &rarr;"}
+
+# Publications
+pubs_title:   {en: "Publications", hi: "प्रकाशन"}
+
+# Footer
+acknowledgement: {en: "Acknowledgement", hi: "आभार"}
+contact:      {en: "Contact", hi: "संपर्क"}
+
+# Signal hero + Say hey
+hear_it:      {en: "Hear it", hi: "सुनें"}
+meet_team:    {en: "Meet the team &rarr;", hi: "टीम से मिलें &rarr;"}
+cap_s:        {en: "<b>Sensing.</b> A real recording of “Welcome to SPIN Lab”, as the microphone hears it.", hi: "<b>संवेदन।</b> “Welcome to SPIN Lab” की एक असली रिकॉर्डिंग, जैसी माइक्रोफ़ोन उसे सुनता है।"}
+cap_p:        {en: "<b>Perception.</b> Keep only the moments where the signal turns (extrema sampling), then see its frequencies over time.", hi: "<b>बोध।</b> केवल वे क्षण रखें जहाँ संकेत मुड़ता है (एक्स्ट्रीमा सैंपलिंग), फिर समय के साथ उसकी आवृत्तियाँ देखें।"}
+cap_in:       {en: "<b>Intelligence.</b> Each 10 ms slice lands on a map by how its spectrum sounds, coloured by the word it came from.", hi: "<b>बुद्धिमत्ता।</b> हर 10 मिलीसेकंड का अंश अपने स्पेक्ट्रम के आधार पर नक्शे पर जगह पाता है, और उसका रंग बताता है कि वह किस शब्द से आया है।"}
+say_hey_btn:  {en: "Say hey", hi: "कुछ बोलिए"}
+play_hello:   {en: "Play our hello", hi: "हमारा अभिवादन सुनें"}
+hey_privacy:  {en: "Your voice stays in your browser: nothing is recorded or sent.", hi: "आपकी आवाज़ आपके ब्राउज़र में ही रहती है: कुछ भी रिकॉर्ड या भेजा नहीं जाता।"}
+sig_note:     {en: "We start with sound; the same journey applies to images, video, text and body signals.", hi: "हम ध्वनि से शुरू करते हैं; यही यात्रा चित्रों, वीडियो, पाठ और शरीर के संकेतों पर भी लागू होती है।"}
+modalities:   {en: "Modalities we work with", hi: "हम किन माध्यमों के साथ काम करते हैं"}
+affil_school: {en: "Mehta Family School of Data Science &amp; AI", hi: "मेहता फ़ैमिली स्कूल ऑफ़ डेटा साइंस एंड एआई"}
+affil_inst:   {en: "IIT Guwahati", hi: "आईआईटी गुवाहाटी"}

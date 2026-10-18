@@ -1,0 +1,61 @@
+I"�<h1><span data-l="en">Showcase</span><span data-l="hi" lang="hi">प्रदर्शनी</span></h1>
+
+<p class="page-intro"><span data-l="en">Some of our work is best explored rather than read. These are interactive sites, visual stories and teaching material built in the lab. More are on the way.</span><span data-l="hi" lang="hi">हमारे कुछ काम पढ़ने से ज़्यादा खोजकर देखने लायक हैं। ये लैब में बनी इंटरैक्टिव साइटें, दृश्य कहानियाँ और शिक्षण सामग्री हैं। और भी जल्द आ रही हैं।</span></p>
+
+<div class="showcase-grid">
+
+<a class="showcase-card" href="https://spinlabiitg.github.io/bbi/" target="_blank" rel="noopener">
+  <div class="showcase-img"><img src="http://localhost:4000/images/showcase/bbi.jpg" alt="Preview of Bahubhashi India" loading="lazy" /></div>
+  <div class="showcase-body">
+    <span class="showcase-kind"><span data-l="en">Data story</span><span data-l="hi" lang="hi">डेटा कहानी</span></span>
+    <h4>Bahubhashi India <span class="ext">&#8599;</span></h4>
+    <p><span data-l="en">India's spoken-language landscape, state by state. Census 2011 mother tongues drawn as a night sky of languages, scripts and real voices.</span><span data-l="hi" lang="hi">राज्य-दर-राज्य भारत का भाषाई परिदृश्य। जनगणना 2011 की मातृभाषाएँ, भाषाओं, लिपियों और असली आवाज़ों के रात्रि-आकाश के रूप में।</span></p>
+    <div class="tags"><span>languages</span><span>census</span><span>speech</span><span>visualization</span></div>
+    
+  </div>
+</a>
+
+<a class="showcase-card" href="https://spinlabiitg.github.io/sap/" target="_blank" rel="noopener">
+  <div class="showcase-img"><img src="http://localhost:4000/images/showcase/sap.jpg" alt="Preview of Speech and Audio Processing" loading="lazy" /></div>
+  <div class="showcase-body">
+    <span class="showcase-kind"><span data-l="en">Course site</span><span data-l="hi" lang="hi">पाठ्यक्रम साइट</span></span>
+    <h4>Speech and Audio Processing <span class="ext">&#8599;</span></h4>
+    <p><span data-l="en">An open course, from the physics of a sound to the models that understand it. Spectrograms, source–filter models, linear prediction and codecs, with live demos on Indian-English speech.</span><span data-l="hi" lang="hi">एक खुला पाठ्यक्रम: ध्वनि की भौतिकी से लेकर उसे समझने वाले मॉडलों तक। स्पेक्ट्रोग्राम, स्रोत-फ़िल्टर मॉडल, लीनियर प्रेडिक्शन और कोडेक, भारतीय-अंग्रेज़ी वाणी पर लाइव डेमो के साथ।</span></p>
+    <div class="tags"><span>teaching</span><span>speech</span><span>audio</span><span>interactive demos</span></div>
+    
+  </div>
+</a>
+
+<a class="showcase-card" href="https://spinlabiitg.github.io/iitg_umap/" target="_blank" rel="noopener">
+  <div class="showcase-img"><img src="http://localhost:4000/images/showcase/iitg_umap.jpg" alt="Preview of IITG Campus uMap" loading="lazy" /></div>
+  <div class="showcase-body">
+    <span class="showcase-kind"><span data-l="en">Interactive map</span><span data-l="hi" lang="hi">इंटरैक्टिव नक्शा</span></span>
+    <h4>IITG Campus uMap <span class="ext">&#8599;</span></h4>
+    <p><span data-l="en">An unofficial map of IIT Guwahati's hills, lakes and the Brahmaputra, with walking routes, seasons, terrain, satellite greenness and a poster mode.</span><span data-l="hi" lang="hi">आईआईटी गुवाहाटी की पहाड़ियों, झीलों और ब्रह्मपुत्र का एक अनौपचारिक नक्शा, जिसमें पैदल रास्ते, मौसम, भू-आकृति, उपग्रह से दिखती हरियाली और पोस्टर मोड हैं।</span></p>
+    <div class="tags"><span>maps</span><span>campus</span><span>satellite data</span><span>open data</span></div>
+    <p class="credit">Image contains modified Copernicus Sentinel-2 data (monsoon 2022).</p>
+  </div>
+</a>
+
+</div>
+
+<h2><span data-l="en">Open datasets</span><span data-l="hi" lang="hi">खुले डेटासेट</span></h2>
+
+<div class="dataset-list">
+
+  <div class="dataset">
+    <h4>Coswara</h4>
+    <p><span data-l="en">Breathing, cough and speech recordings with COVID-19 symptoms from 2,500+ individuals, recorded 2020–2022.</span><span data-l="hi" lang="hi">2,500 से अधिक लोगों की साँस, खाँसी और वाणी की रिकॉर्डिंग, कोविड-19 लक्षणों के साथ (2020–2022)।</span></p>
+    <div class="tags"><span>respiratory audio</span><span>healthcare</span></div>
+    <a href="https://www.nature.com/articles/s41597-023-02266-0" target="_blank" rel="noopener"><span data-l="en">Paper (Scientific Data, 2023)</span><span data-l="hi" lang="hi">शोध-पत्र (Scientific Data, 2023)</span> &rarr;</a> &nbsp; <a href="https://github.com/iiscleap/Coswara-Data" target="_blank" rel="noopener"><span data-l="en">Get the data &rarr;</span><span data-l="hi" lang="hi">डेटा प्राप्त करें &rarr;</span></a>
+  </div>
+
+  <div class="dataset">
+    <h4>Boli</h4>
+    <p><span data-l="en">A multilingual stuttered-speech dataset from close to 100 people in India, for understanding the stuttering experience.</span><span data-l="hi" lang="hi">भारत के लगभग 100 लोगों से एकत्रित बहुभाषी हकलाहट-वाणी डेटासेट, हकलाने के अनुभव को समझने के लिए।</span></p>
+    <div class="tags"><span>stuttering</span><span>Indian languages</span></div>
+    <a href="https://arxiv.org/pdf/2501.15877" target="_blank" rel="noopener"><span data-l="en">Paper (ICASSP 2025)</span><span data-l="hi" lang="hi">शोध-पत्र (ICASSP 2025)</span> &rarr;</a>
+  </div>
+
+</div>
+:ET

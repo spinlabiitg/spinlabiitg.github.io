@@ -1,13 +1,48 @@
 ---
 layout: default
 ---
+<div class="col-sm-12">
+  <div class="hero">
+    <div class="hero-text">
+      <h1>{% include t.html k="hero_title" %}</h1>
+      <p class="tagline">{% include t.html k="hero_tagline" %}</p>
+      <p class="hero-affil">
+        <a href="https://www.iitg.ac.in/dsai/" target="_blank" rel="noopener">{% include t.html k="affil_school" %}</a>
+        <a href="https://www.iitg.ac.in/" target="_blank" rel="noopener">{% include t.html k="affil_inst" %}</a>
+      </p>
+      <p>
+        <a class="btn btn-primary" href="{{ site.url }}{{ site.baseurl }}/research/">{% include t.html k="hero_research" %}</a>
+        <a class="btn btn-default" href="{{ site.url }}{{ site.baseurl }}/vacancies">{% include t.html k="nav_join" %}</a>
+      </p>
+    </div>
+    <div class="hero-viz">
+      <div class="signal-hero" data-audio="{{ site.url }}{{ site.baseurl }}/audio/welcome_web.wav">
+        <canvas class="signal-canvas" role="img" aria-label="Animation: a recording of 'Welcome to SPIN Lab' becomes a waveform, then samples and a spectrogram, then a map of sounds."></canvas>
+        <div class="signal-bar">
+          <button type="button" class="signal-chip" data-stage="S"><b>S</b> {% include t.html k="sensing" %}</button>
+          <button type="button" class="signal-chip" data-stage="P"><b>P</b> {% include t.html k="perception" %}</button>
+          <button type="button" class="signal-chip" data-stage="IN"><b>IN</b> {% include t.html k="intelligence" %}</button>
+          <button type="button" class="signal-play js-hear">&#9654; {% include t.html k="hear_it" %}</button>
+        </div>
+        <p class="signal-caption" data-for="S">{% include t.html k="cap_s" %}</p>
+        <p class="signal-caption" data-for="P">{% include t.html k="cap_p" %}</p>
+        <p class="signal-caption" data-for="IN">{% include t.html k="cap_in" %}</p>
+        <p class="signal-note">{% include t.html k="sig_note" %}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="homeid" class="col-sm-8">
-  <h1><b>S</b>ensing<br>
-    <!-- <div style="line-height:0px"><img src="images/fidget_spinner.gif" align="right" alt="Computer man" style="width:120px;height:100px;"/>
-    </div> -->
-  <b>P</b>erception &amp<br><b>IN</b>telligence (SPIN) Lab</h1>
-	{{ content }}
-  </div>
-  <div id="newsid" class="col-sm-4" >
-	{% include news.html %}
-  </div>
+  {{ content }}
+</div>
+<div id="newsid" class="col-sm-4">
+  <a class="team-photo-card" href="{{ site.url }}{{ site.baseurl }}/team/">
+    <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/spinlab_group_Oct2025.jpg" alt="SPIN Lab group, October 2025" loading="lazy" />
+    <span>{% include t.html k="hero_caption" %} &middot; <b>{% include t.html k="meet_team" %}</b></span>
+  </a>
+  {% include news.html %}
+</div>
+
+<script src="{{ site.url }}{{ site.baseurl }}/js/spin_signal_data.js" defer></script>
+<script src="{{ site.url }}{{ site.baseurl }}/js/spin_audio.js" defer></script>

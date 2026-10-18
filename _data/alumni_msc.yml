@@ -1,7 +1,14 @@
+- name: Satyam Kumar (Co-Sup)
+  info: MTech MTP, 2025-26
+  thesis: "Machine learning based breathing anomaly detection using a custom-designed humidity sensor"
+  work: To update
+
 - name: Manikantha Dandi (Co-Sup)
+  thesis: "Photoacoustic image reconstruction using a two-phase approach with lightweight LNEformer"
   info: MTech (DS) MTP, 2025-26
   work: Joined Sirius AI
 
 - name: Aadarsh Navnath Thakur (Co-Sup)
+  thesis: "Prediction of strength and deformation behavior of jointed rocks using machine learning algorithms"
   info: MTech (Civil) MTP, 2023-24
   work: To update

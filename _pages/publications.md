@@ -7,7 +7,7 @@ permalink: /publications/
 ---
 
 
-# Publications
+<h1>{% include t.html k="pubs_title" %}</h1>
 
 **An updated summary of publications is accessible at the Google Scholar page: [click here](https://scholar.google.com/citations?user=j7oyJ0MAAAAJ&hl=en).**
 
@@ -51,15 +51,6 @@ permalink: /publications/
 
 <p> &nbsp; </p>
 
-
-### MTech/BTech Thesis Projects
-{% for publi in site.data.mtpbtplist %}
-
-  {{ publi.title }} <br />
-  <em>{{ publi.authors }} </em><br /><a href="{{ publi.link.url }}">{{ publi.link.display }}</a>
-
-{% endfor %}
-<p> &nbsp; </p>
 
 <!-- ## Patents
 <em>Milan P Allan, S Gröblacher, RA Norte, M Leeuwenhoek</em><br />Novel atomic force microscopy probes with phononic crystals<br /> PCT/NL20-20/050797 (2020)

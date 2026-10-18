@@ -1,0 +1,25 @@
+# The "Modalities we work with" strip on the Home page.
+
+- name: Audio & speech
+  name_hi: "ऑडियो और वाणी"
+  icon: "🔊"
+  examples: breath, cough, speech, conversations, music
+  examples_hi: "साँस, खाँसी, वाणी, बातचीत, संगीत"
+
+- name: Images & video
+  name_hi: "चित्र और वीडियो"
+  icon: "🖼"
+  examples: SAR, photoacoustic, satellite, video perception
+  examples_hi: "SAR, फ़ोटोअकूस्टिक, उपग्रह चित्र, वीडियो बोध"
+
+- name: Text & language
+  name_hi: "पाठ और भाषा"
+  icon: "🔤"
+  examples: Indian languages
+  examples_hi: "भारतीय भाषाएँ"
+
+- name: Environment
+  name_hi: "पर्यावरण"
+  icon: "🌿"
+  examples: forest soundscapes, climate and weather
+  examples_hi: "जंगल की ध्वनियाँ, जलवायु और मौसम"
